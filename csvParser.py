@@ -12,6 +12,7 @@ with open("util/translate.csv") as csvfile:
                         f.write('\n')
                         f.close()
                         f = open("relations/" + row[0] + ".csv", "w")
+                        f.write("districtID,")
                         topics.append(row[0])
                 elif len(row) > 1:
                         f.write(row[2]+",")
@@ -47,6 +48,7 @@ for state in states:
                                         f.write('\n')
                                         f.close()
                                         f = open("relations/" + row["Topic"] + ".csv", "a")
+                                        f.write(state.replace(".csv", "") + str(i+1)+",")
                                         prevTopic = row["Topic"]
                                 if row["Subject"] in subjectTitle:
                                         if b_any(title in row["Title"] for title in subjectTitle[row["Subject"]]):

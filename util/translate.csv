@@ -16,6 +16,7 @@ Hispanic or Latino and Race,Hispanic or Latino (of any race),hispanic
 Place of Birth,Native,nativeBorn
 Place of Birth,Foreign born,foreignBorn
 Workers
+Employment Status,In labor force,laborForce
 Employment Status,Not in labor force,nonLaborForce
 Employment Status,Unemployment Rate,unemploymentRate
 Commuting to Work,Mean travel time to work (minutes),meanCommute
