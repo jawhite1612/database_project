@@ -1,0 +1,44 @@
+People
+Sex and Age,Total population,totalPop
+Sex and Age,Male,male
+Sex and Age,Female,female
+Sex and Age,Median age (years),medianAge
+Sex and Age,18 years and over,18andOver
+Sex and Age,65 years and over,65andOver
+Race,One race,singleRace
+Race,Black or African American,black
+Race,American Indian and Alaska Native,nativeAmericanAlaskan
+Race,Asian,asian
+Race,Native Hawaiian and Other Pacific Islander,pacificIslander
+Race,Some other race,otherRace
+Race,Two or more races,multiRace
+Hispanic or Latino and Race,Hispanic or Latino (of any race),hispanic
+Place of Birth,Native,nativeBorn
+Place of Birth,Foreign born,foreignBorn
+Workers
+Employment Status,Not in labor force,nonLaborForce
+Employment Status,Unemployment Rate,unemploymentRate
+Commuting to Work,Mean travel time to work (minutes),meanCommute
+Housing
+Housing Occupancy,Occupied housing units,ownedUnits
+Value,Median (dollars),medianOwned
+Mortgage Status,Housing units without a mortgage,nonmortgagedUnits
+Mortgage Status,Housing units with a mortgage,mortgagedUnits
+Gross Rent,Occupied units paying rent,rentedUnits
+Gross Rent,Median (dollars),medianRent
+Socioeconomic
+Income and Benefits (In 2018 inflation-adjusted dollars),Median household income (dollars),medianIncome
+Income and Benefits (In 2018 inflation-adjusted dollars),Mean household income (dollars),meanIncome
+Health Insurance Coverage,With health insurance coverage,withHealthInsurance
+Health Insurance Coverage,No health insurance coverage,withoutHealthInsurance
+Percentage of Families and People Whose Income in the Past 12 Months is Below the Poverty Level,All families,percentBelowPovertyLine
+Education
+Educational Attainment,Less than 9th grade,lessThan9thGrade
+Educational Attainment,9th to 12th grade,9thTo12thGrade
+Educational Attainment,High school graduate (includes equivalency),highSchoolDiploma
+Educational Attainment,Some college,someCollege
+Educational Attainment,Associate's degree,associatesDegree
+Educational Attainment,Bachelor's degree,bachelorsDegree
+Educational Attainment,Graduate or professional degree,graduateOrProfessionalDegree
+Educational Attainment,Percent high school graduate or higher,percentHighSchoolOrHigher
+Educational Attainment,Percent bachelor's degree or higher,percentBachelorsOrHigher
