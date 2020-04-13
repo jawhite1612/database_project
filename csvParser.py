@@ -20,7 +20,10 @@ with open("util/translate.csv") as csvfile:
                         if row[1] not in subjectTitle[row[0]]:
                                 subjectTitle[row[0]].append(row[1])
 f.write("\n")                        
-states = ['alabama.csv','alaska.csv','connecticut.csv']
+f.close()
+f = open("states/states.txt", "r")
+states = [state.strip() for state in f.readlines()]
+print(states)
 f = open("util/blank", "w")
 districtId = 0
 for state in states:
