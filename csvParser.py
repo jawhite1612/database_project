@@ -27,6 +27,10 @@ states = [state.strip() for state in f.readlines()]
 print(states)
 f = open("util/blank", "w")
 districtId = 0
+
+#This variable is solely required for a random edge case
+prevTitle = ''
+
 for state in states:
 	with open("states/" + state) as csvfile:
 		reader = csv.DictReader(csvfile)
@@ -53,5 +57,7 @@ for state in states:
                                         prevTopic = row["Topic"]
                                 if row["Subject"] in subjectTitle:
                                         if b_any(title in row["Title"] for title in subjectTitle[row["Subject"]]):
-                                                f.write(row[districts[i]].strip()+",")
+                                                if (prevTitle != 'Civilian noninstitutionalized population under 19 years'):
+                                                        f.write(row[districts[i]].strip()+",")
+                                prevTitle = row['Title']
                         csvfile.seek(0)
