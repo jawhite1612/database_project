@@ -36,6 +36,7 @@ for state in states:
                                 if "Estimate" in key:
                                         districts.append(key)
                         break
+                csvfile.seek(0)
                 districts.sort()
                 for i in range (len(districts)):
                         prevTopic = ''
