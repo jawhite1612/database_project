@@ -60,11 +60,11 @@ LOAD DATA LOCAL INFILE 'relations/Housing.csv' INTO TABLE Housing FIELDS TERMINA
 
 CREATE TABLE IF NOT EXISTS Socioeconomic (
   districtID VARCHAR(50),
-  medianIncome INT
-  meanIncome FLOAT
-  withHealthInsurance INT
-  withoutHealthInsurance INT
-  percentBelowPovertyLine FLOAT
+  medianIncome INT,
+  meanIncome FLOAT,
+  withHealthInsurance INT,
+  withoutHealthInsurance INT,
+  percentBelowPovertyLine FLOAT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
 LOAD DATA LOCAL INFILE 'relations/Socioeconomic.csv' INTO TABLE Socioeconomic FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
