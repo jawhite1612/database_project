@@ -1,0 +1,988 @@
+districtID,year,office
+texas31,2018,US House
+north carolina3,2018,US House
+indiana5,2016,US House
+hawaii,2016,US Senate
+texas12,2016,US House
+pennsylvania2,2018,US House
+alabama1,2016,US House
+california25,2016,US House
+texas1,2018,US House
+tennessee5,2018,US House
+arizona,2016,US President
+minnesota3,2018,US House
+florida16,2018,US House
+pennsylvania6,2016,US House
+georgia10,2016,US House
+washington4,2018,US House
+florida,2016,US Senate
+oregon,2016,US Senate
+new jersey4,2016,US House
+washington10,2018,US House
+colorado2,2016,US House
+oklahoma1,2016,US House
+pennsylvania11,2018,US House
+new york5,2016,US House
+texas20,2018,US House
+new york23,2018,US House
+alabama2,2016,US House
+georgia12,2018,US House
+colorado,2016,US President
+arkansas,2016,US President
+texas18,2016,US House
+california15,2018,US House
+iowa2,2018,US House
+tennessee6,2016,US House
+florida4,2016,US House
+texas1,2016,US House
+alabama1,2018,US House
+georgia13,2016,US House
+texas,2016,US President
+new york26,2016,US House
+texas17,2016,US House
+texas30,2016,US House
+michigan12,2016,US House
+new jersey9,2016,US House
+california29,2018,US House
+louisiana,2016,US Senate
+hawaii,2016,US President
+virginia,2018,US Senate
+north carolina2,2018,US House
+indiana5,2018,US House
+california5,2016,US House
+california32,2018,US House
+wisconsin3,2016,US House
+nevada1,2016,US House
+nevada,2016,US President
+texas3,2018,US House
+ohio6,2016,US House
+north carolina6,2016,US House
+illinois4,2016,US House
+virginia7,2018,US House
+california18,2018,US House
+hawaii,2018,US Senate
+minnesota5,2016,US House
+mississippi,2016,US President
+oregon1,2018,US House
+new york9,2018,US House
+michigan8,2018,US House
+california14,2016,US House
+california9,2016,US House
+california20,2018,US House
+texas34,2016,US House
+minnesota2,2016,US House
+massachusetts9,2016,US House
+nebraska,2018,US Senate
+texas24,2018,US House
+illinois,2016,US Senate
+iowa3,2018,US House
+pennsylvania8,2016,US House
+pennsylvania10,2016,US House
+massachusetts3,2018,US House
+georgia12,2016,US House
+florida17,2016,US House
+ohio15,2016,US House
+indiana2,2018,US House
+illinois15,2016,US House
+colorado3,2016,US House
+pennsylvania8,2018,US House
+connecticut,2016,US President
+new jersey6,2018,US House
+florida1,2018,US House
+new jersey6,2016,US House
+arizona6,2016,US House
+michigan13,2016,US House
+south carolina2,2016,US House
+oklahoma,2016,US President
+utah2,2018,US House
+new york3,2016,US House
+michigan5,2016,US House
+virginia5,2018,US House
+north carolina11,2018,US House
+california24,2018,US House
+colorado1,2018,US House
+virginia3,2018,US House
+missouri,2016,US President
+illinois8,2016,US House
+oklahoma3,2018,US House
+south dakota,2018,US House
+ohio7,2018,US House
+texas14,2018,US House
+new york7,2016,US House
+new york,2018,US Senate
+wisconsin,2018,US Senate
+ohio16,2016,US House
+california32,2016,US House
+new york16,2016,US House
+vermont,2016,US Senate
+pennsylvania13,2016,US House
+florida25,2016,US House
+district of columbia,2016,US President
+pennsylvania17,2016,US House
+minnesota8,2018,US House
+idaho2,2016,US House
+ohio12,2016,US House
+arizona5,2016,US House
+washington,2018,US Senate
+wisconsin7,2016,US House
+georgia1,2016,US House
+texas19,2018,US House
+tennessee4,2018,US House
+alabama6,2016,US House
+texas4,2016,US House
+pennsylvania3,2016,US House
+mississippi3,2016,US House
+california40,2016,US House
+texas6,2016,US House
+nevada,2016,US Senate
+arizona,2016,US Senate
+new york12,2016,US House
+texas15,2016,US House
+new jersey8,2016,US House
+california42,2016,US House
+pennsylvania7,2016,US House
+california48,2018,US House
+pennsylvania12,2016,US House
+oregon4,2016,US House
+georgia10,2018,US House
+north carolina,2016,US Senate
+maryland3,2016,US House
+florida11,2018,US House
+delaware1,2016,US House
+massachusetts2,2018,US House
+kentucky3,2018,US House
+pennsylvania4,2016,US House
+utah3,2018,US House
+florida8,2018,US House
+texas25,2016,US House
+illinois7,2018,US House
+new jersey,2016,US President
+north carolina,2016,US President
+ohio5,2018,US House
+illinois14,2016,US House
+idaho2,2018,US House
+new mexico,2018,US Senate
+wisconsin2,2018,US House
+kansas1,2016,US House
+florida19,2018,US House
+pennsylvania5,2016,US House
+missouri5,2018,US House
+michigan5,2018,US House
+new york18,2016,US House
+texas32,2018,US House
+alabama7,2018,US House
+nevada3,2016,US House
+pennsylvania4,2018,US House
+wisconsin6,2016,US House
+new york,2016,US President
+indiana4,2016,US House
+california8,2016,US House
+georgia3,2018,US House
+indiana,2016,US President
+michigan6,2018,US House
+illinois9,2016,US House
+delaware,2018,US Senate
+oregon5,2016,US House
+colorado5,2018,US House
+georgia,2016,US Senate
+new jersey2,2018,US House
+wisconsin5,2016,US House
+new york2,2016,US House
+mississippi1,2018,US House
+california41,2016,US House
+indiana8,2018,US House
+missouri1,2018,US House
+texas23,2016,US House
+florida17,2018,US House
+tennessee1,2018,US House
+south carolina2,2018,US House
+illinois6,2018,US House
+minnesota6,2018,US House
+minnesota,2016,US President
+colorado1,2016,US House
+missouri7,2018,US House
+louisiana1,2018,US House
+ohio,2016,US Senate
+florida13,2016,US House
+michigan2,2016,US House
+arizona8,2016,US House
+texas21,2016,US House
+illinois10,2016,US House
+tennessee9,2018,US House
+texas33,2016,US House
+ohio13,2018,US House
+louisiana6,2018,US House
+new jersey11,2016,US House
+indiana1,2016,US House
+ohio10,2018,US House
+florida12,2018,US House
+alabama5,2016,US House
+pennsylvania15,2018,US House
+pennsylvania10,2018,US House
+nevada2,2016,US House
+new york2,2018,US House
+mississippi,2018,US Senate
+new jersey11,2018,US House
+north carolina12,2018,US House
+new york8,2018,US House
+new jersey1,2016,US House
+massachusetts1,2016,US House
+south carolina5,2016,US House
+california44,2016,US House
+california21,2018,US House
+idaho,2016,US Senate
+virginia6,2018,US House
+maine2,2016,US House
+texas2,2018,US House
+west virginia3,2018,US House
+california33,2018,US House
+west virginia,2016,US President
+minnesota1,2016,US House
+florida19,2016,US House
+minnesota2,2018,US House
+georgia2,2016,US House
+missouri3,2018,US House
+new york14,2018,US House
+kentucky5,2018,US House
+mississippi2,2016,US House
+wisconsin8,2018,US House
+massachusetts8,2016,US House
+massachusetts5,2018,US House
+california2,2016,US House
+california19,2018,US House
+new york25,2018,US House
+massachusetts6,2018,US House
+new york7,2018,US House
+texas22,2016,US House
+california31,2018,US House
+maine1,2016,US House
+california22,2016,US House
+massachusetts9,2018,US House
+alabama4,2018,US House
+nebraska2,2016,US House
+nebraska3,2016,US House
+iowa,2016,US Senate
+utah1,2016,US House
+ohio,2016,US President
+new york19,2018,US House
+montana1,2016,US House
+new york15,2016,US House
+illinois18,2018,US House
+ohio4,2018,US House
+rhode island2,2016,US House
+california50,2018,US House
+california11,2016,US House
+washington6,2018,US House
+colorado6,2018,US House
+missouri6,2018,US House
+california26,2016,US House
+south carolina1,2018,US House
+new hampshire1,2016,US House
+florida7,2016,US House
+alaska1,2018,US House
+alaska,2016,US Senate
+virginia9,2016,US House
+oklahoma1,2018,US House
+arizona9,2018,US House
+virginia7,2016,US House
+texas27,2016,US House
+michigan11,2018,US House
+michigan14,2016,US House
+kentucky1,2016,US House
+oklahoma3,2016,US House
+ohio6,2018,US House
+georgia11,2018,US House
+missouri,2016,US Senate
+maryland,2018,US Senate
+wisconsin1,2016,US House
+virginia9,2018,US House
+california37,2016,US House
+iowa3,2016,US House
+washington,2016,US President
+indiana,2016,US Senate
+california23,2018,US House
+florida5,2016,US House
+new jersey3,2018,US House
+south carolina7,2018,US House
+south carolina,2016,US Senate
+tennessee,2016,US President
+california16,2018,US House
+pennsylvania6,2018,US House
+michigan10,2016,US House
+tennessee6,2018,US House
+hawaii1,2016,US House
+texas22,2018,US House
+california47,2016,US House
+west virginia2,2016,US House
+texas35,2016,US House
+louisiana2,2016,US House
+oregon5,2018,US House
+illinois9,2018,US House
+indiana2,2016,US House
+new york5,2018,US House
+texas6,2018,US House
+tennessee7,2018,US House
+new york23,2016,US House
+rhode island,2018,US Senate
+massachusetts4,2016,US House
+florida3,2018,US House
+missouri2,2016,US House
+florida9,2016,US House
+oregon2,2018,US House
+new york21,2016,US House
+connecticut,2018,US Senate
+idaho1,2018,US House
+georgia6,2016,US House
+mississippi2,2018,US House
+connecticut4,2016,US House
+illinois14,2018,US House
+tennessee3,2016,US House
+minnesota5,2018,US House
+california5,2018,US House
+north carolina10,2016,US House
+oklahoma2,2016,US House
+utah,2018,US Senate
+kansas4,2018,US House
+wisconsin1,2018,US House
+alabama6,2018,US House
+kansas3,2018,US House
+ohio14,2018,US House
+tennessee5,2016,US House
+illinois2,2018,US House
+vermont1,2018,US House
+florida14,2018,US House
+massachusetts,2018,US Senate
+florida23,2018,US House
+pennsylvania18,2018,US House
+wyoming,2016,US President
+ohio9,2018,US House
+north carolina1,2016,US House
+iowa4,2018,US House
+kansas,2016,US President
+kentucky1,2018,US House
+idaho1,2016,US House
+california36,2016,US House
+california13,2018,US House
+texas24,2016,US House
+wisconsin6,2018,US House
+georgia14,2018,US House
+north carolina5,2018,US House
+indiana3,2018,US House
+florida4,2018,US House
+maryland,2016,US President
+pennsylvania9,2016,US House
+new mexico3,2018,US House
+missouri2,2018,US House
+california41,2018,US House
+new york22,2016,US House
+virginia5,2016,US House
+north carolina11,2016,US House
+north carolina4,2018,US House
+georgia8,2018,US House
+new mexico3,2016,US House
+oregon1,2016,US House
+california28,2018,US House
+michigan1,2018,US House
+iowa4,2016,US House
+washington1,2016,US House
+maryland6,2018,US House
+texas13,2018,US House
+new york1,2018,US House
+new jersey12,2018,US House
+tennessee2,2018,US House
+west virginia1,2018,US House
+massachusetts,2016,US President
+rhode island2,2018,US House
+virginia10,2016,US House
+texas36,2016,US House
+california50,2016,US House
+new mexico2,2018,US House
+louisiana4,2018,US House
+florida21,2018,US House
+pennsylvania,2016,US President
+texas16,2018,US House
+california22,2018,US House
+maryland2,2016,US House
+illinois6,2016,US House
+virginia3,2016,US House
+new york27,2016,US House
+florida10,2018,US House
+ohio4,2016,US House
+ohio12,2018,US House
+california10,2018,US House
+illinois16,2018,US House
+california53,2018,US House
+florida1,2016,US House
+california49,2018,US House
+california39,2018,US House
+california36,2018,US House
+california28,2016,US House
+new hampshire2,2016,US House
+california45,2018,US House
+new york17,2018,US House
+rhode island1,2016,US House
+maryland1,2018,US House
+new york1,2016,US House
+illinois10,2018,US House
+new york22,2018,US House
+kentucky6,2018,US House
+north carolina3,2016,US House
+ohio11,2018,US House
+florida13,2018,US House
+illinois13,2016,US House
+new york18,2018,US House
+pennsylvania14,2018,US House
+indiana3,2016,US House
+california53,2016,US House
+virginia4,2016,US House
+louisiana2,2018,US House
+virginia10,2018,US House
+south dakota,2016,US House
+new jersey7,2016,US House
+washington10,2016,US House
+oklahoma5,2018,US House
+north carolina8,2016,US House
+south carolina3,2016,US House
+new york3,2018,US House
+pennsylvania7,2018,US House
+georgia3,2016,US House
+illinois7,2016,US House
+california38,2018,US House
+louisiana1,2016,US House
+ohio5,2016,US House
+north carolina8,2018,US House
+california1,2016,US House
+georgia7,2016,US House
+ohio8,2016,US House
+minnesota6,2016,US House
+wisconsin,2016,US President
+texas28,2016,US House
+north dakota1,2018,US House
+michigan4,2016,US House
+california51,2018,US House
+arkansas4,2016,US House
+new york10,2016,US House
+new york20,2018,US House
+california6,2016,US House
+texas4,2018,US House
+utah2,2016,US House
+pennsylvania16,2018,US House
+south carolina6,2018,US House
+arizona7,2018,US House
+south carolina7,2016,US House
+north carolina2,2016,US House
+virginia1,2016,US House
+new jersey3,2016,US House
+georgia4,2016,US House
+alabama4,2016,US House
+california52,2018,US House
+minnesota8,2016,US House
+maryland1,2016,US House
+illinois13,2018,US House
+virginia11,2016,US House
+california29,2016,US House
+texas11,2018,US House
+connecticut1,2016,US House
+texas34,2018,US House
+florida6,2018,US House
+washington8,2018,US House
+california48,2016,US House
+new mexico,2016,US President
+arizona4,2016,US House
+california10,2016,US House
+north dakota,2016,US Senate
+washington2,2018,US House
+georgia5,2016,US House
+connecticut,2016,US Senate
+missouri3,2016,US House
+arkansas1,2018,US House
+idaho,2016,US President
+new york24,2016,US House
+north carolina13,2018,US House
+virginia4,2018,US House
+connecticut2,2016,US House
+kansas,2016,US Senate
+ohio2,2018,US House
+nevada,2018,US Senate
+ohio8,2018,US House
+louisiana6,2016,US House
+pennsylvania17,2018,US House
+north carolina1,2018,US House
+south dakota,2016,US President
+west virginia,2018,US Senate
+ohio13,2016,US House
+wisconsin8,2016,US House
+new york4,2016,US House
+florida,2018,US Senate
+new york6,2016,US House
+new jersey,2018,US Senate
+tennessee9,2016,US House
+vermont1,2016,US House
+michigan10,2018,US House
+maryland7,2016,US House
+arkansas2,2016,US House
+texas7,2018,US House
+connecticut5,2016,US House
+missouri6,2016,US House
+california17,2018,US House
+nebraska,2016,US President
+florida21,2016,US House
+arizona2,2018,US House
+georgia13,2018,US House
+tennessee1,2016,US House
+texas8,2016,US House
+new jersey5,2018,US House
+california43,2016,US House
+california7,2018,US House
+florida18,2018,US House
+south carolina6,2016,US House
+kansas1,2018,US House
+new jersey2,2016,US House
+wisconsin5,2018,US House
+florida22,2018,US House
+florida10,2016,US House
+delaware1,2018,US House
+texas9,2016,US House
+illinois1,2018,US House
+new york26,2018,US House
+illinois,2016,US President
+arkansas1,2016,US House
+ohio3,2018,US House
+arkansas3,2016,US House
+illinois15,2018,US House
+oregon2,2016,US House
+florida26,2018,US House
+texas11,2016,US House
+michigan2,2018,US House
+arizona8,2018,US House
+massachusetts4,2018,US House
+florida6,2016,US House
+new york12,2018,US House
+arkansas2,2018,US House
+california3,2018,US House
+california47,2018,US House
+new hampshire1,2018,US House
+maryland5,2018,US House
+virginia2,2016,US House
+colorado4,2016,US House
+california44,2018,US House
+massachusetts7,2016,US House
+maryland7,2018,US House
+washington7,2018,US House
+michigan8,2016,US House
+arizona2,2016,US House
+florida27,2018,US House
+alabama,2016,US President
+illinois11,2018,US House
+utah,2016,US President
+alabama5,2018,US House
+florida24,2018,US House
+iowa1,2018,US House
+arizona5,2018,US House
+pennsylvania1,2018,US House
+florida27,2016,US House
+california24,2016,US House
+missouri,2018,US Senate
+arizona6,2018,US House
+california37,2018,US House
+california25,2018,US House
+north carolina9,2016,US House
+new jersey10,2016,US House
+kansas2,2018,US House
+michigan12,2018,US House
+arizona9,2016,US House
+michigan3,2016,US House
+texas31,2016,US House
+tennessee8,2018,US House
+oregon4,2018,US House
+pennsylvania13,2018,US House
+california52,2016,US House
+ohio16,2018,US House
+california8,2018,US House
+oklahoma4,2018,US House
+hawaii1,2018,US House
+colorado,2016,US Senate
+south dakota,2016,US Senate
+colorado5,2016,US House
+texas20,2016,US House
+massachusetts7,2018,US House
+california3,2016,US House
+california12,2016,US House
+utah3,2016,US House
+new york11,2018,US House
+new jersey9,2018,US House
+west virginia3,2016,US House
+alabama3,2018,US House
+indiana6,2016,US House
+michigan,2018,US Senate
+tennessee,2018,US Senate
+illinois5,2018,US House
+california35,2018,US House
+virginia8,2016,US House
+ohio9,2016,US House
+texas27,2018,US House
+washington3,2016,US House
+georgia6,2018,US House
+texas29,2016,US House
+michigan3,2018,US House
+california18,2016,US House
+texas5,2018,US House
+wyoming1,2018,US House
+maryland8,2018,US House
+alaska,2016,US President
+kansas2,2016,US House
+new jersey4,2018,US House
+florida14,2016,US House
+wisconsin,2016,US Senate
+new jersey10,2018,US House
+ohio15,2018,US House
+arizona,2018,US Senate
+missouri5,2016,US House
+illinois4,2018,US House
+washington1,2018,US House
+arizona3,2018,US House
+michigan9,2018,US House
+florida20,2016,US House
+california16,2016,US House
+new york17,2016,US House
+new mexico2,2016,US House
+georgia9,2018,US House
+california46,2016,US House
+georgia14,2016,US House
+california26,2018,US House
+iowa2,2016,US House
+wyoming,2018,US Senate
+oregon3,2018,US House
+california4,2016,US House
+connecticut3,2018,US House
+tennessee3,2018,US House
+nevada3,2018,US House
+minnesota,2018,US Senate
+arizona1,2018,US House
+maine,2016,US President
+new mexico1,2018,US House
+louisiana5,2018,US House
+california38,2016,US House
+north carolina7,2016,US House
+california4,2018,US House
+texas5,2016,US House
+new york,2016,US Senate
+maryland8,2016,US House
+louisiana,2016,US President
+massachusetts1,2018,US House
+texas13,2016,US House
+colorado7,2016,US House
+tennessee4,2016,US House
+indiana7,2016,US House
+nevada1,2018,US House
+new york11,2016,US House
+florida3,2016,US House
+california12,2018,US House
+north dakota1,2016,US House
+illinois18,2016,US House
+minnesota7,2016,US House
+louisiana5,2016,US House
+washington3,2018,US House
+california11,2018,US House
+indiana1,2018,US House
+rhode island1,2018,US House
+maryland,2016,US Senate
+pennsylvania5,2018,US House
+tennessee7,2016,US House
+missouri4,2018,US House
+washington4,2016,US House
+iowa,2016,US President
+georgia9,2016,US House
+texas19,2016,US House
+pennsylvania18,2016,US House
+california,2016,US President
+hawaii2,2018,US House
+maine1,2018,US House
+california39,2016,US House
+georgia2,2018,US House
+maine2,2018,US House
+illinois12,2018,US House
+illinois16,2016,US House
+west virginia2,2018,US House
+pennsylvania14,2016,US House
+texas9,2018,US House
+california34,2016,US House
+maryland5,2016,US House
+ohio11,2016,US House
+nebraska1,2016,US House
+california15,2016,US House
+new york16,2018,US House
+maryland6,2016,US House
+michigan14,2018,US House
+louisiana3,2018,US House
+new york20,2016,US House
+california31,2016,US House
+florida8,2016,US House
+minnesota7,2018,US House
+oregon3,2016,US House
+maryland3,2018,US House
+new hampshire,2016,US Senate
+texas10,2018,US House
+utah4,2018,US House
+texas3,2016,US House
+south carolina3,2018,US House
+south carolina4,2018,US House
+south carolina,2016,US President
+south carolina4,2016,US House
+indiana,2018,US Senate
+delaware,2016,US President
+indiana7,2018,US House
+texas,2018,US Senate
+texas7,2016,US House
+new york24,2018,US House
+arizona4,2018,US House
+new york27,2018,US House
+massachusetts8,2018,US House
+utah4,2016,US House
+missouri4,2016,US House
+texas28,2018,US House
+wisconsin2,2016,US House
+california34,2018,US House
+rhode island,2016,US President
+colorado3,2018,US House
+wisconsin3,2018,US House
+illinois17,2016,US House
+indiana9,2016,US House
+kentucky6,2016,US House
+new york6,2018,US House
+california49,2016,US House
+north carolina10,2018,US House
+indiana9,2018,US House
+south carolina5,2018,US House
+maryland2,2018,US House
+colorado7,2018,US House
+georgia7,2018,US House
+washington9,2016,US House
+texas14,2016,US House
+texas18,2018,US House
+florida2,2018,US House
+nevada4,2016,US House
+california30,2018,US House
+kentucky2,2016,US House
+new jersey1,2018,US House
+alabama,2016,US Senate
+florida12,2016,US House
+arizona1,2016,US House
+washington5,2016,US House
+california9,2018,US House
+california42,2018,US House
+california,2018,US Senate
+kansas4,2016,US House
+michigan6,2016,US House
+arizona7,2016,US House
+california14,2018,US House
+washington6,2016,US House
+virginia,2016,US President
+illinois12,2016,US House
+california7,2016,US House
+maryland4,2018,US House
+virginia6,2016,US House
+new hampshire,2016,US President
+new york13,2016,US House
+florida26,2016,US House
+minnesota3,2016,US House
+florida23,2016,US House
+washington2,2016,US House
+texas35,2018,US House
+washington9,2018,US House
+kentucky,2016,US Senate
+nevada2,2018,US House
+illinois17,2018,US House
+pennsylvania15,2016,US House
+missouri8,2018,US House
+virginia1,2018,US House
+colorado4,2018,US House
+maryland4,2016,US House
+oklahoma5,2016,US House
+ohio10,2016,US House
+california23,2016,US House
+virginia2,2018,US House
+texas36,2018,US House
+new york19,2016,US House
+washington,2016,US Senate
+texas2,2016,US House
+florida9,2018,US House
+massachusetts2,2016,US House
+pennsylvania1,2016,US House
+texas32,2016,US House
+new york25,2016,US House
+north carolina13,2016,US House
+mississippi4,2016,US House
+vermont,2016,US President
+kentucky4,2016,US House
+florida25,2018,US House
+wisconsin4,2018,US House
+washington7,2016,US House
+texas21,2018,US House
+michigan13,2018,US House
+texas8,2018,US House
+florida15,2016,US House
+vermont,2018,US Senate
+texas15,2018,US House
+oklahoma4,2016,US House
+texas30,2018,US House
+california51,2016,US House
+mississippi1,2016,US House
+minnesota1,2018,US House
+wisconsin7,2018,US House
+georgia4,2018,US House
+california40,2018,US House
+missouri8,2016,US House
+kentucky5,2016,US House
+louisiana4,2016,US House
+michigan,2016,US President
+michigan4,2018,US House
+maine,2018,US Senate
+colorado2,2018,US House
+new york13,2018,US House
+connecticut3,2016,US House
+california46,2018,US House
+kentucky4,2018,US House
+new york10,2018,US House
+florida18,2016,US House
+pennsylvania3,2018,US House
+california45,2016,US House
+california35,2016,US House
+illinois11,2016,US House
+oklahoma,2016,US Senate
+california27,2018,US House
+mississippi4,2018,US House
+florida,2016,US President
+massachusetts3,2016,US House
+michigan11,2016,US House
+pennsylvania,2016,US Senate
+indiana6,2018,US House
+illinois1,2016,US House
+tennessee8,2016,US House
+ohio3,2016,US House
+kentucky,2016,US President
+georgia1,2018,US House
+nevada4,2018,US House
+virginia11,2018,US House
+virginia8,2018,US House
+montana,2018,US Senate
+florida20,2018,US House
+florida5,2018,US House
+ohio7,2016,US House
+new jersey7,2018,US House
+new york14,2016,US House
+illinois5,2016,US House
+pennsylvania,2018,US Senate
+california21,2016,US House
+wisconsin4,2016,US House
+connecticut5,2018,US House
+california30,2016,US House
+washington5,2018,US House
+texas29,2018,US House
+new york8,2016,US House
+texas12,2018,US House
+north carolina5,2016,US House
+utah,2016,US Senate
+texas33,2018,US House
+north carolina7,2018,US House
+california2,2018,US House
+california,2016,US Senate
+massachusetts6,2016,US House
+utah1,2018,US House
+montana,2016,US President
+arkansas3,2018,US House
+florida15,2018,US House
+new york9,2016,US House
+pennsylvania9,2018,US House
+texas23,2018,US House
+michigan7,2018,US House
+missouri1,2016,US House
+california20,2016,US House
+pennsylvania12,2018,US House
+texas25,2018,US House
+tennessee2,2016,US House
+indiana4,2018,US House
+pennsylvania2,2016,US House
+montana1,2018,US House
+nebraska1,2018,US House
+california17,2016,US House
+georgia8,2016,US House
+new mexico1,2016,US House
+florida11,2016,US House
+arkansas,2016,US Senate
+new hampshire2,2018,US House
+pennsylvania16,2016,US House
+california6,2018,US House
+kansas3,2016,US House
+oregon,2016,US President
+minnesota4,2016,US House
+colorado6,2016,US House
+georgia11,2016,US House
+alabama3,2016,US House
+west virginia1,2016,US House
+north dakota,2018,US Senate
+kentucky3,2016,US House
+florida2,2016,US House
+georgia,2016,US President
+minnesota4,2018,US House
+connecticut2,2018,US House
+new york4,2018,US House
+new jersey12,2016,US House
+texas17,2018,US House
+california13,2016,US House
+ohio1,2016,US House
+ohio,2018,US Senate
+illinois3,2016,US House
+michigan1,2016,US House
+washington8,2016,US House
+alabama7,2016,US House
+iowa1,2016,US House
+arizona3,2016,US House
+michigan9,2016,US House
+wyoming,2016,US House
+new york21,2018,US House
+north carolina9,2018,US House
+north carolina4,2016,US House
+texas10,2016,US House
+new york15,2018,US House
+florida22,2016,US House
+nebraska3,2018,US House
+connecticut1,2018,US House
+north carolina6,2018,US House
+mississippi3,2018,US House
+new jersey8,2018,US House
+texas26,2018,US House
+california43,2018,US House
+illinois2,2016,US House
+ohio2,2016,US House
+missouri7,2016,US House
+michigan7,2016,US House
+california27,2016,US House
+arkansas4,2018,US House
+ohio1,2018,US House
+california19,2016,US House
+kentucky2,2018,US House
+north dakota,2016,US President
+illinois3,2018,US House
+illinois8,2018,US House
+georgia5,2018,US House
+south carolina1,2016,US House
+alabama2,2018,US House
+louisiana3,2016,US House
+new jersey5,2016,US House
+massachusetts5,2016,US House
+alaska1,2016,US House
+texas16,2016,US House
+florida7,2018,US House
+california1,2018,US House
+hawaii2,2016,US House
+pennsylvania11,2016,US House
+oklahoma2,2018,US House
+florida16,2016,US House
+ohio14,2016,US House
+texas26,2016,US House
+connecticut4,2018,US House
+nebraska2,2018,US House
+indiana8,2016,US House
+california33,2016,US House
+north carolina12,2016,US House
