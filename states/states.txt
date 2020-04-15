@@ -6,7 +6,7 @@ california.csv
 colorado.csv
 connecticut.csv
 delaware.csv
-district_of_colombia.csv
+district_of_columbia.csv
 florida.csv
 georgia.csv
 hawaii.csv
@@ -19,7 +19,7 @@ kentucky.csv
 louisiana.csv
 maine.csv
 maryland.csv
-massachusettes.csv
+massachusetts.csv
 michigan.csv
 minnesota.csv
 mississippi.csv
@@ -36,12 +36,12 @@ north_dakota.csv
 ohio.csv
 oklahoma.csv
 oregon.csv
-pennslyvania.csv
+pennsylvania.csv
 puerto_rico.csv
 rhode_island.csv
 south_carolina.csv
 south_dakota.csv
-tennesse.csv
+tennessee.csv
 texas.csv
 utah.csv
 vermont.csv
