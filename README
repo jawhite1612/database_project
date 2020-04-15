@@ -1,11 +1,12 @@
-To run the parser type:
+To run the state data parser to create the state data relations, type:
 
-python csvParser.py
+python stateDataParser.py
 
 Dir description:
 
     relations --> the output of relations when running the parser
     states --> the raw data from states (removed occupation for now)
+    elections --> the raw data from elections (only includes )
     util --> blank (required for io)
     	     translate.txt
 		To add an attribute to a specific relation:
