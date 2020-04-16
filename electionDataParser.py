@@ -18,9 +18,9 @@ def readElectionsAndCandidates(file):
   	reader = csv.DictReader(csvfile)
   	for row in reader:
           election = row["district"] + "," + row["year"] + "," + row["office"]
-          if (row["district"] != "prevDistrict"):
+          if (row["district"] != prevDistrict):
             electionID+=1;
-            g.write(str(candidateID) +"," + str(electionID)+","+row["candidate"]+","+row["party"]+","+row["candidatevotes"]+","+row["totalvotes"]+","+row["writein"]+'\n')
+          g.write(str(candidateID) +"," + str(electionID)+","+row["candidate"]+","+row["party"]+","+row["candidatevotes"]+","+row["totalvotes"]+","+row["writein"]+'\n')
           if election not in elections:
             elections.append(election)
           prevDistrict = row["district"]
@@ -31,7 +31,7 @@ files = ['house.csv','senate.csv','president.csv']
 for file in files:
   readElectionsAndCandidates(file)
 
-electionID = 0
+electionID = 1
 for item in elections:
   f.write(str(electionID)+","+item + '\n')
   electionID+=1
