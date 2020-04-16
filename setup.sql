@@ -4,6 +4,8 @@ DROP TABLE IF EXISTS Housing;
 DROP TABLE IF EXISTS Workers;
 DROP TABLE IF EXISTS Population;
 DROP TABLE IF EXISTS District;
+DROP TABLE IF EXISTS Election;
+DROP TABLE IF EXISTS Candidate;
 
 CREATE TABLE IF NOT EXISTS District (
   districtID VARCHAR(50),
@@ -12,6 +14,30 @@ CREATE TABLE IF NOT EXISTS District (
   PRIMARY KEY (districtID)
 );
 LOAD DATA LOCAL INFILE 'relations/Districts.csv' INTO TABLE District FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
+CREATE TABLE IF NOT EXISTS Election (
+  electionID INT,
+  districtID VARCHAR(50),
+  year INT,
+  office VARCHAR(50),
+  PRIMARY KEY(electionID),
+  FOREIGN KEY (districtID) REFERENCES District(districtID)
+);
+LOAD DATA LOCAL INFILE 'relations/Election.csv' INTO TABLE Education FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
+CREATE TABLE IF NOT EXISTS Candidate (
+  candidateID INT,
+  electionID INT,
+  name VARCHAR(100),
+  party VARCHAR(50),
+  numOfVotes INT,
+  totalVotes INT,
+  writeIn, BOOLEAN,
+  PRIMARY KEY(candidateID),
+  FOREIGN KEY (electionID) REFERENCES Election(electionID)
+);
+LOAD DATA LOCAL INFILE 'relations/Candidate.csv' INTO TABLE Education FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
 
 CREATE TABLE IF NOT EXISTS Population (
   districtID VARCHAR(50),
