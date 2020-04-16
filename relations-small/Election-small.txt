@@ -14,3 +14,5 @@ electionID,districtID,year,office
 13,arizona5,2016,US House
 14,arizona6,2016,US House
 15,arizona7,2016,US House
+16,arizona8,2016,US House
+17,arizona9,2016,US House
