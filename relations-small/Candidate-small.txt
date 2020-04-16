@@ -1,4 +1,3 @@
-candidateID,electionID,name,party,numOfVotes,totalVotes,writeIn
 1,1,Bradley Byrne,republican,208083,215893,False
 2,1,,,7810,215893,True
 3,2,Nathan Mathis,democrat,112089,276584,False

@@ -1,17 +1,25 @@
-To run the state data parser to create the state data relations, type:
+Julian White
+Andrew Zheng
+601.315.SP20 Databases
 
-python stateDataParser.py
+To populate using the small data sets:
 
-Dir description:
+   mysql -h dbase.cs.jhu.edu -u USERNAME -D DATABASE -p < setup-small.sql
 
-    relations --> the output of relations when running the parser
-    states --> the raw data from states (removed occupation for now)
-    elections --> the raw data from elections (only includes )
-    util --> blank (required for io)
-    	     translate.txt
-		To add an attribute to a specific relation:
-		1. Find the relation that you want to write to
-		2. Under that relation name, type:
-		   	 Subject,Title,sql_attribute
-		   Where Subject and Title are defined in the states data
-		   And sql_attribute is the alias in the csv to be used in the database
+To populate using the entire data sets:
+
+   mysql -h dbase.cs.jhu.edu -u USERNAME -D DATABASE -p < setup.sql
+
+Phase C
+
+      During this phase of the project, we were able to take from our design and schemas from
+Phase B and create actual database relations and populate them with data. Overall, there were
+not many challenges to this process, thanks mostly to the fact that we spent time planning
+out the questions we want to answer. This informed how we wanted to design our database.
+The trickiest part of this process was processing the data in a format that represented our design.
+For example, a problem that we currently have with the data is that some entires have commas, which we
+are using to deliniate different attributes. Therefore, some of the data is inaccurate. However, this
+issue is only in the Candidate relation and is very limited. Moving into the next phase, we will try
+our best to continue making sure that the data is accurate and accessible. But due to the large data
+set and the limited time we have on this phase, we were unable to make that fix here. Despite this, we have
+no concerns about our project and we look forward to moving on to the next phase.

@@ -1,4 +1,3 @@
-electionID,districtID,year,office
 1,alabama1,2016,US House
 2,alabama2,2016,US House
 3,alabama3,2016,US House

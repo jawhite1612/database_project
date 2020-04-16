@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS Candidate_small (
   party VARCHAR(50),
   numOfVotes INT,
   totalVotes INT,
-  writeIn BOOLEAN,
+  writeIn VARCHAR(10),
   PRIMARY KEY(candidateID),
   FOREIGN KEY (electionID) REFERENCES Election_small(electionID)
 );
