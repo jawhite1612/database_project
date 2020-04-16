@@ -267,7 +267,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 266,106,NA,NA,20,363166,TRUE
 267,106,NA,NA,109,363166,TRUE
 268,106,Robert M. Neeld,democrat,123812,363166,FALSE
-269,107,Gary Stein,republican,54646,277560,FALSE
+269,107,Gary Steinrepublican,54646,277560,FALSE
 270,107,Alcee L. Hastings,democrat,222914,277560,FALSE
 271,108,Paul Spain,republican,118038,335861,FALSE
 272,108,Lois Frankel,democrat,210606,335861,FALSE
@@ -276,7 +276,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 275,109,Theodore E. Deutch,democrat,199113,337850,FALSE
 276,110,Debbie Wasserman Schultz,democrat,183225,323120,FALSE
 277,110,Don Endriss,none,5180,323120,FALSE
-278,110,Lyle Milstein,none,3897,323120,FALSE
+278,110,Lyle Milsteinnone,3897,323120,FALSE
 279,110,Joseph ""Joe"" Kaufman,republican,130818,323120,FALSE
 280,111,Alina Valdes,democrat,95319,253240,FALSE
 281,111,Mario Diaz-Balart,republican,157921,253240,FALSE
@@ -465,7 +465,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 464,176,Oliver Jenkins,republican,44521,268761,FALSE
 465,176,Kenneth J. Krefft,none,2493,268761,FALSE
 466,176,Elbert Guillory,republican,21017,268761,FALSE
-467,176,Mike"" Johnson,republican,87370,268761,FALSE
+467,176,Mike"" Johnsonrepublican,87370,268761,FALSE
 468,177,Ralph Lee Abraham,republican,208545,255662,FALSE
 469,177,Billy Burkette,republican,47117,255662,FALSE
 470,178,Devin Lance Graham,other,3218,331098,FALSE
@@ -560,7 +560,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 559,197,Paul J. Harrington,independent,26233,403642,FALSE
 560,197,Christopher D. Cataldo,unenrolled,8338,403642,FALSE
 561,198,Diane Bostow,libertarian,13386,360271,FALSE
-562,198,Lon Johnson,democrat,144334,360271,FALSE
+562,198,Lon Johnsondemocrat,144334,360271,FALSE
 563,198,Jack Bergman,republican,197777,360271,FALSE
 564,198,Ellis Boal,green,4774,360271,FALSE
 565,199,Dennis B. Murphy,democrat,110391,339328,FALSE
@@ -616,7 +616,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 615,210,Jeff Gorman,republican,40541,257797,FALSE
 616,210,John Conyers Jr,democrat,198771,257797,FALSE
 617,210,NA,NA,2,257797,TRUE
-618,210,Sam Johnson,working class,8835,257797,FALSE
+618,210,Sam Johnsonworking class,8835,257797,FALSE
 619,211,Howard Klausner,republican,58103,310974,FALSE
 620,211,Brenda L. Lawrence,democrat,244135,310974,FALSE
 621,211,Gregory Creswell,libertarian,4893,310974,FALSE
@@ -1046,7 +1046,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1045,302,James Neu Jr,democrat,100392,344991,FALSE
 1046,302,Robert E. Latta,republican,244599,344991,FALSE
 1047,303,Michael L. Lorentz,democrat,88780,302755,FALSE
-1048,303,Bill Johnson,republican,213975,302755,FALSE
+1048,303,Bill Johnsonrepublican,213975,302755,FALSE
 1049,304,Roy Rich,democrat,89638,309553,FALSE
 1050,304,Bob Gibbs,republican,198221,309553,FALSE
 1051,304,Dan Phillip,no party,21694,309553,FALSE
@@ -1060,7 +1060,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1059,307,Tom McMasters,no party,10890,336602,FALSE
 1060,307,Robert Klepinger,democrat,109981,336602,FALSE
 1061,307,NA,NA,7,336602,TRUE
-1062,308,Beverly A. Goldstein,republican,59769,302686,FALSE
+1062,308,Beverly A. Goldsteinrepublican,59769,302686,FALSE
 1063,308,Marcia L. Fudge,democrat,242917,302686,FALSE
 1064,309,Patrick J. Tiberi,republican,251266,377534,FALSE
 1065,309,Ed Albertson,democrat,112638,377534,FALSE
@@ -1102,7 +1102,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1101,322,Gil Guthrie,libertarian,6527,397568,FALSE
 1102,322,Art Robinson,republican,157743,397568,FALSE
 1103,322,Other,,476,397568,FALSE
-1104,322,Mike Beilstein,pacific green,12194,397568,FALSE
+1104,322,Mike Beilsteinpacific green,12194,397568,FALSE
 1105,322,Peter A. DeFazio,democrat,220628,397568,FALSE
 1106,323,Kurt Schrader,democrat,199505,373108,FALSE
 1107,323,Marvin Sandnes,pacific green,12542,373108,FALSE
@@ -1147,7 +1147,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1146,342,NA,NA,814,202371,TRUE
 1147,342,Harold Russell Taub,republican,71023,202371,FALSE
 1148,343,NA,NA,544,229148,TRUE
-1149,343,Jeffrey C. Johnson,independent,16253,229148,FALSE
+1149,343,Jeffrey C. Johnsonindependent,16253,229148,FALSE
 1150,343,Rhue R. Reis,republican,70301,229148,FALSE
 1151,343,Salvatore G. Caiozzo,independent,8942,229148,FALSE
 1152,343,James R. Langevin,democrat,133108,229148,FALSE
@@ -1226,7 +1226,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1225,362,Joshua Darr,green,2884,278236,FALSE
 1226,362,Ted Poe,republican,168692,278236,FALSE
 1227,363,Scott Jameson,libertarian,10448,316467,FALSE
-1228,363,Sam Johnson,republican,193684,316467,FALSE
+1228,363,Sam Johnsonrepublican,193684,316467,FALSE
 1229,363,Paul Blair,green,2915,316467,FALSE
 1230,363,Adam P. Bell,democrat,109420,316467,FALSE
 1231,364,Cody Wommack,libertarian,29577,246220,FALSE
@@ -1301,7 +1301,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1300,389,James Partsch-Galvan,green,1453,131982,FALSE
 1301,389,Julio Garza,republican,31646,131982,FALSE
 1302,389,Gene Green,democrat,95649,131982,FALSE
-1303,390,Eddie Bernice Johnson,democrat,170502,218826,FALSE
+1303,390,Eddie Bernice Johnsondemocrat,170502,218826,FALSE
 1304,390,Charles Lingerfelt,republican,41518,218826,FALSE
 1305,390,Thom Prentice,green,2053,218826,FALSE
 1306,390,Jarrett R. Woods,libertarian,4753,218826,FALSE
@@ -1734,7 +1734,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1733,559,Barry Loudermilk,republican,191887,310540,FALSE
 1734,559,Flynn D. Broady Jr,democrat,118653,310540,FALSE
 1735,560,Rick W. Allen,republican,148986,250489,FALSE
-1736,560,Francys Johnson,democrat,101503,250489,FALSE
+1736,560,Francys Johnsondemocrat,101503,250489,FALSE
 1737,560,NA,NA,3,250492,TRUE
 1738,561,David Callahan,republican,69760,292917,FALSE
 1739,561,David Scott,democrat,223157,292917,FALSE
@@ -1892,7 +1892,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1891,610,Larry Rader,democrat,9692,245943,FALSE
 1892,610,Verone Thomas,democrat,7815,245943,FALSE
 1893,611,Mark David Halverson,no party,4612,216872,FALSE
-1894,611,Mike"" Johnson,republican,139326,216872,FALSE
+1894,611,Mike"" Johnsonrepublican,139326,216872,FALSE
 1895,611,Ryan Trundle,democrat,72934,216872,FALSE
 1896,612,Ralph Abraham,republican,149018,223946,FALSE
 1897,612,Billy Burkette,independent,4799,223946,FALSE
@@ -2000,7 +2000,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 1999,642,Paul Mitchell,republican,182808,303064,FALSE
 2000,643,Cooper Nye,no  affiliation,4727,350901,FALSE
 2001,643,Haley Stevens,democrat,181912,350901,FALSE
-2002,643,Lena Epstein,republican,158463,350901,FALSE
+2002,643,Lena Epsteinrepublican,158463,350901,FALSE
 2003,643,Leonard Schwartz,libertarian,5799,350901,FALSE
 2004,644,Debbie Dingell,democrat,200588,294628,FALSE
 2005,644,Gary Walkowicz,working class,6712,294628,FALSE
@@ -2008,7 +2008,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2007,644,Niles Niemuth,no  affiliation,2213,294628,FALSE
 2008,645,D. Etta Wilcoxon,green,7980,196299,FALSE
 2009,645,Rashida Tlaib,democrat,165355,196299,FALSE
-2010,645,Sam Johnson,working class,22186,196299,FALSE
+2010,645,Sam Johnsonworking class,22186,196299,FALSE
 2011,645,NA,NA,778,196299,TRUE
 2012,646,Brenda Lawrence,democrat,214334,264994,FALSE
 2013,646,Marc S. Herschfus,republican,45899,264994,FALSE
@@ -2157,7 +2157,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2156,685,Claudio Belusic,libertarian,1730,200416,FALSE
 2157,686,Donald M. Payne Jr,democrat,175253,200159,FALSE
 2158,686,Agha Khan,republican,20191,200159,FALSE
-2159,686,Cynthia Johnson,c4c 2018,2070,200159,FALSE
+2159,686,Cynthia Johnsonc4c 2018,2070,200159,FALSE
 2160,686,Joanne Miller,never give up,2038,200159,FALSE
 2161,686,Scott Diroma,libertarian,607,200159,FALSE
 2162,687,Mikie Sherrill,democrat,183684,323574,FALSE
@@ -2217,7 +2217,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2216,698,Jeffrey M. Kurzon,reform,1740,157302,FALSE
 2217,698,NA,NA,205,157302,TRUE
 2218,699,Hakeem S. Jeffries,democrat,170850,191567,FALSE
-2219,699,Ernest C. Johnson,conservative,9997,191567,FALSE
+2219,699,Ernest C. Johnsonconservative,9997,191567,FALSE
 2220,699,Hakeem S. Jeffries,working families,9526,191567,FALSE
 2221,699,Jessica L. White,reform,1031,191567,FALSE
 2222,699,NA,NA,163,191567,TRUE
@@ -2402,7 +2402,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2401,737,J. Michael Galbraith,democrat,99655,283617,FALSE
 2402,737,Don Kissick,libertarian,7393,283617,FALSE
 2403,737,Bob Latta,republican,176569,283617,FALSE
-2404,738,Bill Johnson,republican,172774,249490,FALSE
+2404,738,Bill Johnsonrepublican,172774,249490,FALSE
 2405,738,Shawna Roberts,democrat,76716,249490,FALSE
 2406,739,Bob Gibbs,republican,153117,260653,FALSE
 2407,739,Ken Harbaugh,democrat,107536,260653,FALSE
@@ -2416,7 +2416,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2415,742,Mike Turner,republican,157554,281726,FALSE
 2416,743,NA,NA,36,250660,TRUE
 2417,743,Marcia L. Fudge,democrat,206138,250660,FALSE
-2418,743,Beverly A. Goldstein,republican,44486,250660,FALSE
+2418,743,Beverly A. Goldsteinrepublican,44486,250660,FALSE
 2419,744,Troy Balderson,republican,175677,341647,FALSE
 2420,744,NA,NA,1,341647,TRUE
 2421,744,Joe Manchik,green,4718,341647,FALSE
@@ -2459,7 +2459,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2458,756,NA,NA,514,384326,TRUE
 2459,757,Art Robinson,republican,152414,372893,FALSE
 2460,757,Richard R Jacobson,libertarian,5370,372893,FALSE
-2461,757,Mike Beilstein,pacific green,5956,372893,FALSE
+2461,757,Mike Beilsteinpacific green,5956,372893,FALSE
 2462,757,Peter DeFazio,democrat,208710,372893,FALSE
 2463,757,NA,NA,443,372893,TRUE
 2464,758,Mark Callahan,republican,149887,358469,FALSE
@@ -2480,7 +2480,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2479,764,Christina Jampoler__Houlahan,democrat,177704,301828,FALSE
 2480,764,Gregory Michael  Mccauley Sr.,republican,124124,301828,FALSE
 2481,765,Susan Ellis__Wild,democrat,140813,263261,FALSE
-2482,765,Martin W__Nothstein,republican,114437,263261,FALSE
+2482,765,Martin W__Nothsteinrepublican,114437,263261,FALSE
 2483,765,Tim__Silfies,libertarian,8011,263261,FALSE
 2484,766,Matthew Alton__Cartwright,democrat,135603,248166,FALSE
 2485,766,John Robert__Chrin,republican,112563,248166,FALSE
@@ -2537,7 +2537,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2536,785,Tom Rice,republican,142681,239554,FALSE
 2537,785,NA,NA,309,239554,TRUE
 2538,786,George D. Hendrickson,libertarian,4896,335471,FALSE
-2539,786,Dustin ""Dusty"" Johnson,republican,202446,335471,FALSE
+2539,786,Dustin ""Dusty"" Johnsonrepublican,202446,335471,FALSE
 2540,786,Tim Bjorkman,democrat,120816,335471,FALSE
 2541,786,Ron Wieczorek,independent,7313,335471,FALSE
 2542,787,Marty Olsen,democrat,47138,224282,FALSE
@@ -2664,7 +2664,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 2663,824,Sylvia R. Garcia,democrat,88188,117494,FALSE
 2664,824,Cullen Burns,libertarian,1199,117494,FALSE
 2665,824,NA,NA,9,117494,TRUE
-2666,825,Eddie Bernice Johnson,democrat,166784,183174,FALSE
+2666,825,Eddie Bernice Johnsondemocrat,166784,183174,FALSE
 2667,825,Shawn Jones,libertarian,16390,183174,FALSE
 2668,826,John Carter,republican,144680,286007,FALSE
 2669,826,Mary Jennings """"MJ"""" Hegar,democrat,136362,286007,FALSE
@@ -3013,13 +3013,13 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 3012,903,Russ Feingold,democrat,1380335,2948741,FALSE
 3013,903,Philip N. Anderson,libertarian,87531,2948741,FALSE
 3014,903,NA,NA,8,2948741,TRUE
-3015,903,Ron Johnson,republican,1479471,2948741,FALSE
+3015,903,Ron Johnsonrepublican,1479471,2948741,FALSE
 3016,903,scatter,,1396,2948741,FALSE
 3017,904,Martha McSally,republican,1135200,2384308,FALSE
 3018,904,Kyrsten Sinema,democrat,1191100,2384308,FALSE
 3019,904,Angela Green,green,57442,2384308,FALSE
 3020,904,NA,NA,566,2384308,TRUE
-3021,905,Dianne Feinstein,democrat,6019422,11113364,FALSE
+3021,905,Dianne Feinsteindemocrat,6019422,11113364,FALSE
 3022,905,Kevin De Leon,democrat,5093942,11113364,FALSE
 3023,906,Christopher S Murphy,democrat,787685,1386840,FALSE
 3024,906,Matthew Corey,republican,545717,1386840,FALSE
@@ -3042,7 +3042,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 3041,910,NA,NA,70,2282565,TRUE
 3042,911,Eric L. Brakey,republican,223502,634409,FALSE
 3043,911,Angus S. King, Jr.,independent,344575,634409,FALSE
-3044,911,Zak Ringelstein,democrat,66268,634409,FALSE
+3044,911,Zak Ringelsteindemocrat,66268,634409,FALSE
 3045,911,Others,NA,64,634409,FALSE
 3046,912,Tony Campbell,republican,697017,2299889,FALSE
 3047,912,Ben Cardin,democrat,1491614,2299889,FALSE
@@ -3103,7 +3103,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 3102,921,Kevin Kimple,make it simple,9087,3169310,FALSE
 3103,921,Hank Schroeder,economic growth,8854,3169310,FALSE
 3104,922,Martin T Heinrich,democrat,376998,697012,FALSE
-3105,922,Gary E Johnson,libertarian,107201,697012,FALSE
+3105,922,Gary E Johnsonlibertarian,107201,697012,FALSE
 3106,922,Mick Rich,republican,212813,697012,FALSE
 3107,923,Kirsten E. Gillibrand,democrat,3755489,6055151,FALSE
 3108,923,Chele Chiavacci Farley,republican,1730439,6055151,FALSE
@@ -3167,48 +3167,48 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 3166,936,Gary Trauner,democrat,61227,203420,FALSE
 3167,936,Joseph Porambo,libertarian,5658,203420,FALSE
 3168,936,NA,NA,325,203420,TRUE
-3169,937,Trump, Donald J.,republican,1318255,2123372,FALSE
-3170,937,Clinton, Hillary,democrat,729547,2123372,FALSE
-3171,937,Johnson, Gary,libertarian,44467,2123372,FALSE
+3169,937,Trump Donald J.,republican,1318255,2123372,FALSE
+3170,937,Clinton Hillary,democrat,729547,2123372,FALSE
+3171,937,Johnson Gary,libertarian,44467,2123372,FALSE
 3172,937,,,21712,2123372,TRUE
-3173,937,Stein, Jill,green,9391,2123372,FALSE
-3174,938,Trump, Donald J.,republican,163387,318608,FALSE
-3175,938,Clinton, Hillary,democrat,116454,318608,FALSE
-3176,938,Johnson, Gary,libertarian,18725,318608,FALSE
+3173,937,Stein Jill,green,9391,2123372,FALSE
+3174,938,Trump Donald J.,republican,163387,318608,FALSE
+3175,938,Clinton Hillary,democrat,116454,318608,FALSE
+3176,938,Johnson Gary,libertarian,18725,318608,FALSE
 3177,938,,,9201,318608,TRUE
-3178,938,Stein, Jill,green,5735,318608,FALSE
-3179,938,Castle, Darrell L.,constitution party,3866,318608,FALSE
+3178,938,Stein Jill,green,5735,318608,FALSE
+3179,938,Castle Darrell L.,constitution party,3866,318608,FALSE
 3180,938,De La Fuente, Roque ""Rocky"",no party affiliation,1240,318608,FALSE
-3181,939,Trump, Donald J.,republican,1252401,2573165,FALSE
-3182,939,Clinton, Hillary,democrat,1161167,2573165,FALSE
-3183,939,Johnson, Gary,libertarian,106327,2573165,FALSE
-3184,939,Stein, Jill,green,34345,2573165,FALSE
+3181,939,Trump Donald J.,republican,1252401,2573165,FALSE
+3182,939,Clinton Hillary,democrat,1161167,2573165,FALSE
+3183,939,Johnson Gary,libertarian,106327,2573165,FALSE
+3184,939,Stein Jill,green,34345,2573165,FALSE
 3185,939,,independent,17473,2573165,TRUE
-3186,939,Castle, Darrell L.,constitution party,1058,2573165,TRUE
+3186,939,Castle Darrell L.,constitution party,1058,2573165,TRUE
 3187,939,,no party affiliation,311,2573165,TRUE
 3188,939,,democrat,42,2573165,TRUE
 3189,939,De La Fuente, Roque ""Rocky"",american delta party,29,2573165,TRUE
 3190,939,Tittle, Sheila ""Samm"",we the people,12,2573165,TRUE
-3191,940,Trump, Donald J.,republican,684872,1130635,FALSE
-3192,940,Clinton, Hillary,democrat,380494,1130635,FALSE
-3193,940,Johnson, Gary,libertarian,29829,1130635,FALSE
-3194,940,McMullin, Evan,better for america,13255,1130635,FALSE
-3195,940,Stein, Jill,green,9473,1130635,FALSE
+3191,940,Trump Donald J.,republican,684872,1130635,FALSE
+3192,940,Clinton Hillary,democrat,380494,1130635,FALSE
+3193,940,Johnson Gary,libertarian,29829,1130635,FALSE
+3194,940,McMullin Evan,better for america,13255,1130635,FALSE
+3195,940,Stein Jill,green,9473,1130635,FALSE
 3196,940,Hedges, Jim,prohibition,4709,1130635,FALSE
-3197,940,Castle, Darrell L.,constitution party,4613,1130635,FALSE
+3197,940,Castle Darrell L.,constitution party,4613,1130635,FALSE
 3198,940,Kahn, Lynn S.,independent,3390,1130635,FALSE
-3199,941,Clinton, Hillary,democrat,8753788,14181595,FALSE
-3200,941,Trump, Donald J.,republican,4483810,14181595,FALSE
-3201,941,Johnson, Gary,libertarian,478500,14181595,FALSE
-3202,941,Stein, Jill,green,278657,14181595,FALSE
+3199,941,Clinton Hillary,democrat,8753788,14181595,FALSE
+3200,941,Trump Donald J.,republican,4483810,14181595,FALSE
+3201,941,Johnson Gary,libertarian,478500,14181595,FALSE
+3202,941,Stein Jill,green,278657,14181595,FALSE
 3203,941,,,120739,14181595,TRUE
 3204,941,La Riva, Gloria Estella,peace & freedom,66101,14181595,FALSE
-3205,942,Clinton, Hillary,democrat,1338870,2780220,FALSE
-3206,942,Trump, Donald J.,republican,1202484,2780220,FALSE
-3207,942,Johnson, Gary,libertarian,144121,2780220,FALSE
-3208,942,Stein, Jill,green,38437,2780220,FALSE
+3205,942,Clinton Hillary,democrat,1338870,2780220,FALSE
+3206,942,Trump Donald J.,republican,1202484,2780220,FALSE
+3207,942,Johnson Gary,libertarian,144121,2780220,FALSE
+3208,942,Stein Jill,green,38437,2780220,FALSE
 3209,942,Scattering,unaffiliated,31485,2780220,FALSE
-3210,942,Castle, Darrell L.,american constitution party,11699,2780220,FALSE
+3210,942,Castle Darrell L.,american constitution party,11699,2780220,FALSE
 3211,942,Keniston, Chris,veterans party of america,5028,2780220,FALSE
 3212,942,De La Fuente, Roque ""Rocky"",american delta party,1255,2780220,FALSE
 3213,942,Kopitke, Kyle Kenley,independent american,1096,2780220,FALSE
@@ -3223,292 +3223,292 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 3222,942,Atwood, Frank,approval voting party,337,2780220,FALSE
 3223,942,Emidio ""Mimi"", Soltysik,socialist party usa,271,2780220,FALSE
 3224,942,Hedges, James,prohibition,185,2780220,FALSE
-3225,943,Clinton, Hillary,democrat,897572,1644920,FALSE
-3226,943,Trump, Donald J.,republican,673215,1644920,FALSE
-3227,943,Johnson, Gary,libertarian,48676,1644920,FALSE
-3228,943,Stein, Jill,green,22841,1644920,FALSE
+3225,943,Clinton Hillary,democrat,897572,1644920,FALSE
+3226,943,Trump Donald J.,republican,673215,1644920,FALSE
+3227,943,Johnson Gary,libertarian,48676,1644920,FALSE
+3228,943,Stein Jill,green,22841,1644920,FALSE
 3229,943,,,2616,1644920,TRUE
-3230,944,Clinton, Hillary,democrat,235603,441590,FALSE
-3231,944,Trump, Donald J.,republican,185127,441590,FALSE
-3232,944,Johnson, Gary,libertarian,14757,441590,FALSE
-3233,944,Stein, Jill,green,6103,441590,FALSE
-3234,945,Clinton, Hillary,democrat,282830,312575,FALSE
-3235,945,Trump, Donald J.,republican,12723,312575,FALSE
+3230,944,Clinton Hillary,democrat,235603,441590,FALSE
+3231,944,Trump Donald J.,republican,185127,441590,FALSE
+3232,944,Johnson Gary,libertarian,14757,441590,FALSE
+3233,944,Stein Jill,green,6103,441590,FALSE
+3234,945,Clinton Hillary,democrat,282830,312575,FALSE
+3235,945,Trump Donald J.,republican,12723,312575,FALSE
 3236,945,,,6551,312575,TRUE
-3237,945,Johnson, Gary,libertarian,4906,312575,FALSE
-3238,945,Stein, Jill,green,4258,312575,FALSE
+3237,945,Johnson Gary,libertarian,4906,312575,FALSE
+3238,945,Stein Jill,green,4258,312575,FALSE
 3239,945,Blank Vote,,1064,312575,FALSE
 3240,945,Over Vote,,243,312575,FALSE
-3241,946,Trump, Donald J.,republican,4617886,9420039,FALSE
-3242,946,Clinton, Hillary,democrat,4504975,9420039,FALSE
-3243,946,Johnson, Gary,libertarian,207043,9420039,FALSE
-3244,946,Stein, Jill,green,64399,9420039,FALSE
-3245,946,Castle, Darrell L.,constitution party,16475,9420039,FALSE
+3241,946,Trump Donald J.,republican,4617886,9420039,FALSE
+3242,946,Clinton Hillary,democrat,4504975,9420039,FALSE
+3243,946,Johnson Gary,libertarian,207043,9420039,FALSE
+3244,946,Stein Jill,green,64399,9420039,FALSE
+3245,946,Castle Darrell L.,constitution party,16475,9420039,FALSE
 3246,946,De La Fuente, Roque ""Rocky"",reform party,9108,9420039,FALSE
 3247,946,,,153,9420039,TRUE
-3248,947,Trump, Donald J.,republican,2089104,4114732,FALSE
-3249,947,Clinton, Hillary,democrat,1877963,4114732,FALSE
-3250,947,Johnson, Gary,libertarian,125306,4114732,FALSE
+3248,947,Trump Donald J.,republican,2089104,4114732,FALSE
+3249,947,Clinton Hillary,democrat,1877963,4114732,FALSE
+3250,947,Johnson Gary,libertarian,125306,4114732,FALSE
 3251,947,,,22359,4114732,TRUE
-3252,948,Clinton, Hillary,democrat,266891,437664,FALSE
-3253,948,Trump, Donald J.,republican,128847,437664,FALSE
-3254,948,Johnson, Gary,libertarian,15954,437664,FALSE
-3255,948,Stein, Jill,green,12737,437664,FALSE
+3252,948,Clinton Hillary,democrat,266891,437664,FALSE
+3253,948,Trump Donald J.,republican,128847,437664,FALSE
+3254,948,Johnson Gary,libertarian,15954,437664,FALSE
+3255,948,Stein Jill,green,12737,437664,FALSE
 3256,948,Blank Vote,,8289,437664,FALSE
-3257,948,Castle, Darrell L.,constitution party,4508,437664,FALSE
+3257,948,Castle Darrell L.,constitution party,4508,437664,FALSE
 3258,948,Over Vote,,438,437664,FALSE
-3259,949,Trump, Donald J.,republican,409055,690255,FALSE
-3260,949,Clinton, Hillary,democrat,189765,690255,FALSE
-3261,949,McMullin, Evan,independent,60748,690255,FALSE
-3262,949,Johnson, Gary,libertarian,28331,690255,FALSE
-3263,949,Castle, Darrell L.,constitution party,2356,690255,FALSE
-3264,950,Clinton, Hillary,democrat,3090729,5536424,FALSE
-3265,950,Trump, Donald J.,republican,2146015,5536424,FALSE
-3266,950,Johnson, Gary,libertarian,209596,5536424,FALSE
-3267,950,Stein, Jill,green,76802,5536424,FALSE
+3259,949,Trump Donald J.,republican,409055,690255,FALSE
+3260,949,Clinton Hillary,democrat,189765,690255,FALSE
+3261,949,McMullin Evan,independent,60748,690255,FALSE
+3262,949,Johnson Gary,libertarian,28331,690255,FALSE
+3263,949,Castle Darrell L.,constitution party,2356,690255,FALSE
+3264,950,Clinton Hillary,democrat,3090729,5536424,FALSE
+3265,950,Trump Donald J.,republican,2146015,5536424,FALSE
+3266,950,Johnson Gary,libertarian,209596,5536424,FALSE
+3267,950,Stein Jill,green,76802,5536424,FALSE
 3268,950,,,13282,5536424,TRUE
-3269,951,Trump, Donald J.,republican,1557286,2734958,FALSE
-3270,951,Clinton, Hillary,democrat,1033126,2734958,FALSE
-3271,951,Johnson, Gary,libertarian,133993,2734958,FALSE
+3269,951,Trump Donald J.,republican,1557286,2734958,FALSE
+3270,951,Clinton Hillary,democrat,1033126,2734958,FALSE
+3271,951,Johnson Gary,libertarian,133993,2734958,FALSE
 3272,951,,green,7841,2734958,TRUE
-3273,951,Castle, Darrell L.,constitution party,1937,2734958,TRUE
+3273,951,Castle Darrell L.,constitution party,1937,2734958,TRUE
 3274,951,,independent,718,2734958,TRUE
 3275,951,Emidio ""Mimi"", Soltysik,socialist party usa,57,2734958,TRUE
-3276,952,Trump, Donald J.,republican,800983,1565580,FALSE
-3277,952,Clinton, Hillary,democrat,653669,1565580,FALSE
-3278,952,Johnson, Gary,libertarian,59186,1565580,FALSE
+3276,952,Trump Donald J.,republican,800983,1565580,FALSE
+3277,952,Clinton Hillary,democrat,653669,1565580,FALSE
+3278,952,Johnson Gary,libertarian,59186,1565580,FALSE
 3279,952,,,17746,1565580,TRUE
-3280,952,McMullin, Evan,nominated by petition,12366,1565580,FALSE
-3281,952,Stein, Jill,green,11479,1565580,FALSE
-3282,952,Castle, Darrell L.,constitution party,5335,1565580,FALSE
+3280,952,McMullin Evan,nominated by petition,12366,1565580,FALSE
+3281,952,Stein Jill,green,11479,1565580,FALSE
+3282,952,Castle Darrell L.,constitution party,5335,1565580,FALSE
 3283,952,Kahn, Lynn S.,new independent party iowa,2247,1565580,FALSE
 3284,952,Vacek, Dan,legal marijuana now,2246,1565580,FALSE
 3285,952,La Riva, Gloria Estella,socialism and liberation party,323,1565580,FALSE
-3286,953,Trump, Donald J.,republican,671018,1184402,FALSE
-3287,953,Clinton, Hillary,democrat,427005,1184402,FALSE
-3288,953,Johnson, Gary,libertarian,55406,1184402,FALSE
-3289,953,Stein, Jill,independent,23506,1184402,FALSE
+3286,953,Trump Donald J.,republican,671018,1184402,FALSE
+3287,953,Clinton Hillary,democrat,427005,1184402,FALSE
+3288,953,Johnson Gary,libertarian,55406,1184402,FALSE
+3289,953,Stein Jill,independent,23506,1184402,FALSE
 3290,953,,,7467,1184402,TRUE
-3291,954,Trump, Donald J.,republican,1202971,1924149,FALSE
-3292,954,Clinton, Hillary,democrat,628854,1924149,FALSE
-3293,954,Johnson, Gary,libertarian,53752,1924149,FALSE
-3294,954,McMullin, Evan,independent,22780,1924149,FALSE
-3295,954,Stein, Jill,green,13913,1924149,FALSE
+3291,954,Trump Donald J.,republican,1202971,1924149,FALSE
+3292,954,Clinton Hillary,democrat,628854,1924149,FALSE
+3293,954,Johnson Gary,libertarian,53752,1924149,FALSE
+3294,954,McMullin Evan,independent,22780,1924149,FALSE
+3295,954,Stein Jill,green,13913,1924149,FALSE
 3296,954,De La Fuente, Roque ""Rocky"",american delta party,1128,1924149,FALSE
 3297,954,,,751,1924149,TRUE
-3298,955,Trump, Donald J.,republican,1178638,2029032,FALSE
-3299,955,Clinton, Hillary,democrat,780154,2029032,FALSE
-3300,955,Johnson, Gary,libertarian,37978,2029032,FALSE
+3298,955,Trump Donald J.,republican,1178638,2029032,FALSE
+3299,955,Clinton Hillary,democrat,780154,2029032,FALSE
+3300,955,Johnson Gary,libertarian,37978,2029032,FALSE
 3301,955,Other,,18231,2029032,FALSE
-3302,955,Stein, Jill,green,14031,2029032,FALSE
-3303,956,Clinton, Hillary,democrat,357735,771892,FALSE
-3304,956,Trump, Donald J.,republican,335593,771892,FALSE
-3305,956,Johnson, Gary,libertarian,38105,771892,FALSE
+3302,955,Stein Jill,green,14031,2029032,FALSE
+3303,956,Clinton Hillary,democrat,357735,771892,FALSE
+3304,956,Trump Donald J.,republican,335593,771892,FALSE
+3305,956,Johnson Gary,libertarian,38105,771892,FALSE
 3306,956,Blank Vote,,23965,771892,FALSE
-3307,956,Stein, Jill,green,14251,771892,FALSE
+3307,956,Stein Jill,green,14251,771892,FALSE
 3308,956,,unenrolled,2243,771892,FALSE
-3309,957,Clinton, Hillary,democrat,1677928,2781446,FALSE
-3310,957,Trump, Donald J.,republican,943169,2781446,FALSE
-3311,957,Johnson, Gary,libertarian,79605,2781446,FALSE
-3312,957,Stein, Jill,green,35945,2781446,FALSE
+3309,957,Clinton Hillary,democrat,1677928,2781446,FALSE
+3310,957,Trump Donald J.,republican,943169,2781446,FALSE
+3311,957,Johnson Gary,libertarian,79605,2781446,FALSE
+3312,957,Stein Jill,green,35945,2781446,FALSE
 3313,957,,,33263,2781446,TRUE
 3314,957,Other,,10921,2781446,TRUE
 3315,957,,no party affiliation,278,2781446,TRUE
-3316,957,Trump, Donald J.,republican,259,2781446,TRUE
-3317,957,Clinton, Hillary,democrat,78,2781446,TRUE
-3318,958,Clinton, Hillary,democrat,1995196,3378821,FALSE
-3319,958,Trump, Donald J.,republican,1090893,3378821,FALSE
-3320,958,Johnson, Gary,libertarian,138018,3378821,FALSE
+3316,957,Trump Donald J.,republican,259,2781446,TRUE
+3317,957,Clinton Hillary,democrat,78,2781446,TRUE
+3318,958,Clinton Hillary,democrat,1995196,3378821,FALSE
+3319,958,Trump Donald J.,republican,1090893,3378821,FALSE
+3320,958,Johnson Gary,libertarian,138018,3378821,FALSE
 3321,958,Blank Vote,,53775,3378821,FALSE
 3322,958,Other,,50488,3378821,FALSE
-3323,958,Stein, Jill,green,47661,3378821,FALSE
+3323,958,Stein Jill,green,47661,3378821,FALSE
 3324,958,,,2790,3378821,TRUE
-3325,959,Trump, Donald J.,republican,2279543,4799284,FALSE
-3326,959,Clinton, Hillary,democrat,2268839,4799284,FALSE
-3327,959,Johnson, Gary,libertarian,172136,4799284,FALSE
-3328,959,Stein, Jill,green,51463,4799284,FALSE
-3329,959,Castle, Darrell L.,u.s. taxpayers party,16139,4799284,FALSE
+3325,959,Trump Donald J.,republican,2279543,4799284,FALSE
+3326,959,Clinton Hillary,democrat,2268839,4799284,FALSE
+3327,959,Johnson Gary,libertarian,172136,4799284,FALSE
+3328,959,Stein Jill,green,51463,4799284,FALSE
+3329,959,Castle Darrell L.,u.s. taxpayers party,16139,4799284,FALSE
 3330,959,,,8955,4799284,TRUE
 3331,959,Emidio ""Mimi"", Soltysik,natural law,2209,4799284,FALSE
-3332,960,Clinton, Hillary,democrat,1367705,2944782,FALSE
-3333,960,Trump, Donald J.,republican,1322949,2944782,FALSE
-3334,960,Johnson, Gary,libertarian,112972,2944782,FALSE
-3335,960,McMullin, Evan,independence,53075,2944782,FALSE
-3336,960,Stein, Jill,green,36986,2944782,FALSE
+3332,960,Clinton Hillary,democrat,1367705,2944782,FALSE
+3333,960,Trump Donald J.,republican,1322949,2944782,FALSE
+3334,960,Johnson Gary,libertarian,112972,2944782,FALSE
+3335,960,McMullin Evan,independence,53075,2944782,FALSE
+3336,960,Stein Jill,green,36986,2944782,FALSE
 3337,960,,,27247,2944782,TRUE
 3338,960,Vacek, Dan,legal marijuana now,11291,2944782,FALSE
-3339,960,Castle, Darrell L.,constitution party,9456,2944782,FALSE
+3339,960,Castle Darrell L.,constitution party,9456,2944782,FALSE
 3340,960,Kennedy, Alyson,socialist workers,1671,2944782,FALSE
 3341,960,De La Fuente, Roque ""Rocky"",american delta party,1430,2944782,FALSE
-3342,961,Trump, Donald J.,republican,700714,1209357,FALSE
-3343,961,Clinton, Hillary,democrat,485131,1209357,FALSE
-3344,961,Johnson, Gary,libertarian,14435,1209357,FALSE
-3345,961,Castle, Darrell L.,constitution party,3987,1209357,FALSE
-3346,961,Stein, Jill,green,3731,1209357,FALSE
+3342,961,Trump Donald J.,republican,700714,1209357,FALSE
+3343,961,Clinton Hillary,democrat,485131,1209357,FALSE
+3344,961,Johnson Gary,libertarian,14435,1209357,FALSE
+3345,961,Castle Darrell L.,constitution party,3987,1209357,FALSE
+3346,961,Stein Jill,green,3731,1209357,FALSE
 3347,961,Hedges, James,prohibition,715,1209357,FALSE
 3348,961,De La Fuente, Roque ""Rocky"",american delta party,644,1209357,FALSE
-3349,962,Trump, Donald J.,republican,1594511,2808605,FALSE
-3350,962,Clinton, Hillary,democrat,1071068,2808605,FALSE
-3351,962,Johnson, Gary,libertarian,97359,2808605,FALSE
-3352,962,Stein, Jill,green,25419,2808605,FALSE
-3353,962,Castle, Darrell L.,constitution party,13092,2808605,FALSE
+3349,962,Trump Donald J.,republican,1594511,2808605,FALSE
+3350,962,Clinton Hillary,democrat,1071068,2808605,FALSE
+3351,962,Johnson Gary,libertarian,97359,2808605,FALSE
+3352,962,Stein Jill,green,25419,2808605,FALSE
+3353,962,Castle Darrell L.,constitution party,13092,2808605,FALSE
 3354,962,,,7156,2808605,TRUE
-3355,963,Trump, Donald J.,republican,279240,494526,FALSE
-3356,963,Clinton, Hillary,democrat,177709,494526,FALSE
-3357,963,Johnson, Gary,libertarian,28037,494526,FALSE
-3358,963,Stein, Jill,green,7970,494526,FALSE
+3355,963,Trump Donald J.,republican,279240,494526,FALSE
+3356,963,Clinton Hillary,democrat,177709,494526,FALSE
+3357,963,Johnson Gary,libertarian,28037,494526,FALSE
+3358,963,Stein Jill,green,7970,494526,FALSE
 3359,963,De La Fuente, Roque ""Rocky"",american delta party,1570,494526,FALSE
-3360,964,Trump, Donald J.,republican,495961,844227,FALSE
-3361,964,Clinton, Hillary,democrat,284494,844227,FALSE
-3362,964,Johnson, Gary,libertarian,38946,844227,FALSE
+3360,964,Trump Donald J.,republican,495961,844227,FALSE
+3361,964,Clinton Hillary,democrat,284494,844227,FALSE
+3362,964,Johnson Gary,libertarian,38946,844227,FALSE
 3363,964,,,16051,844227,TRUE
-3364,964,Stein, Jill,nominated by petition,8775,844227,FALSE
-3365,965,Clinton, Hillary,democrat,539260,1125385,FALSE
-3366,965,Trump, Donald J.,republican,512058,1125385,FALSE
-3367,965,Johnson, Gary,libertarian,37384,1125385,FALSE
+3364,964,Stein Jill,nominated by petition,8775,844227,FALSE
+3365,965,Clinton Hillary,democrat,539260,1125385,FALSE
+3366,965,Trump Donald J.,republican,512058,1125385,FALSE
+3367,965,Johnson Gary,libertarian,37384,1125385,FALSE
 3368,965,None Of The Above,,28863,1125385,FALSE
 3369,965,Kopitke, Kyle Kenley,independent american,5268,1125385,FALSE
 3370,965,De La Fuente, Roque ""Rocky"",no party affiliation,2552,1125385,FALSE
-3371,966,Clinton, Hillary,democrat,348526,744296,FALSE
-3372,966,Trump, Donald J.,republican,345790,744296,FALSE
-3373,966,Johnson, Gary,libertarian,30777,744296,FALSE
+3371,966,Clinton Hillary,democrat,348526,744296,FALSE
+3372,966,Trump Donald J.,republican,345790,744296,FALSE
+3373,966,Johnson Gary,libertarian,30777,744296,FALSE
 3374,966,,,9618,744296,TRUE
-3375,966,Stein, Jill,green,6496,744296,FALSE
+3375,966,Stein Jill,green,6496,744296,FALSE
 3376,966,Scattering,,2411,744296,TRUE
 3377,966,De La Fuente, Roque ""Rocky"",american delta party,678,744296,FALSE
-3378,967,Clinton, Hillary,democrat,2148278,3874046,FALSE
-3379,967,Trump, Donald J.,republican,1601933,3874046,FALSE
-3380,967,Johnson, Gary,libertarian,72477,3874046,FALSE
-3381,967,Stein, Jill,green,37772,3874046,FALSE
-3382,967,Castle, Darrell L.,constitution party,6161,3874046,FALSE
+3378,967,Clinton Hillary,democrat,2148278,3874046,FALSE
+3379,967,Trump Donald J.,republican,1601933,3874046,FALSE
+3380,967,Johnson Gary,libertarian,72477,3874046,FALSE
+3381,967,Stein Jill,green,37772,3874046,FALSE
+3382,967,Castle Darrell L.,constitution party,6161,3874046,FALSE
 3383,967,Kennedy, Alyson,socialist workers,2156,3874046,FALSE
 3384,967,De La Fuente, Roque ""Rocky"",american delta party,1838,3874046,FALSE
 3385,967,Moorehead, Monica,workers world party,1749,3874046,FALSE
 3386,967,La Riva, Gloria Estella,socialism and liberation party,1682,3874046,FALSE
-3387,968,Clinton, Hillary,democrat,385234,798319,FALSE
-3388,968,Trump, Donald J.,republican,319667,798319,FALSE
-3389,968,Johnson, Gary,libertarian,74541,798319,FALSE
-3390,968,Stein, Jill,green,9879,798319,FALSE
-3391,968,McMullin, Evan,better for america,5825,798319,FALSE
-3392,968,Castle, Darrell L.,constitution party,1514,798319,FALSE
+3387,968,Clinton Hillary,democrat,385234,798319,FALSE
+3388,968,Trump Donald J.,republican,319667,798319,FALSE
+3389,968,Johnson Gary,libertarian,74541,798319,FALSE
+3390,968,Stein Jill,green,9879,798319,FALSE
+3391,968,McMullin Evan,better for america,5825,798319,FALSE
+3392,968,Castle Darrell L.,constitution party,1514,798319,FALSE
 3393,968,La Riva, Gloria Estella,socialism and liberation party,1184,798319,FALSE
 3394,968,De La Fuente, Roque ""Rocky"",american delta party,475,798319,FALSE
-3395,969,Clinton, Hillary,democrat,4379789,7802084,FALSE
-3396,969,Trump, Donald J.,republican,2527142,7802084,FALSE
-3397,969,Trump, Donald J.,conservative,292392,7802084,FALSE
-3398,969,Clinton, Hillary,working families,140041,7802084,FALSE
-3399,969,Johnson, Gary,independence,119156,7802084,FALSE
-3400,969,Stein, Jill,green,107934,7802084,FALSE
+3395,969,Clinton Hillary,democrat,4379789,7802084,FALSE
+3396,969,Trump Donald J.,republican,2527142,7802084,FALSE
+3397,969,Trump Donald J.,conservative,292392,7802084,FALSE
+3398,969,Clinton Hillary,working families,140041,7802084,FALSE
+3399,969,Johnson Gary,independence,119156,7802084,FALSE
+3400,969,Stein Jill,green,107934,7802084,FALSE
 3401,969,Blank Vote,,77179,7802084,FALSE
-3402,969,Johnson, Gary,libertarian,57442,7802084,FALSE
+3402,969,Johnson Gary,libertarian,57442,7802084,FALSE
 3403,969,Scattering,,48447,7802084,FALSE
-3404,969,Clinton, Hillary,women's equality,36294,7802084,FALSE
+3404,969,Clinton Hillary,women's equality,36294,7802084,FALSE
 3405,969,,,12816,7802084,TRUE
 3406,969,Void Vote,,3452,7802084,FALSE
-3407,970,Trump, Donald J.,republican,2362631,4741564,FALSE
-3408,970,Clinton, Hillary,democrat,2189316,4741564,FALSE
-3409,970,Johnson, Gary,libertarian,130126,4741564,FALSE
+3407,970,Trump Donald J.,republican,2362631,4741564,FALSE
+3408,970,Clinton Hillary,democrat,2189316,4741564,FALSE
+3409,970,Johnson Gary,libertarian,130126,4741564,FALSE
 3410,970,Scattering,,47386,4741564,TRUE
 3411,970,,,12105,4741564,TRUE
-3412,971,Trump, Donald J.,republican,216794,344360,FALSE
-3413,971,Clinton, Hillary,democrat,93758,344360,FALSE
-3414,971,Johnson, Gary,libertarian,21434,344360,FALSE
+3412,971,Trump Donald J.,republican,216794,344360,FALSE
+3413,971,Clinton Hillary,democrat,93758,344360,FALSE
+3414,971,Johnson Gary,libertarian,21434,344360,FALSE
 3415,971,,,6397,344360,TRUE
-3416,971,Stein, Jill,green,3780,344360,FALSE
-3417,971,Castle, Darrell L.,constitution party,1833,344360,FALSE
+3416,971,Stein Jill,green,3780,344360,FALSE
+3417,971,Castle Darrell L.,constitution party,1833,344360,FALSE
 3418,971,De La Fuente, Roque ""Rocky"",american delta party,364,344360,FALSE
-3419,972,Trump, Donald J.,republican,2841005,5496487,FALSE
-3420,972,Clinton, Hillary,democrat,2394164,5496487,FALSE
+3419,972,Trump Donald J.,republican,2841005,5496487,FALSE
+3420,972,Clinton Hillary,democrat,2394164,5496487,FALSE
 3421,972,,no party affiliation,198733,5496487,FALSE
-3422,972,Stein, Jill,green,46271,5496487,FALSE
+3422,972,Stein Jill,green,46271,5496487,FALSE
 3423,972,,,16314,5496487,TRUE
-3424,973,Trump, Donald J.,republican,949136,1452992,FALSE
-3425,973,Clinton, Hillary,democrat,420375,1452992,FALSE
-3426,973,Johnson, Gary,libertarian,83481,1452992,FALSE
-3427,974,Clinton, Hillary,democrat,1002106,2001336,FALSE
-3428,974,Trump, Donald J.,republican,782403,2001336,FALSE
-3429,974,Johnson, Gary,libertarian,94231,2001336,FALSE
+3424,973,Trump Donald J.,republican,949136,1452992,FALSE
+3425,973,Clinton Hillary,democrat,420375,1452992,FALSE
+3426,973,Johnson Gary,libertarian,83481,1452992,FALSE
+3427,974,Clinton Hillary,democrat,1002106,2001336,FALSE
+3428,974,Trump Donald J.,republican,782403,2001336,FALSE
+3429,974,Johnson Gary,libertarian,94231,2001336,FALSE
 3430,974,Other,,72594,2001336,FALSE
-3431,974,Stein, Jill,green,50002,2001336,FALSE
-3432,975,Trump, Donald J.,republican,2970733,6115402,FALSE
-3433,975,Clinton, Hillary,democrat,2926441,6115402,FALSE
-3434,975,Johnson, Gary,libertarian,146715,6115402,FALSE
-3435,975,Stein, Jill,green,49941,6115402,FALSE
-3436,975,Castle, Darrell L.,constitution party,21572,6115402,FALSE
-3437,976,Clinton, Hillary,democrat,252525,464144,FALSE
-3438,976,Trump, Donald J.,republican,180543,464144,FALSE
-3439,976,Johnson, Gary,libertarian,14746,464144,FALSE
+3431,974,Stein Jill,green,50002,2001336,FALSE
+3432,975,Trump Donald J.,republican,2970733,6115402,FALSE
+3433,975,Clinton Hillary,democrat,2926441,6115402,FALSE
+3434,975,Johnson Gary,libertarian,146715,6115402,FALSE
+3435,975,Stein Jill,green,49941,6115402,FALSE
+3436,975,Castle Darrell L.,constitution party,21572,6115402,FALSE
+3437,976,Clinton Hillary,democrat,252525,464144,FALSE
+3438,976,Trump Donald J.,republican,180543,464144,FALSE
+3439,976,Johnson Gary,libertarian,14746,464144,FALSE
 3440,976,,,9439,464144,TRUE
-3441,976,Stein, Jill,green,6220,464144,FALSE
+3441,976,Stein Jill,green,6220,464144,FALSE
 3442,976,De La Fuente, Roque ""Rocky"",american delta party,671,464144,FALSE
-3443,977,Trump, Donald J.,republican,1155389,2103027,FALSE
-3444,977,Clinton, Hillary,democrat,855373,2103027,FALSE
-3445,977,Johnson, Gary,libertarian,49204,2103027,FALSE
-3446,977,McMullin, Evan,independence,21016,2103027,FALSE
-3447,977,Stein, Jill,green,13034,2103027,FALSE
-3448,977,Castle, Darrell L.,constitution party,5765,2103027,FALSE
+3443,977,Trump Donald J.,republican,1155389,2103027,FALSE
+3444,977,Clinton Hillary,democrat,855373,2103027,FALSE
+3445,977,Johnson Gary,libertarian,49204,2103027,FALSE
+3446,977,McMullin Evan,independence,21016,2103027,FALSE
+3447,977,Stein Jill,green,13034,2103027,FALSE
+3448,977,Castle Darrell L.,constitution party,5765,2103027,FALSE
 3449,977,Skewes, Peter,american,3246,2103027,FALSE
-3450,978,Trump, Donald J.,republican,227721,370093,FALSE
-3451,978,Clinton, Hillary,democrat,117458,370093,FALSE
-3452,978,Johnson, Gary,libertarian,20850,370093,FALSE
-3453,978,Castle, Darrell L.,constitution party,4064,370093,FALSE
-3454,979,Trump, Donald J.,republican,1522925,2508027,FALSE
-3455,979,Clinton, Hillary,democrat,870695,2508027,FALSE
+3450,978,Trump Donald J.,republican,227721,370093,FALSE
+3451,978,Clinton Hillary,democrat,117458,370093,FALSE
+3452,978,Johnson Gary,libertarian,20850,370093,FALSE
+3453,978,Castle Darrell L.,constitution party,4064,370093,FALSE
+3454,979,Trump Donald J.,republican,1522925,2508027,FALSE
+3455,979,Clinton Hillary,democrat,870695,2508027,FALSE
 3456,979,,independent,100618,2508027,FALSE
 3457,979,,,13789,2508027,TRUE
-3458,980,Trump, Donald J.,republican,4685047,8969226,FALSE
-3459,980,Clinton, Hillary,democrat,3877868,8969226,FALSE
-3460,980,Johnson, Gary,libertarian,283492,8969226,FALSE
-3461,980,Stein, Jill,green,71558,8969226,FALSE
+3458,980,Trump Donald J.,republican,4685047,8969226,FALSE
+3459,980,Clinton Hillary,democrat,3877868,8969226,FALSE
+3460,980,Johnson Gary,libertarian,283492,8969226,FALSE
+3461,980,Stein Jill,green,71558,8969226,FALSE
 3462,980,,,51261,8969226,TRUE
-3463,981,Trump, Donald J.,republican,515211,1131317,FALSE
-3464,981,Clinton, Hillary,democrat,310674,1131317,FALSE
-3465,981,McMullin, Evan,no party affiliation,255060,1131317,FALSE
-3466,981,Johnson, Gary,libertarian,39608,1131317,FALSE
-3467,981,Castle, Darrell L.,constitution party,8032,1131317,FALSE
+3463,981,Trump Donald J.,republican,515211,1131317,FALSE
+3464,981,Clinton Hillary,democrat,310674,1131317,FALSE
+3465,981,McMullin Evan,no party affiliation,255060,1131317,FALSE
+3466,981,Johnson Gary,libertarian,39608,1131317,FALSE
+3467,981,Castle Darrell L.,constitution party,8032,1131317,FALSE
 3468,981,Kopitke, Kyle Kenley,independent american,2732,1131317,FALSE
-3469,982,Clinton, Hillary,democrat,178573,320467,FALSE
-3470,982,Trump, Donald J.,republican,95369,320467,FALSE
+3469,982,Clinton Hillary,democrat,178573,320467,FALSE
+3470,982,Trump Donald J.,republican,95369,320467,FALSE
 3471,982,,,22899,320467,TRUE
-3472,982,Johnson, Gary,libertarian,10078,320467,FALSE
-3473,982,Stein, Jill,green,6758,320467,FALSE
+3472,982,Johnson Gary,libertarian,10078,320467,FALSE
+3473,982,Stein Jill,green,6758,320467,FALSE
 3474,982,Blank Vote,,4574,320467,FALSE
 3475,982,De La Fuente, Roque ""Rocky"",independent,1063,320467,FALSE
 3476,982,Void Vote,,826,320467,FALSE
 3477,982,La Riva, Gloria Estella,liberty union party,327,320467,FALSE
-3478,983,Clinton, Hillary,democrat,1981473,3982752,FALSE
-3479,983,Trump, Donald J.,republican,1769443,3982752,FALSE
-3480,983,Johnson, Gary,libertarian,118274,3982752,FALSE
-3481,983,McMullin, Evan,independent,54054,3982752,FALSE
+3478,983,Clinton Hillary,democrat,1981473,3982752,FALSE
+3479,983,Trump Donald J.,republican,1769443,3982752,FALSE
+3480,983,Johnson Gary,libertarian,118274,3982752,FALSE
+3481,983,McMullin Evan,independent,54054,3982752,FALSE
 3482,983,,,31870,3982752,TRUE
-3483,983,Stein, Jill,green,27638,3982752,FALSE
-3484,984,Clinton, Hillary,democrat,1742718,3317019,FALSE
-3485,984,Trump, Donald J.,republican,1221747,3317019,FALSE
-3486,984,Johnson, Gary,libertarian,160879,3317019,FALSE
+3483,983,Stein Jill,green,27638,3982752,FALSE
+3484,984,Clinton Hillary,democrat,1742718,3317019,FALSE
+3485,984,Trump Donald J.,republican,1221747,3317019,FALSE
+3486,984,Johnson Gary,libertarian,160879,3317019,FALSE
 3487,984,,,107805,3317019,TRUE
-3488,984,Stein, Jill,green,58417,3317019,FALSE
-3489,984,Castle, Darrell L.,constitution party,17623,3317019,FALSE
+3488,984,Stein Jill,green,58417,3317019,FALSE
+3489,984,Castle Darrell L.,constitution party,17623,3317019,FALSE
 3490,984,Kennedy, Alyson,socialist workers,4307,3317019,FALSE
 3491,984,La Riva, Gloria Estella,socialism and liberation party,3523,3317019,FALSE
-3492,985,Trump, Donald J.,republican,489371,713051,FALSE
-3493,985,Clinton, Hillary,democrat,188794,713051,FALSE
-3494,985,Johnson, Gary,libertarian,23004,713051,FALSE
-3495,985,Stein, Jill,green,8075,713051,FALSE
-3496,985,Castle, Darrell L.,constitution party,3807,713051,FALSE
-3497,986,Trump, Donald J.,republican,1405284,2976150,FALSE
-3498,986,Clinton, Hillary,democrat,1382536,2976150,FALSE
-3499,986,Johnson, Gary,libertarian,106674,2976150,FALSE
-3500,986,Stein, Jill,green,31072,2976150,FALSE
+3492,985,Trump Donald J.,republican,489371,713051,FALSE
+3493,985,Clinton Hillary,democrat,188794,713051,FALSE
+3494,985,Johnson Gary,libertarian,23004,713051,FALSE
+3495,985,Stein Jill,green,8075,713051,FALSE
+3496,985,Castle Darrell L.,constitution party,3807,713051,FALSE
+3497,986,Trump Donald J.,republican,1405284,2976150,FALSE
+3498,986,Clinton Hillary,democrat,1382536,2976150,FALSE
+3499,986,Johnson Gary,libertarian,106674,2976150,FALSE
+3500,986,Stein Jill,green,31072,2976150,FALSE
 3501,986,Scattering,,22764,2976150,FALSE
 3502,986,,,12386,2976150,TRUE
-3503,986,Castle, Darrell L.,constitution party,12162,2976150,FALSE
+3503,986,Castle Darrell L.,constitution party,12162,2976150,FALSE
 3504,986,Moorehead, Monica,workers world party,1770,2976150,FALSE
 3505,986,De La Fuente, Roque ""Rocky"",american delta party,1502,2976150,FALSE
-3506,987,Trump, Donald J.,republican,174419,258788,FALSE
-3507,987,Clinton, Hillary,democrat,55973,258788,FALSE
-3508,987,Johnson, Gary,libertarian,13287,258788,FALSE
+3506,987,Trump Donald J.,republican,174419,258788,FALSE
+3507,987,Clinton Hillary,democrat,55973,258788,FALSE
+3508,987,Johnson Gary,libertarian,13287,258788,FALSE
 3509,987,,,6904,258788,TRUE
 3510,987,,independent,3224,258788,FALSE
 3511,987,Blank Vote,,2661,258788,FALSE
-3512,987,Castle, Darrell L.,constitution party,2042,258788,FALSE
+3512,987,Castle Darrell L.,constitution party,2042,258788,FALSE
 3513,987,Over Vote,,278,258788,FALSE
