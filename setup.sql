@@ -3,8 +3,8 @@ DROP TABLE IF EXISTS Socioeconomic;
 DROP TABLE IF EXISTS Housing;
 DROP TABLE IF EXISTS Workers;
 DROP TABLE IF EXISTS Population;
-DROP TABLE IF EXISTS Election;
 DROP TABLE IF EXISTS Candidate;
+DROP TABLE IF EXISTS Election;
 DROP TABLE IF EXISTS District;
 
 CREATE TABLE IF NOT EXISTS District (
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS District (
   congressionalDistrictNum INT,
   PRIMARY KEY (districtID)
 );
-LOAD DATA LOCAL INFILE 'relations/Districts.csv' INTO TABLE District FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/Districts.txt' INTO TABLE District FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 CREATE TABLE IF NOT EXISTS Election (
   electionID INT,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS Election (
   PRIMARY KEY(electionID),
   FOREIGN KEY (districtID) REFERENCES District(districtID)
 );
-LOAD DATA LOCAL INFILE 'relations/Election.csv' INTO TABLE Election FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/Election.txt' INTO TABLE Election FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 CREATE TABLE IF NOT EXISTS Candidate (
   candidateID INT,
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS Candidate (
   PRIMARY KEY(candidateID),
   FOREIGN KEY (electionID) REFERENCES Election(electionID)
 );
-LOAD DATA LOCAL INFILE 'relations/Candidate.csv' INTO TABLE Candidate FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/Candidate.txt' INTO TABLE Candidate FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 
 CREATE TABLE IF NOT EXISTS Population (
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS Population (
   foreignBorn INT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
-LOAD DATA LOCAL INFILE 'relations/People.csv' INTO TABLE Population FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/People.txt' INTO TABLE Population FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 CREATE TABLE IF NOT EXISTS Workers (
   districtID VARCHAR(50),
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS Workers (
   meanCommute FLOAT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
-LOAD DATA LOCAL INFILE 'relations/Workers.csv' INTO TABLE Workers FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/Workers.txt' INTO TABLE Workers FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 CREATE TABLE IF NOT EXISTS Housing (
   districtID VARCHAR(50),
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS Housing (
   medianRent INT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
-LOAD DATA LOCAL INFILE 'relations/Housing.csv' INTO TABLE Housing FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/Housing.txt' INTO TABLE Housing FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 CREATE TABLE IF NOT EXISTS Socioeconomic (
   districtID VARCHAR(50),
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS Socioeconomic (
   percentBelowPovertyLine FLOAT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
-LOAD DATA LOCAL INFILE 'relations/Socioeconomic.csv' INTO TABLE Socioeconomic FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/Socioeconomic.txt' INTO TABLE Socioeconomic FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 CREATE TABLE IF NOT EXISTS Education (
   districtID VARCHAR(50),
@@ -108,4 +108,4 @@ CREATE TABLE IF NOT EXISTS Education (
   percentBachelorsOrHigher FLOAT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
-LOAD DATA LOCAL INFILE 'relations/Education.csv' INTO TABLE Education FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+LOAD DATA LOCAL INFILE 'relations/Education.txt' INTO TABLE Education FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
