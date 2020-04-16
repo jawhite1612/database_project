@@ -1,4 +1,4 @@
-electionID,name,party,numOfVotes,totalVotes,writeIn
+candidateID,electionID,name,party,numOfVotes,totalVotes,writeIn
 1,1,Bradley Byrne,republican,208083,215893,FALSE
 2,1,NA,NA,7810,215893,TRUE
 3,2,Nathan Mathis,democrat,112089,276584,FALSE
@@ -144,7 +144,7 @@ electionID,name,party,numOfVotes,totalVotes,writeIn
 143,63,Ken Calvert,republican,149547,254236,FALSE
 144,64,Maxine Waters,democrat,167017,219516,FALSE
 145,64,Omar Navarro,republican,52499,219516,FALSE
-146,65,Nanette Diaz Barragê___ê__çn,democrat,93124,178413,FALSE
+146,65,Nanette Diaz BarragÔøΩ___ÔøΩ__ÔøΩn,democrat,93124,178413,FALSE
 147,65,Isadore Hall III,democrat,85289,178413,FALSE
 148,66,Ron Varasteh,democrat,129231,311849,FALSE
 149,66,Mimi Walters,republican,182618,311849,FALSE

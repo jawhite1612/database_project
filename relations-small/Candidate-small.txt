@@ -1,0 +1,16 @@
+candidateID,electionID,name,party,numOfVotes,totalVotes,writeIn
+1,1,Bradley Byrne,republican,208083,215893,False
+2,1,,,7810,215893,True
+3,2,Nathan Mathis,democrat,112089,276584,False
+4,2,,,29609,276584,True
+5,2,Martha Roby,republican,134886,276584,False
+6,3,,,391,287104,True
+7,3,Mike Rogers,republican,192164,287104,False
+8,3,Jesse Smith,democrat,94549,287104,False
+9,4,,,3519,239444,True
+10,4,Robert B. Aderholt,republican,235925,239444,False
+11,5,Mo Brooks,republican,205647,308326,False
+12,5,Will Boyd Jr,democrat,102234,308326,False
+13,5,,,445,308326,True
+14,6,David J. Putnam,democrat,83709,329306,False
+15,6,Gary J. Palmer,republican,245313,329306,False

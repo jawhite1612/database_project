@@ -1,0 +1,16 @@
+electionID,districtID,year,office
+1,alabama1,2016,US House
+2,alabama2,2016,US House
+3,alabama3,2016,US House
+4,alabama4,2016,US House
+5,alabama5,2016,US House
+6,alabama6,2016,US House
+7,alabama7,2016,US House
+8,alaska1,2016,US House
+9,arizona1,2016,US House
+10,arizona2,2016,US House
+11,arizona3,2016,US House
+12,arizona4,2016,US House
+13,arizona5,2016,US House
+14,arizona6,2016,US House
+15,arizona7,2016,US House
