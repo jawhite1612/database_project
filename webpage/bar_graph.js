@@ -1,4 +1,3 @@
-
 function createGraph(x, y) {
     var options = {
 		title: {
@@ -11,10 +10,14 @@ function createGraph(x, y) {
 		}
 		]
 	};
+    
+    for (var i =0; i < x.length; i++) {
+	if (parseInt(y[i]) > 0) {
 
-	for (var i =0; i < x.length; i++) {
-		options.data[0].dataPoints.push({lable: x[i], y: y[i]})
+	    options.data[0].dataPoints.push({label: x[i], y: parseInt(y[i])})
+	}
 	}
 
 	$("#chartContainer").CanvasJSChart(options);
+    console.log(options);
 }

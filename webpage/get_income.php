@@ -6,7 +6,7 @@
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <script type = 'text/javascript' src='bar_graph.js'></script>
-     <?php
+<?php
 
     include 'open.php';
 
@@ -38,6 +38,7 @@
             }
             $result->close();
         }
+
         echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y).";createGraph(x,y);</script>";
 
     } else {
