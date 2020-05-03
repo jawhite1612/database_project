@@ -2,8 +2,7 @@
  <title>Income</title>
  </head>
  <body>
-<script type="text/javascript" src="bar_graph.js"></script>
-<div id="chartContainer" style="height : 370px; width: 50%;"></div>
+ <div id="chartContainer" style="height : 370px; width: 50%;"></div>
  <?php
 
 include 'open.php';
@@ -37,7 +36,7 @@ if ($mysqli->multi_query("CALL GetIncome();")) {
         $result->close();
     }
 
-    echo "<script type='text/javascript'>createGraph();</script>";
+    echo "<script type='text/javascript' src='bar_graph.js'>createGraph();</script>";
 
 } else {
         printf("<br>Error: %s\n", $mysqli->error);
