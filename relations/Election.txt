@@ -238,64 +238,64 @@ electionID,districtID,year,office
 237,nevada2,2016,US House
 238,nevada3,2016,US House
 239,nevada4,2016,US House
-240,new hampshire1,2016,US House
-241,new hampshire2,2016,US House
-242,new jersey1,2016,US House
-243,new jersey2,2016,US House
-244,new jersey3,2016,US House
-245,new jersey4,2016,US House
-246,new jersey5,2016,US House
-247,new jersey6,2016,US House
-248,new jersey7,2016,US House
-249,new jersey8,2016,US House
-250,new jersey9,2016,US House
-251,new jersey10,2016,US House
-252,new jersey11,2016,US House
-253,new jersey12,2016,US House
-254,new mexico1,2016,US House
-255,new mexico2,2016,US House
-256,new mexico3,2016,US House
-257,new york1,2016,US House
-258,new york2,2016,US House
-259,new york3,2016,US House
-260,new york4,2016,US House
-261,new york5,2016,US House
-262,new york6,2016,US House
-263,new york7,2016,US House
-264,new york8,2016,US House
-265,new york9,2016,US House
-266,new york10,2016,US House
-267,new york11,2016,US House
-268,new york12,2016,US House
-269,new york13,2016,US House
-270,new york14,2016,US House
-271,new york15,2016,US House
-272,new york16,2016,US House
-273,new york17,2016,US House
-274,new york18,2016,US House
-275,new york19,2016,US House
-276,new york20,2016,US House
-277,new york21,2016,US House
-278,new york22,2016,US House
-279,new york23,2016,US House
-280,new york24,2016,US House
-281,new york25,2016,US House
-282,new york26,2016,US House
-283,new york27,2016,US House
-284,north carolina1,2016,US House
-285,north carolina2,2016,US House
-286,north carolina3,2016,US House
-287,north carolina4,2016,US House
-288,north carolina5,2016,US House
-289,north carolina6,2016,US House
-290,north carolina7,2016,US House
-291,north carolina8,2016,US House
-292,north carolina9,2016,US House
-293,north carolina10,2016,US House
-294,north carolina11,2016,US House
-295,north carolina12,2016,US House
-296,north carolina13,2016,US House
-297,north dakota1,2016,US House
+240,new_hampshire1,2016,US House
+241,new_hampshire2,2016,US House
+242,new_jersey1,2016,US House
+243,new_jersey2,2016,US House
+244,new_jersey3,2016,US House
+245,new_jersey4,2016,US House
+246,new_jersey5,2016,US House
+247,new_jersey6,2016,US House
+248,new_jersey7,2016,US House
+249,new_jersey8,2016,US House
+250,new_jersey9,2016,US House
+251,new_jersey10,2016,US House
+252,new_jersey11,2016,US House
+253,new_jersey12,2016,US House
+254,new_mexico1,2016,US House
+255,new_mexico2,2016,US House
+256,new_mexico3,2016,US House
+257,new_york1,2016,US House
+258,new_york2,2016,US House
+259,new_york3,2016,US House
+260,new_york4,2016,US House
+261,new_york5,2016,US House
+262,new_york6,2016,US House
+263,new_york7,2016,US House
+264,new_york8,2016,US House
+265,new_york9,2016,US House
+266,new_york10,2016,US House
+267,new_york11,2016,US House
+268,new_york12,2016,US House
+269,new_york13,2016,US House
+270,new_york14,2016,US House
+271,new_york15,2016,US House
+272,new_york16,2016,US House
+273,new_york17,2016,US House
+274,new_york18,2016,US House
+275,new_york19,2016,US House
+276,new_york20,2016,US House
+277,new_york21,2016,US House
+278,new_york22,2016,US House
+279,new_york23,2016,US House
+280,new_york24,2016,US House
+281,new_york25,2016,US House
+282,new_york26,2016,US House
+283,new_york27,2016,US House
+284,north_carolina1,2016,US House
+285,north_carolina2,2016,US House
+286,north_carolina3,2016,US House
+287,north_carolina4,2016,US House
+288,north_carolina5,2016,US House
+289,north_carolina6,2016,US House
+290,north_carolina7,2016,US House
+291,north_carolina8,2016,US House
+292,north_carolina9,2016,US House
+293,north_carolina10,2016,US House
+294,north_carolina11,2016,US House
+295,north_carolina12,2016,US House
+296,north_carolina13,2016,US House
+297,north_dakota1,2016,US House
 298,ohio1,2016,US House
 299,ohio2,2016,US House
 300,ohio3,2016,US House
@@ -340,16 +340,16 @@ electionID,districtID,year,office
 339,pennsylvania16,2016,US House
 340,pennsylvania17,2016,US House
 341,pennsylvania18,2016,US House
-342,rhode island1,2016,US House
-343,rhode island2,2016,US House
-344,south carolina1,2016,US House
-345,south carolina2,2016,US House
-346,south carolina3,2016,US House
-347,south carolina4,2016,US House
-348,south carolina5,2016,US House
-349,south carolina6,2016,US House
-350,south carolina7,2016,US House
-351,south dakota,2016,US House
+342,rhode_island1,2016,US House
+343,rhode_island2,2016,US House
+344,south_carolina1,2016,US House
+345,south_carolina2,2016,US House
+346,south_carolina3,2016,US House
+347,south_carolina4,2016,US House
+348,south_carolina5,2016,US House
+349,south_carolina6,2016,US House
+350,south_carolina7,2016,US House
+351,south_dakota,2016,US House
 352,tennessee1,2016,US House
 353,tennessee2,2016,US House
 354,tennessee3,2016,US House
@@ -421,9 +421,9 @@ electionID,districtID,year,office
 420,washington8,2016,US House
 421,washington9,2016,US House
 422,washington10,2016,US House
-423,west virginia1,2016,US House
-424,west virginia2,2016,US House
-425,west virginia3,2016,US House
+423,west_virginia1,2016,US House
+424,west_virginia2,2016,US House
+425,west_virginia3,2016,US House
 426,wisconsin1,2016,US House
 427,wisconsin2,2016,US House
 428,wisconsin3,2016,US House
@@ -673,64 +673,64 @@ electionID,districtID,year,office
 672,nevada2,2018,US House
 673,nevada3,2018,US House
 674,nevada4,2018,US House
-675,new hampshire1,2018,US House
-676,new hampshire2,2018,US House
-677,new jersey1,2018,US House
-678,new jersey2,2018,US House
-679,new jersey3,2018,US House
-680,new jersey4,2018,US House
-681,new jersey5,2018,US House
-682,new jersey6,2018,US House
-683,new jersey7,2018,US House
-684,new jersey8,2018,US House
-685,new jersey9,2018,US House
-686,new jersey10,2018,US House
-687,new jersey11,2018,US House
-688,new jersey12,2018,US House
-689,new mexico1,2018,US House
-690,new mexico2,2018,US House
-691,new mexico3,2018,US House
-692,new york1,2018,US House
-693,new york2,2018,US House
-694,new york3,2018,US House
-695,new york4,2018,US House
-696,new york5,2018,US House
-697,new york6,2018,US House
-698,new york7,2018,US House
-699,new york8,2018,US House
-700,new york9,2018,US House
-701,new york10,2018,US House
-702,new york11,2018,US House
-703,new york12,2018,US House
-704,new york13,2018,US House
-705,new york14,2018,US House
-706,new york15,2018,US House
-707,new york16,2018,US House
-708,new york17,2018,US House
-709,new york18,2018,US House
-710,new york19,2018,US House
-711,new york20,2018,US House
-712,new york21,2018,US House
-713,new york22,2018,US House
-714,new york23,2018,US House
-715,new york24,2018,US House
-716,new york25,2018,US House
-717,new york26,2018,US House
-718,new york27,2018,US House
-719,north carolina1,2018,US House
-720,north carolina2,2018,US House
-721,north carolina3,2018,US House
-722,north carolina4,2018,US House
-723,north carolina5,2018,US House
-724,north carolina6,2018,US House
-725,north carolina7,2018,US House
-726,north carolina8,2018,US House
-727,north carolina9,2018,US House
-728,north carolina10,2018,US House
-729,north carolina11,2018,US House
-730,north carolina12,2018,US House
-731,north carolina13,2018,US House
-732,north dakota1,2018,US House
+675,new_hampshire1,2018,US House
+676,new_hampshire2,2018,US House
+677,new_jersey1,2018,US House
+678,new_jersey2,2018,US House
+679,new_jersey3,2018,US House
+680,new_jersey4,2018,US House
+681,new_jersey5,2018,US House
+682,new_jersey6,2018,US House
+683,new_jersey7,2018,US House
+684,new_jersey8,2018,US House
+685,new_jersey9,2018,US House
+686,new_jersey10,2018,US House
+687,new_jersey11,2018,US House
+688,new_jersey12,2018,US House
+689,new_mexico1,2018,US House
+690,new_mexico2,2018,US House
+691,new_mexico3,2018,US House
+692,new_york1,2018,US House
+693,new_york2,2018,US House
+694,new_york3,2018,US House
+695,new_york4,2018,US House
+696,new_york5,2018,US House
+697,new_york6,2018,US House
+698,new_york7,2018,US House
+699,new_york8,2018,US House
+700,new_york9,2018,US House
+701,new_york10,2018,US House
+702,new_york11,2018,US House
+703,new_york12,2018,US House
+704,new_york13,2018,US House
+705,new_york14,2018,US House
+706,new_york15,2018,US House
+707,new_york16,2018,US House
+708,new_york17,2018,US House
+709,new_york18,2018,US House
+710,new_york19,2018,US House
+711,new_york20,2018,US House
+712,new_york21,2018,US House
+713,new_york22,2018,US House
+714,new_york23,2018,US House
+715,new_york24,2018,US House
+716,new_york25,2018,US House
+717,new_york26,2018,US House
+718,new_york27,2018,US House
+719,north_carolina1,2018,US House
+720,north_carolina2,2018,US House
+721,north_carolina3,2018,US House
+722,north_carolina4,2018,US House
+723,north_carolina5,2018,US House
+724,north_carolina6,2018,US House
+725,north_carolina7,2018,US House
+726,north_carolina8,2018,US House
+727,north_carolina9,2018,US House
+728,north_carolina10,2018,US House
+729,north_carolina11,2018,US House
+730,north_carolina12,2018,US House
+731,north_carolina13,2018,US House
+732,north_dakota1,2018,US House
 733,ohio1,2018,US House
 734,ohio2,2018,US House
 735,ohio3,2018,US House
@@ -775,16 +775,16 @@ electionID,districtID,year,office
 774,pennsylvania16,2018,US House
 775,pennsylvania17,2018,US House
 776,pennsylvania18,2018,US House
-777,rhode island1,2018,US House
-778,rhode island2,2018,US House
-779,south carolina1,2018,US House
-780,south carolina2,2018,US House
-781,south carolina3,2018,US House
-782,south carolina4,2018,US House
-783,south carolina5,2018,US House
-784,south carolina6,2018,US House
-785,south carolina7,2018,US House
-786,south dakota,2018,US House
+777,rhode_island1,2018,US House
+778,rhode_island2,2018,US House
+779,south_carolina1,2018,US House
+780,south_carolina2,2018,US House
+781,south_carolina3,2018,US House
+782,south_carolina4,2018,US House
+783,south_carolina5,2018,US House
+784,south_carolina6,2018,US House
+785,south_carolina7,2018,US House
+786,south_dakota,2018,US House
 787,tennessee1,2018,US House
 788,tennessee2,2018,US House
 789,tennessee3,2018,US House
@@ -856,9 +856,9 @@ electionID,districtID,year,office
 855,washington8,2018,US House
 856,washington9,2018,US House
 857,washington10,2018,US House
-858,west virginia1,2018,US House
-859,west virginia2,2018,US House
-860,west virginia3,2018,US House
+858,west_virginia1,2018,US House
+859,west_virginia2,2018,US House
+860,west_virginia3,2018,US House
 861,wisconsin1,2018,US House
 862,wisconsin2,2018,US House
 863,wisconsin3,2018,US House
@@ -888,16 +888,16 @@ electionID,districtID,year,office
 887,maryland,2016,US Senate
 888,missouri,2016,US Senate
 889,nevada,2016,US Senate
-890,new hampshire,2016,US Senate
-891,new york,2016,US Senate
-892,north carolina,2016,US Senate
-893,north dakota,2016,US Senate
+890,new_hampshire,2016,US Senate
+891,new_york,2016,US Senate
+892,north_carolina,2016,US Senate
+893,north_dakota,2016,US Senate
 894,ohio,2016,US Senate
 895,oklahoma,2016,US Senate
 896,oregon,2016,US Senate
 897,pennsylvania,2016,US Senate
-898,south carolina,2016,US Senate
-899,south dakota,2016,US Senate
+898,south_carolina,2016,US Senate
+899,south_dakota,2016,US Senate
 900,utah,2016,US Senate
 901,vermont,2016,US Senate
 902,washington,2016,US Senate
@@ -919,20 +919,20 @@ electionID,districtID,year,office
 918,montana,2018,US Senate
 919,nebraska,2018,US Senate
 920,nevada,2018,US Senate
-921,new jersey,2018,US Senate
-922,new mexico,2018,US Senate
-923,new york,2018,US Senate
-924,north dakota,2018,US Senate
+921,new_jersey,2018,US Senate
+922,new_mexico,2018,US Senate
+923,new_york,2018,US Senate
+924,north_dakota,2018,US Senate
 925,ohio,2018,US Senate
 926,pennsylvania,2018,US Senate
-927,rhode island,2018,US Senate
+927,rhode_island,2018,US Senate
 928,tennessee,2018,US Senate
 929,texas,2018,US Senate
 930,utah,2018,US Senate
 931,vermont,2018,US Senate
 932,virginia,2018,US Senate
 933,washington,2018,US Senate
-934,west virginia,2018,US Senate
+934,west_virginia,2018,US Senate
 935,wisconsin,2018,US Senate
 936,wyoming,2018,US Senate
 937,alabama,2016,US President
@@ -964,25 +964,25 @@ electionID,districtID,year,office
 963,montana,2016,US President
 964,nebraska,2016,US President
 965,nevada,2016,US President
-966,new hampshire,2016,US President
-967,new jersey,2016,US President
-968,new mexico,2016,US President
-969,new york,2016,US President
-970,north carolina,2016,US President
-971,north dakota,2016,US President
+966,new_hampshire,2016,US President
+967,new_jersey,2016,US President
+968,new_mexico,2016,US President
+969,new_york,2016,US President
+970,north_carolina,2016,US President
+971,north_dakota,2016,US President
 972,ohio,2016,US President
 973,oklahoma,2016,US President
 974,oregon,2016,US President
 975,pennsylvania,2016,US President
-976,rhode island,2016,US President
-977,south carolina,2016,US President
-978,south dakota,2016,US President
+976,rhode_island,2016,US President
+977,south_carolina,2016,US President
+978,south_dakota,2016,US President
 979,tennessee,2016,US President
 980,texas,2016,US President
 981,utah,2016,US President
 982,vermont,2016,US President
 983,virginia,2016,US President
 984,washington,2016,US President
-985,west virginia,2016,US President
+985,west_virginia,2016,US President
 986,wisconsin,2016,US President
 987,wyoming,2016,US President
