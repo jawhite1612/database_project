@@ -201,54 +201,54 @@ nevada,2016,US President,"Johnson, Gary",libertarian,FALSE,37384,1125385
 nevada,2016,US President,None Of The Above,,FALSE,28863,1125385
 nevada,2016,US President,"Kopitke, Kyle Kenley",independent american,FALSE,5268,1125385
 nevada,2016,US President,"De La Fuente, Roque """"Rocky""""",no party affiliation,FALSE,2552,1125385
-new hampshire,2016,US President,"Clinton, Hillary",democrat,FALSE,348526,744296
-new hampshire,2016,US President,"Trump, Donald J.",republican,FALSE,345790,744296
-new hampshire,2016,US President,"Johnson, Gary",libertarian,FALSE,30777,744296
-new hampshire,2016,US President,,,TRUE,9618,744296
-new hampshire,2016,US President,"Stein, Jill",green,FALSE,6496,744296
-new hampshire,2016,US President,Scattering,,TRUE,2411,744296
-new hampshire,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,678,744296
-new jersey,2016,US President,"Clinton, Hillary",democrat,FALSE,2148278,3874046
-new jersey,2016,US President,"Trump, Donald J.",republican,FALSE,1601933,3874046
-new jersey,2016,US President,"Johnson, Gary",libertarian,FALSE,72477,3874046
-new jersey,2016,US President,"Stein, Jill",green,FALSE,37772,3874046
-new jersey,2016,US President,"Castle, Darrell L.",constitution party,FALSE,6161,3874046
-new jersey,2016,US President,"Kennedy, Alyson",socialist workers,FALSE,2156,3874046
-new jersey,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,1838,3874046
-new jersey,2016,US President,"Moorehead, Monica",workers world party,FALSE,1749,3874046
-new jersey,2016,US President,"La Riva, Gloria Estella",socialism and liberation party,FALSE,1682,3874046
-new mexico,2016,US President,"Clinton, Hillary",democrat,FALSE,385234,798319
-new mexico,2016,US President,"Trump, Donald J.",republican,FALSE,319667,798319
-new mexico,2016,US President,"Johnson, Gary",libertarian,FALSE,74541,798319
-new mexico,2016,US President,"Stein, Jill",green,FALSE,9879,798319
-new mexico,2016,US President,"McMullin, Evan",better for america,FALSE,5825,798319
-new mexico,2016,US President,"Castle, Darrell L.",constitution party,FALSE,1514,798319
-new mexico,2016,US President,"La Riva, Gloria Estella",socialism and liberation party,FALSE,1184,798319
-new mexico,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,475,798319
-new york,2016,US President,"Clinton, Hillary",democrat,FALSE,4379789,7802084
-new york,2016,US President,"Trump, Donald J.",republican,FALSE,2527142,7802084
-new york,2016,US President,"Trump, Donald J.",conservative,FALSE,292392,7802084
-new york,2016,US President,"Clinton, Hillary",working families,FALSE,140041,7802084
-new york,2016,US President,"Johnson, Gary",independence,FALSE,119156,7802084
-new york,2016,US President,"Stein, Jill",green,FALSE,107934,7802084
-new york,2016,US President,Blank Vote,,FALSE,77179,7802084
-new york,2016,US President,"Johnson, Gary",libertarian,FALSE,57442,7802084
-new york,2016,US President,Scattering,,FALSE,48447,7802084
-new york,2016,US President,"Clinton, Hillary",women's equality,FALSE,36294,7802084
-new york,2016,US President,,,TRUE,12816,7802084
-new york,2016,US President,Void Vote,,FALSE,3452,7802084
-north carolina,2016,US President,"Trump, Donald J.",republican,FALSE,2362631,4741564
-north carolina,2016,US President,"Clinton, Hillary",democrat,FALSE,2189316,4741564
-north carolina,2016,US President,"Johnson, Gary",libertarian,FALSE,130126,4741564
-north carolina,2016,US President,Scattering,,TRUE,47386,4741564
-north carolina,2016,US President,,,TRUE,12105,4741564
-north dakota,2016,US President,"Trump, Donald J.",republican,FALSE,216794,344360
-north dakota,2016,US President,"Clinton, Hillary",democrat,FALSE,93758,344360
-north dakota,2016,US President,"Johnson, Gary",libertarian,FALSE,21434,344360
-north dakota,2016,US President,,,TRUE,6397,344360
-north dakota,2016,US President,"Stein, Jill",green,FALSE,3780,344360
-north dakota,2016,US President,"Castle, Darrell L.",constitution party,FALSE,1833,344360
-north dakota,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,364,344360
+new_hampshire,2016,US President,"Clinton, Hillary",democrat,FALSE,348526,744296
+new_hampshire,2016,US President,"Trump, Donald J.",republican,FALSE,345790,744296
+new_hampshire,2016,US President,"Johnson, Gary",libertarian,FALSE,30777,744296
+new_hampshire,2016,US President,,,TRUE,9618,744296
+new_hampshire,2016,US President,"Stein, Jill",green,FALSE,6496,744296
+new_hampshire,2016,US President,Scattering,,TRUE,2411,744296
+new_hampshire,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,678,744296
+new_jersey,2016,US President,"Clinton, Hillary",democrat,FALSE,2148278,3874046
+new_jersey,2016,US President,"Trump, Donald J.",republican,FALSE,1601933,3874046
+new_jersey,2016,US President,"Johnson, Gary",libertarian,FALSE,72477,3874046
+new_jersey,2016,US President,"Stein, Jill",green,FALSE,37772,3874046
+new_jersey,2016,US President,"Castle, Darrell L.",constitution party,FALSE,6161,3874046
+new_jersey,2016,US President,"Kennedy, Alyson",socialist workers,FALSE,2156,3874046
+new_jersey,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,1838,3874046
+new_jersey,2016,US President,"Moorehead, Monica",workers world party,FALSE,1749,3874046
+new_jersey,2016,US President,"La Riva, Gloria Estella",socialism and liberation party,FALSE,1682,3874046
+new_mexico,2016,US President,"Clinton, Hillary",democrat,FALSE,385234,798319
+new_mexico,2016,US President,"Trump, Donald J.",republican,FALSE,319667,798319
+new_mexico,2016,US President,"Johnson, Gary",libertarian,FALSE,74541,798319
+new_mexico,2016,US President,"Stein, Jill",green,FALSE,9879,798319
+new_mexico,2016,US President,"McMullin, Evan",better for america,FALSE,5825,798319
+new_mexico,2016,US President,"Castle, Darrell L.",constitution party,FALSE,1514,798319
+new_mexico,2016,US President,"La Riva, Gloria Estella",socialism and liberation party,FALSE,1184,798319
+new_mexico,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,475,798319
+new_york,2016,US President,"Clinton, Hillary",democrat,FALSE,4379789,7802084
+new_york,2016,US President,"Trump, Donald J.",republican,FALSE,2527142,7802084
+new_york,2016,US President,"Trump, Donald J.",conservative,FALSE,292392,7802084
+new_york,2016,US President,"Clinton, Hillary",working families,FALSE,140041,7802084
+new_york,2016,US President,"Johnson, Gary",independence,FALSE,119156,7802084
+new_york,2016,US President,"Stein, Jill",green,FALSE,107934,7802084
+new_york,2016,US President,Blank Vote,,FALSE,77179,7802084
+new_york,2016,US President,"Johnson, Gary",libertarian,FALSE,57442,7802084
+new_york,2016,US President,Scattering,,FALSE,48447,7802084
+new_york,2016,US President,"Clinton, Hillary",women's equality,FALSE,36294,7802084
+new_york,2016,US President,,,TRUE,12816,7802084
+new_york,2016,US President,Void Vote,,FALSE,3452,7802084
+north_carolina,2016,US President,"Trump, Donald J.",republican,FALSE,2362631,4741564
+north_carolina,2016,US President,"Clinton, Hillary",democrat,FALSE,2189316,4741564
+north_carolina,2016,US President,"Johnson, Gary",libertarian,FALSE,130126,4741564
+north_carolina,2016,US President,Scattering,,TRUE,47386,4741564
+north_carolina,2016,US President,,,TRUE,12105,4741564
+north_dakota,2016,US President,"Trump, Donald J.",republican,FALSE,216794,344360
+north_dakota,2016,US President,"Clinton, Hillary",democrat,FALSE,93758,344360
+north_dakota,2016,US President,"Johnson, Gary",libertarian,FALSE,21434,344360
+north_dakota,2016,US President,,,TRUE,6397,344360
+north_dakota,2016,US President,"Stein, Jill",green,FALSE,3780,344360
+north_dakota,2016,US President,"Castle, Darrell L.",constitution party,FALSE,1833,344360
+north_dakota,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,364,344360
 ohio,2016,US President,"Trump, Donald J.",republican,FALSE,2841005,5496487
 ohio,2016,US President,"Clinton, Hillary",democrat,FALSE,2394164,5496487
 ohio,2016,US President,,no party affiliation,FALSE,198733,5496487
@@ -267,23 +267,23 @@ pennsylvania,2016,US President,"Clinton, Hillary",democrat,FALSE,2926441,6115402
 pennsylvania,2016,US President,"Johnson, Gary",libertarian,FALSE,146715,6115402
 pennsylvania,2016,US President,"Stein, Jill",green,FALSE,49941,6115402
 pennsylvania,2016,US President,"Castle, Darrell L.",constitution party,FALSE,21572,6115402
-rhode island,2016,US President,"Clinton, Hillary",democrat,FALSE,252525,464144
-rhode island,2016,US President,"Trump, Donald J.",republican,FALSE,180543,464144
-rhode island,2016,US President,"Johnson, Gary",libertarian,FALSE,14746,464144
-rhode island,2016,US President,,,TRUE,9439,464144
-rhode island,2016,US President,"Stein, Jill",green,FALSE,6220,464144
-rhode island,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,671,464144
-south carolina,2016,US President,"Trump, Donald J.",republican,FALSE,1155389,2103027
-south carolina,2016,US President,"Clinton, Hillary",democrat,FALSE,855373,2103027
-south carolina,2016,US President,"Johnson, Gary",libertarian,FALSE,49204,2103027
-south carolina,2016,US President,"McMullin, Evan",independence,FALSE,21016,2103027
-south carolina,2016,US President,"Stein, Jill",green,FALSE,13034,2103027
-south carolina,2016,US President,"Castle, Darrell L.",constitution party,FALSE,5765,2103027
-south carolina,2016,US President,"Skewes, Peter",american,FALSE,3246,2103027
-south dakota,2016,US President,"Trump, Donald J.",republican,FALSE,227721,370093
-south dakota,2016,US President,"Clinton, Hillary",democrat,FALSE,117458,370093
-south dakota,2016,US President,"Johnson, Gary",libertarian,FALSE,20850,370093
-south dakota,2016,US President,"Castle, Darrell L.",constitution party,FALSE,4064,370093
+rhode_island,2016,US President,"Clinton, Hillary",democrat,FALSE,252525,464144
+rhode_island,2016,US President,"Trump, Donald J.",republican,FALSE,180543,464144
+rhode_island,2016,US President,"Johnson, Gary",libertarian,FALSE,14746,464144
+rhode_island,2016,US President,,,TRUE,9439,464144
+rhode_island,2016,US President,"Stein, Jill",green,FALSE,6220,464144
+rhode_island,2016,US President,"De La Fuente, Roque """"Rocky""""",american delta party,FALSE,671,464144
+south_carolina,2016,US President,"Trump, Donald J.",republican,FALSE,1155389,2103027
+south_carolina,2016,US President,"Clinton, Hillary",democrat,FALSE,855373,2103027
+south_carolina,2016,US President,"Johnson, Gary",libertarian,FALSE,49204,2103027
+south_carolina,2016,US President,"McMullin, Evan",independence,FALSE,21016,2103027
+south_carolina,2016,US President,"Stein, Jill",green,FALSE,13034,2103027
+south_carolina,2016,US President,"Castle, Darrell L.",constitution party,FALSE,5765,2103027
+south_carolina,2016,US President,"Skewes, Peter",american,FALSE,3246,2103027
+south_dakota,2016,US President,"Trump, Donald J.",republican,FALSE,227721,370093
+south_dakota,2016,US President,"Clinton, Hillary",democrat,FALSE,117458,370093
+south_dakota,2016,US President,"Johnson, Gary",libertarian,FALSE,20850,370093
+south_dakota,2016,US President,"Castle, Darrell L.",constitution party,FALSE,4064,370093
 tennessee,2016,US President,"Trump, Donald J.",republican,FALSE,1522925,2508027
 tennessee,2016,US President,"Clinton, Hillary",democrat,FALSE,870695,2508027
 tennessee,2016,US President,,independent,FALSE,100618,2508027
@@ -322,11 +322,11 @@ washington,2016,US President,"Stein, Jill",green,FALSE,58417,3317019
 washington,2016,US President,"Castle, Darrell L.",constitution party,FALSE,17623,3317019
 washington,2016,US President,"Kennedy, Alyson",socialist workers,FALSE,4307,3317019
 washington,2016,US President,"La Riva, Gloria Estella",socialism and liberation party,FALSE,3523,3317019
-west virginia,2016,US President,"Trump, Donald J.",republican,FALSE,489371,713051
-west virginia,2016,US President,"Clinton, Hillary",democrat,FALSE,188794,713051
-west virginia,2016,US President,"Johnson, Gary",libertarian,FALSE,23004,713051
-west virginia,2016,US President,"Stein, Jill",green,FALSE,8075,713051
-west virginia,2016,US President,"Castle, Darrell L.",constitution party,FALSE,3807,713051
+west_virginia,2016,US President,"Trump, Donald J.",republican,FALSE,489371,713051
+west_virginia,2016,US President,"Clinton, Hillary",democrat,FALSE,188794,713051
+west_virginia,2016,US President,"Johnson, Gary",libertarian,FALSE,23004,713051
+west_virginia,2016,US President,"Stein, Jill",green,FALSE,8075,713051
+west_virginia,2016,US President,"Castle, Darrell L.",constitution party,FALSE,3807,713051
 wisconsin,2016,US President,"Trump, Donald J.",republican,FALSE,1405284,2976150
 wisconsin,2016,US President,"Clinton, Hillary",democrat,FALSE,1382536,2976150
 wisconsin,2016,US President,"Johnson, Gary",libertarian,FALSE,106674,2976150
