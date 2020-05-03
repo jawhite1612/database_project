@@ -1,4 +1,9 @@
-function createGraph (x, y) {
+function createGraph () {
+
+	var x =  
+    <?php echo json_encode($x); ?>; 
+    var y =  
+    <?php echo json_encode($y); ?>; 
 
 	var options = {
 		title: {
