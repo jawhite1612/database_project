@@ -109,3 +109,15 @@ CREATE TABLE IF NOT EXISTS Education (
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
 LOAD DATA LOCAL INFILE 'relations/Education.txt' INTO TABLE Education FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetIncome //
+CREATE PROCEDURE GetIncome()
+BEGIN
+  SELECT state, avg(medianIncome) AS Average_Income 
+  FROM Socioeconomic, District 
+  WHERE Socioeconomic.districtID = District.districtID 
+  GROUP BY state;
+END;
+//
+delimiter;
