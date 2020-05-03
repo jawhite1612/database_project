@@ -145,31 +145,31 @@ nevada,2016,US Senate,Tony Gumina,none,FALSE,10740,1108294
 nevada,2016,US Senate,Tom Jones,independent american,FALSE,17128,1108294
 nevada,2016,US Senate,none of the above,,FALSE,42257,1108294
 nevada,2016,US Senate,Jarrod M. Williams,none,FALSE,6888,1108294
-new hampshire,2016,US Senate,Kelly Ayotte,republican,FALSE,353632,739140
-new hampshire,2016,US Senate,Maggie Hassan,democrat,FALSE,354649,739140
-new hampshire,2016,US Senate,scatter,,FALSE,520,739140
-new hampshire,2016,US Senate,Brian Chabot,libertarian,FALSE,12597,739140
-new hampshire,2016,US Senate,Aaron Day,independent,FALSE,17742,739140
-new york,2016,US Senate,Alex Merced,libertarian,FALSE,48121,7800725
-new york,2016,US Senate,Charles E. Schumer,working families,FALSE,241672,7800725
-new york,2016,US Senate,Wendy Long,republican,FALSE,1723927,7800725
-new york,2016,US Senate,Blank Vote,,FALSE,400943,7800725
-new york,2016,US Senate,Void Vote,,FALSE,3474,7800725
-new york,2016,US Senate,Wendy Long,reform,FALSE,17813,7800725
-new york,2016,US Senate,Charles E. Schumer,women's equality,FALSE,45402,7800725
-new york,2016,US Senate,scatter,,FALSE,3472,7800725
-new york,2016,US Senate,Charles E. Schumer,democrat,FALSE,4784220,7800725
-new york,2016,US Senate,Wendy Long,conservative,FALSE,267613,7800725
-new york,2016,US Senate,Robin Laverne Wilson,green,FALSE,113413,7800725
-new york,2016,US Senate,Charles E. Schumer,independence,FALSE,150655,7800725
-north carolina,2016,US Senate,Deborah K. Ross,democrat,FALSE,2128165,4691133
-north carolina,2016,US Senate,Richard Burr,republican,FALSE,2395376,4691133
-north carolina,2016,US Senate,Sean Haugh,libertarian,FALSE,167592,4691133
-north dakota,2016,US Senate,NA,NA,TRUE,366,342501
-north dakota,2016,US Senate,James Germalic,independent,FALSE,4675,342501
-north dakota,2016,US Senate,John Hoeven,republican,FALSE,268788,342501
-north dakota,2016,US Senate,Eliot Glassheim,democrat,FALSE,58116,342501
-north dakota,2016,US Senate,Robert N. Marquette,libertarian,FALSE,10556,342501
+new_hampshire,2016,US Senate,Kelly Ayotte,republican,FALSE,353632,739140
+new_hampshire,2016,US Senate,Maggie Hassan,democrat,FALSE,354649,739140
+new_hampshire,2016,US Senate,scatter,,FALSE,520,739140
+new_hampshire,2016,US Senate,Brian Chabot,libertarian,FALSE,12597,739140
+new_hampshire,2016,US Senate,Aaron Day,independent,FALSE,17742,739140
+new_york,2016,US Senate,Alex Merced,libertarian,FALSE,48121,7800725
+new_york,2016,US Senate,Charles E. Schumer,working families,FALSE,241672,7800725
+new_york,2016,US Senate,Wendy Long,republican,FALSE,1723927,7800725
+new_york,2016,US Senate,Blank Vote,,FALSE,400943,7800725
+new_york,2016,US Senate,Void Vote,,FALSE,3474,7800725
+new_york,2016,US Senate,Wendy Long,reform,FALSE,17813,7800725
+new_york,2016,US Senate,Charles E. Schumer,women's equality,FALSE,45402,7800725
+new_york,2016,US Senate,scatter,,FALSE,3472,7800725
+new_york,2016,US Senate,Charles E. Schumer,democrat,FALSE,4784220,7800725
+new_york,2016,US Senate,Wendy Long,conservative,FALSE,267613,7800725
+new_york,2016,US Senate,Robin Laverne Wilson,green,FALSE,113413,7800725
+new_york,2016,US Senate,Charles E. Schumer,independence,FALSE,150655,7800725
+north_carolina,2016,US Senate,Deborah K. Ross,democrat,FALSE,2128165,4691133
+north_carolina,2016,US Senate,Richard Burr,republican,FALSE,2395376,4691133
+north_carolina,2016,US Senate,Sean Haugh,libertarian,FALSE,167592,4691133
+north_dakota,2016,US Senate,NA,NA,TRUE,366,342501
+north_dakota,2016,US Senate,James Germalic,independent,FALSE,4675,342501
+north_dakota,2016,US Senate,John Hoeven,republican,FALSE,268788,342501
+north_dakota,2016,US Senate,Eliot Glassheim,democrat,FALSE,58116,342501
+north_dakota,2016,US Senate,Robert N. Marquette,libertarian,FALSE,10556,342501
 ohio,2016,US Senate,NA,NA,TRUE,111,5374164
 ohio,2016,US Senate,Scott Rupert,none,FALSE,77291,5374164
 ohio,2016,US Senate,Ted Strickland,democrat,FALSE,1996908,5374164
@@ -191,16 +191,16 @@ oregon,2016,US Senate,Jim Lindsay,libertarian,FALSE,23941,1952478
 pennsylvania,2016,US Senate,Katie McGinty,democrat,FALSE,2865012,6051856
 pennsylvania,2016,US Senate,Edward T. Clifford III,libertarian,FALSE,235142,6051856
 pennsylvania,2016,US Senate,Patrick J. Toomey,republican,FALSE,2951702,6051856
-south carolina,2016,US Senate,Thomas Dixon,democrat,FALSE,704540,2049893
-south carolina,2016,US Senate,Bill Bledsoe,libertarian,FALSE,24830,2049893
-south carolina,2016,US Senate,Thomas Dixon,working families,FALSE,37610,2049893
-south carolina,2016,US Senate,Bill Bledsoe,constitution,FALSE,12652,2049893
-south carolina,2016,US Senate,Tim Scott,republican,FALSE,1241609,2049893
-south carolina,2016,US Senate,NA,NA,TRUE,1857,2049893
-south carolina,2016,US Senate,Rebel Michael Scarborough,american,FALSE,11923,2049893
-south carolina,2016,US Senate,Thomas Dixon,green,FALSE,14872,2049893
-south dakota,2016,US Senate,John R. Thune,republican,FALSE,265516,369656
-south dakota,2016,US Senate,Jay Williams,democrat,FALSE,104140,369656
+south_carolina,2016,US Senate,Thomas Dixon,democrat,FALSE,704540,2049893
+south_carolina,2016,US Senate,Bill Bledsoe,libertarian,FALSE,24830,2049893
+south_carolina,2016,US Senate,Thomas Dixon,working families,FALSE,37610,2049893
+south_carolina,2016,US Senate,Bill Bledsoe,constitution,FALSE,12652,2049893
+south_carolina,2016,US Senate,Tim Scott,republican,FALSE,1241609,2049893
+south_carolina,2016,US Senate,NA,NA,TRUE,1857,2049893
+south_carolina,2016,US Senate,Rebel Michael Scarborough,american,FALSE,11923,2049893
+south_carolina,2016,US Senate,Thomas Dixon,green,FALSE,14872,2049893
+south_dakota,2016,US Senate,John R. Thune,republican,FALSE,265516,369656
+south_dakota,2016,US Senate,Jay Williams,democrat,FALSE,104140,369656
 utah,2016,US Senate,Mike Lee,republican,FALSE,760220,1115583
 utah,2016,US Senate,Bill Barron,none,FALSE,26166,1115583
 utah,2016,US Senate,Stoney Fonua,independent american,FALSE,27339,1115583
@@ -299,27 +299,27 @@ nevada,2018,US Senate,None of these Candidates,NA,FALSE,15303,972132
 nevada,2018,US Senate,Barry Michaels,independent,FALSE,9269,972132
 nevada,2018,US Senate,Tim Hagan,libertarian,FALSE,9196,972132
 nevada,2018,US Senate,Kamau A. Bakari,independent american,FALSE,7091,972132
-new jersey,2018,US Senate,Robert Menendez,democrat,FALSE,1711654,3169310
-new jersey,2018,US Senate,Bob Hugin,republican,FALSE,1357355,3169310
-new jersey,2018,US Senate,Madelyn R. Hoffman,green,FALSE,25150,3169310
-new jersey,2018,US Senate,Murray Sabrin,libertarian,FALSE,21212,3169310
-new jersey,2018,US Senate,Natalie Lynn Rivera,for the people,FALSE,19897,3169310
-new jersey,2018,US Senate,Tricia Flanagan,new day nj,FALSE,16101,3169310
-new jersey,2018,US Senate,Kevin Kimple,make it simple,FALSE,9087,3169310
-new jersey,2018,US Senate,Hank Schroeder,economic growth,FALSE,8854,3169310
-new mexico,2018,US Senate,Martin T Heinrich,democrat,FALSE,376998,697012
-new mexico,2018,US Senate,Gary E Johnson,libertarian,FALSE,107201,697012
-new mexico,2018,US Senate,Mick Rich,republican,FALSE,212813,697012
-new york,2018,US Senate,Kirsten E. Gillibrand,democrat,FALSE,3755489,6055151
-new york,2018,US Senate,Chele Chiavacci Farley,republican,FALSE,1730439,6055151
-new york,2018,US Senate,Chele Chiavacci Farley,conservative,FALSE,246171,6055151
-new york,2018,US Senate,Kirsten E. Gillibrand,working families,FALSE,160128,6055151
-new york,2018,US Senate,Kirsten E. Gillibrand,independence,FALSE,99325,6055151
-new york,2018,US Senate,Kirsten E. Gillibrand,women's equality,FALSE,41989,6055151
-new york,2018,US Senate,Chele Chiavacci Farley,reform,FALSE,21610,6055151
-north dakota,2018,US Senate,Kevin Cramer,republican,FALSE,179720,326138
-north dakota,2018,US Senate,Heidi Heitkamp,democratic-npl,FALSE,144376,326138
-north dakota,2018,US Senate,NA,NA,TRUE,2042,326138
+new_jersey,2018,US Senate,Robert Menendez,democrat,FALSE,1711654,3169310
+new_jersey,2018,US Senate,Bob Hugin,republican,FALSE,1357355,3169310
+new_jersey,2018,US Senate,Madelyn R. Hoffman,green,FALSE,25150,3169310
+new_jersey,2018,US Senate,Murray Sabrin,libertarian,FALSE,21212,3169310
+new_jersey,2018,US Senate,Natalie Lynn Rivera,for the people,FALSE,19897,3169310
+new_jersey,2018,US Senate,Tricia Flanagan,new day nj,FALSE,16101,3169310
+new_jersey,2018,US Senate,Kevin Kimple,make it simple,FALSE,9087,3169310
+new_jersey,2018,US Senate,Hank Schroeder,economic growth,FALSE,8854,3169310
+new_mexico,2018,US Senate,Martin T Heinrich,democrat,FALSE,376998,697012
+new_mexico,2018,US Senate,Gary E Johnson,libertarian,FALSE,107201,697012
+new_mexico,2018,US Senate,Mick Rich,republican,FALSE,212813,697012
+new_york,2018,US Senate,Kirsten E. Gillibrand,democrat,FALSE,3755489,6055151
+new_york,2018,US Senate,Chele Chiavacci Farley,republican,FALSE,1730439,6055151
+new_york,2018,US Senate,Chele Chiavacci Farley,conservative,FALSE,246171,6055151
+new_york,2018,US Senate,Kirsten E. Gillibrand,working families,FALSE,160128,6055151
+new_york,2018,US Senate,Kirsten E. Gillibrand,independence,FALSE,99325,6055151
+new_york,2018,US Senate,Kirsten E. Gillibrand,women's equality,FALSE,41989,6055151
+new_york,2018,US Senate,Chele Chiavacci Farley,reform,FALSE,21610,6055151
+north_dakota,2018,US Senate,Kevin Cramer,republican,FALSE,179720,326138
+north_dakota,2018,US Senate,Heidi Heitkamp,democratic-npl,FALSE,144376,326138
+north_dakota,2018,US Senate,NA,NA,TRUE,2042,326138
 ohio,2018,US Senate,Sherrod Brown,democrat,FALSE,2355923,4410898
 ohio,2018,US Senate,NA,NA,TRUE,1012,4410898
 ohio,2018,US Senate,Jim Renacci,republican,FALSE,2053963,4410898
@@ -327,9 +327,9 @@ pennsylvania,2018,US Senate,Robert P Casey Jr,democrat,FALSE,2777680,4994643
 pennsylvania,2018,US Senate,Louis J. Barletta,republican,FALSE,2134848,4994643
 pennsylvania,2018,US Senate,Neal Taylor Gale,green,FALSE,31208,4994643
 pennsylvania,2018,US Senate,Dale R Kerns Jr,libertarian,FALSE,50907,4994643
-rhode island,2018,US Senate,Sheldon Whitehouse,democrat,FALSE,231477,376738
-rhode island,2018,US Senate,"Robert G. Flanders, Jr.",republican,FALSE,144421,376738
-rhode island,2018,US Senate,NA,NA,TRUE,840,376738
+rhode_island,2018,US Senate,Sheldon Whitehouse,democrat,FALSE,231477,376738
+rhode_island,2018,US Senate,"Robert G. Flanders, Jr.",republican,FALSE,144421,376738
+rhode_island,2018,US Senate,NA,NA,TRUE,840,376738
 tennessee,2018,US Senate,Marsha Blackburn,republican,FALSE,1227483,2243740
 tennessee,2018,US Senate,Phil Bredesen,democrat,FALSE,985450,2243740
 tennessee,2018,US Senate,Trudy A. Austin,independent,FALSE,9455,2243740
@@ -362,9 +362,9 @@ virginia,2018,US Senate,Matt J. Waters,libertarian,FALSE,61565,3351373
 virginia,2018,US Senate,NA,NA,TRUE,5125,3351373
 washington,2018,US Senate,Maria Cantwell,democrat,FALSE,1803364,3086168
 washington,2018,US Senate,Susan Hutchison,republican,FALSE,1282804,3086168
-west virginia,2018,US Senate,Joe Manchin,democrat,FALSE,288808,582911
-west virginia,2018,US Senate,Patrick Morrisey,republican,FALSE,269872,582911
-west virginia,2018,US Senate,Rusty Hollen,libertarian,FALSE,24231,582911
+west_virginia,2018,US Senate,Joe Manchin,democrat,FALSE,288808,582911
+west_virginia,2018,US Senate,Patrick Morrisey,republican,FALSE,269872,582911
+west_virginia,2018,US Senate,Rusty Hollen,libertarian,FALSE,24231,582911
 wisconsin,2018,US Senate,Tammy Baldwin,democrat,FALSE,1472914,2657841
 wisconsin,2018,US Senate,Leah Vukmir,republican,FALSE,1184885,2657841
 wisconsin,2018,US Senate,NA,NA,TRUE,42,2657841
