@@ -113,11 +113,14 @@ LOAD DATA LOCAL INFILE 'relations/Education.txt' INTO TABLE Education FIELDS TER
 delimiter //
 DROP PROCEDURE IF EXISTS GetIncome //
 CREATE PROCEDURE GetIncome()
-BEGIN
-  SELECT state, avg(medianIncome) AS Average
-  FROM Socioeconomic, District 
-  WHERE Socioeconomic.districtID = District.districtID 
-  GROUP BY state;
-END;
+BEGIN  
+  SELECT state, Average, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, avg(medianIncome) AS Average, name, party
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes) as votes from Candidate group by electionID) as A on A.votes = Candidate.numOfVotes
+    WHERE Socioeconomic.districtID = District.districtID
+    AND District.districtID = Election.districtID 
+    AND Candidate.electionId = Election.electionID
+    GROUP BY Election.electionID) as B
+  GROUP BY state
+END
 //
 delimiter ;
