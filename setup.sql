@@ -114,10 +114,10 @@ delimiter //
 DROP PROCEDURE IF EXISTS GetIncome //
 CREATE PROCEDURE GetIncome()
 BEGIN
-  SELECT state, avg(medianIncome) AS Average_Income 
+  SELECT state, avg(medianIncome) AS Average
   FROM Socioeconomic, District 
   WHERE Socioeconomic.districtID = District.districtID 
   GROUP BY state;
 END;
 //
-delimiter;
+delimiter ;
