@@ -1,22 +1,20 @@
-window.onload = function () {
+function createGraph (x, y) {
 
 	var options = {
 		title: {
-			text: "Column Chart in jQuery CanvasJS"              
+			text: "Income"              
 		},
 		data: [              
 		{
 			type: "column",
-			dataPoints: [
-				{ label: "apple",  y: 10  },
-				{ label: "orange", y: 15  },
-				{ label: "banana", y: 25  },
-				{ label: "mango",  y: 30  },
-				{ label: "grape",  y: 28  }
-			]
+			dataPoints: []
 		}
 		]
 	};
+
+	for (var i =0; i < x.length; i++) {
+		options.data.dataPoints.push({lable: x[i], y: y[i]})
+	}
 
 	$("#chartContainer").CanvasJSChart(options);
 }
