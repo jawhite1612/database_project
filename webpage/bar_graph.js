@@ -1,6 +1,5 @@
 
 function createGraph(x, y) {
-    console.log(x);
     var options = {
 		title: {
 			text: "Income"              
