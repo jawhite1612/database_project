@@ -1,8 +1,9 @@
  <head>
-	<title>Income</title>
+ <title>Income</title>
  </head>
  <body>
 <script type="text/javascript" src="bar_graph.js"></script>
+<div id="chartContainer" style="height : 370px; width: 50%;"></div>
  <?php
 
 
@@ -29,7 +30,8 @@ if ($mysqli->multi_query("CALL GetIncome();")) {
     if ($result = $mysqli->store_result()) {
 
         $row = $result->fetch_row();
-
+	$x = array();
+	$y = array();
         // If the first row of result begins with 'ERROR: ', then our
         // stored procedure produced a relation that indicates error(s)
         if (strcmp($row[0], 'ERROR: ') == 0) {
@@ -46,13 +48,19 @@ if ($mysqli->multi_query("CALL GetIncome();")) {
 
             do {
                 for($i = 0; $i < sizeof($row); $i++){
-                    printf($row[$i]);
+		    if ($i%2 == 0) {
+                       array_push($x, $row[$i]);
+		    }
+		    else {
+		       array_push($y, $row[$i]);
+		    }
                 }
             } while($row = $result->fetch_row());
         }
         $result->close();
     }
-
+    echo "<script>console.log('$x')</script>";
+    echo "<script type='text/javascript'>createGraph('$x', '$y');</script>";
 // The "multi_query" call did not end successfully, so report the error
 // This might indicate we've called a stored procedure that does not exist,
 // or that database connection is broken
