@@ -120,7 +120,7 @@ BEGIN
     AND District.districtID = Election.districtID 
     AND Candidate.electionId = Election.electionID
     GROUP BY Election.electionID) as B
-  GROUP BY state
-END
+  GROUP BY state;
+END;
 //
 delimiter ;
