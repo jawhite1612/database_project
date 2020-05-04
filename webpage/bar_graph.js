@@ -1,5 +1,4 @@
 function getColor(i) {
-    0;136;0c
     if (i == 0) {
 	return 0;
     } else if (i > 0 && i < .5) {
@@ -19,6 +18,7 @@ function createGraph(x, y, r) {
 		title: {
 			text: "Income"              
 		},
+	        dataPointWidth: 20,
 		data: [              
 		    {
 			type: "column",
