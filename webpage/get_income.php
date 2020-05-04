@@ -45,7 +45,7 @@
         }
 
 	echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
-        echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y)."; var r = ".json_encode($r).";createGraph(x,y,r);</script>";
+        echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y)."; var r = ".json_encode($r).";createGraph(x,y,r,true);</script>";
 
     } else {
             printf("<br>Error: %s\n", $mysqli->error);
