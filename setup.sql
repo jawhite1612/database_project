@@ -124,3 +124,18 @@ BEGIN
 END;
 //
 delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetPovertyRate //
+CREATE PROCEDURE GetPovertyRate()
+BEGIN  
+  SELECT state, Average, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, avg(percentBelowPovertyLine) AS Average, name, party
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes) as votes from Candidate group by electionID) as A on A.votes = Candidate.numOfVotes
+    WHERE Socioeconomic.districtID = District.districtID
+    AND District.districtID = Election.districtID 
+    AND Candidate.electionId = Election.electionID
+    GROUP BY Election.electionID) as B
+  GROUP BY state;
+END;
+//
+delimiter ;
