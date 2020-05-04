@@ -7,7 +7,7 @@ function sort(x,y,r) {
 	var maxY = y[0];
 	var maxR = r[0];
 	var maxIndex = 0;
-	for (var i = 0; i < x.length; i++) {
+	for (var i = 0; i < y.length; i++) {
 	    if (y[i] > maxY) {
 		maxX = x[i];
 		maxY = y[i];
@@ -62,7 +62,7 @@ function createGraph(x, y, r, sorted) {
     
     for (var i =0; i < x.length; i++) {
 	if (parseInt(y[i]) > 0) {
-	    options.data[0].dataPoints.push({label: x[i], y: parseInt(y[i]), color: getColor(r[i])})
+	    options.data[0].dataPoints.push({label: x[i], x:i, y: parseInt(y[i]), color: getColor(r[i])})
 	}
     }
     console.log(options);
