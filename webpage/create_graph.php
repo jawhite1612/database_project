@@ -4,8 +4,8 @@
  <body>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-    <form action="get_income.php" method="POST">
-      <input list="options" name="options">
+    <form action="create_graph.php" method="POST">
+      <input list="options" name="options" autocomplete="off">
       <datalist id="options">
         <option value="GetIncome">
         <option value="GetPovertyRate">
