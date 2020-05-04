@@ -5,6 +5,14 @@
     <div id="chartContainer" style="height : 370px; width: 50%;"></div>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <form action="/get_income.php">
+      <input list="options" name="options">
+      <datalist id="options">
+        <option value="Get Income" name="GetIncome()">
+        <option value="Get Poverty Rate">
+      </datalist>
+      <input type="submit">
+    </form>
 <?php
 
     include 'open.php';
