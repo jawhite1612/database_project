@@ -1,3 +1,22 @@
+function createList(x, y, r) {
+	console.log(x);
+	for (var i = 0; i < x.length; i++) {
+		$("<tr></tr>", {
+			id: "row-" + i.toString()
+		}).appendTo("#table");
+
+		$("<td></td>", {
+			text: x[i]
+		}).appendTo("#row-"+i.toString());
+		$("<td></td>", {
+			text: parseFloat(y[i]).toFixed(2)
+		}).appendTo("#row-"+i.toString());
+		$("<td></td>", {
+			text: parseFloat(r[i]).toFixed(2)
+		}).appendTo("#row-"+i.toString());
+	}
+}
+
 function sortGraph(x,y,r, sortBy) {
     var tempX = []
     var tempY = []

@@ -1,5 +1,53 @@
 <head>
 <title>Income</title>
+<style> 
+
+    .data {
+        display: inline-block;
+    }
+
+    #chartContainer {
+        display: inline-block;
+    }
+
+    #tableContainer {
+        display: inline-block;
+        overflow: scroll;
+        overflow-x: hidden; 
+        
+    }
+
+    #tableContainer table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    form {
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+
+    td {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    th {
+        text-align: left
+    }
+</style>
  </head>
  <body>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
@@ -16,7 +64,19 @@
         <option value="Sort by Party">Sort By Party</option>
       </select>
     </form>
-    <div id="chartContainer" style="height : 370px; width: 50%;"></div>
+    <div class="container">
+        <div id="chartContainer" style="height : 370px; width: 50%;"></div>
+        <div id="tableContainer" style="height : 370px; width: 30%;">
+            <table id="table"> 
+                <tr>
+                    <th> State </th>
+                    <th> Value </th>
+                    <th> Ratio </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 <?php
     include 'open.php';
 
@@ -28,6 +88,7 @@
     $r = array();
     $option = $_POST['options'];
     $sort = $_POST['sort'];
+
     echo "<script>document.getElementById('options').value ='".$option."'</script>";
     echo "<script>document.getElementById('sort').value ='".$sort."'</script>";
     
@@ -36,11 +97,11 @@
     }else if ($sort == "Sort by Party") {
     	$sort = 2;
     } else {
-	$sort = 0;
+	   $sort = 0;
     }
+
     if ($mysqli->multi_query("CALL ".$option."();")) {
 
-        // Check if a result was returned after the call
         if ($result = $mysqli->store_result()) {
 
             $row = $result->fetch_row();
@@ -70,7 +131,15 @@
         }
 
 	echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
-    echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y)."; var r = ".json_encode($r)."; var sort = ".json_encode($sort)."; createGraph(x,y,r,sort);</script>";
+    echo "<script type='text/javascript'>";
+        echo "var x = ".json_encode($x).";";
+        echo "var y = ".json_encode($y).";";
+        echo "var r = ".json_encode($r).";";
+        echo "var sort = ".json_encode($sort).";";
+        echo "createList(x,y,r);";
+        echo "createGraph(x,y,r,sort);";
+    echo "</script>";
+
 
     } else {
             printf("Choose a graph above!");
