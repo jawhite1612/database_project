@@ -1,18 +1,31 @@
-function sort(x,y,r) {
+function sort(x,y,r, sortBy) {
+    console.log(r)
     var tempX = []
     var tempY = []
     var tempR = []
-    while (y.length > 0) {
+    var sort = []
+    
+    if (sortBy == 0) {
+	return [x, y, r];
+    } else if (sortBy == 1) {
+	sort = y;
+    } else if (sortBy == 2) {
+	sort = r;
+    }
+    
+    while (sort.length > 0) {
 	var maxX = x[0];
 	var maxY = y[0];
 	var maxR = r[0];
 	var maxIndex = 0;
-	for (var i = 0; i < y.length; i++) {
-	    if (y[i] > maxY) {
+	var sortMax = -1;
+	for (var i = 0; i < sort.length; i++) {
+	    if (parseFloat(sort[i]) > parseFloat(sortMax)) {
 		maxX = x[i];
 		maxY = y[i];
 		maxR = r[i];
 		maxIndex = i;
+		sortMax = sort[i];
 	    }
 	}
 	tempX.push(maxX);
@@ -21,6 +34,11 @@ function sort(x,y,r) {
 	x.splice(maxIndex,1);
 	y.splice(maxIndex,1);
 	r.splice(maxIndex,1);
+	if (sortBy == 1) {
+	    sort = y;
+	} else if (sortBy == 2) {
+	    sort = r;
+	}
     }
     return [tempX, tempY, tempR];
 }
@@ -39,15 +57,15 @@ function getColor(i) {
     }
 }
 
-function createGraph(x, y, r, sorted) {
-    if (sorted) {
-	var temp = sort(x, y, r);
+function createGraph(x, y, r, sort) {
+    if (sort >= 0) {
+	var temp = sort(x, y, r, sort);
 	x = temp[0];
 	y = temp[1];
 	r = temp[2];
     }
-    console.log(y);
     var options = {
+	animationEnabled: true,
 		title: {
 			text: "Income"              
 		},
@@ -62,7 +80,7 @@ function createGraph(x, y, r, sorted) {
     
     for (var i =0; i < x.length; i++) {
 	if (parseInt(y[i]) > 0) {
-	    options.data[0].dataPoints.push({label: x[i], x:i, y: parseInt(y[i]), color: getColor(r[i])})
+	    options.data[0].dataPoints.push({label: x[i], y: parseInt(y[i]), color: getColor(r[i])})
 	}
     }
     console.log(options);

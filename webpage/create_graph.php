@@ -10,6 +10,12 @@
         <option value="GetIncome">
         <option value="GetPovertyRate">
       </datalist>
+      <input list="sort" name="sort" autocomplete="off">
+      <datalist id="sort">
+      	<option value="Sort by Alpha">
+        <option value="Sort by Value">
+        <option value="Sort by Party">
+      </datalist>
       <input type="submit" name="submit">
     </form>
     <div id="chartContainer" style="height : 370px; width: 50%;"></div>
@@ -24,9 +30,18 @@
     $y = array();
     $r = array();
     $option = "";
+    $sort = "";
     if(isset($_POST['submit'])) {
     	$option = $_POST['options'];
+	$sort = $_POST['sort'];
     }
+    if ($sort == "Sort by Value") {
+       $sort = 1;
+    }else if ($sort == "Sort by Party") {
+    	  $sort = 1;
+	  } else {
+	  $sort = 0;
+}
     
     if ($mysqli->multi_query("CALL ".$option."();")) {
 
@@ -58,7 +73,7 @@
         }
 
 	echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
-        echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y)."; var r = ".json_encode($r).";createGraph(x,y,r,true);</script>";
+        echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y)."; var r = ".json_encode($r)."; var sort = ".json_encode($sort)>"; createGraph(x,y,r,true,sort);</script>";
 
     } else {
             printf("Choose a graph above!");
