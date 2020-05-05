@@ -31,17 +31,19 @@
     $r = array();
     $option = "";
     $sort = "";
+    
     if(isset($_POST['submit'])) {
-    	$option = $_POST['options'];
-	$sort = $_POST['sort'];
+        $option = $_POST['options'];
+        $sort = $_POST['sort'];
     }
+
     if ($sort == "Sort by Value") {
        $sort = 1;
     }else if ($sort == "Sort by Party") {
-    	  $sort = 1;
-	  } else {
-	  $sort = 0;
-}
+    	$sort = 2;
+    } else {
+	   $sort = 0;
+    }
     
     if ($mysqli->multi_query("CALL ".$option."();")) {
 
@@ -49,23 +51,25 @@
         if ($result = $mysqli->store_result()) {
 
             $row = $result->fetch_row();
-	    $turn = -1;
+            $turn = -1;
+            
             if (strcmp($row[0], 'ERROR: ') == 0) {
                 printf("ERROR!");
             } else {
+            
                 do {
 		   
                     for($i = 0; $i < sizeof($row); $i++){
-		    $turn = $turn + 1;
-		    	   if ($turn == 0) {
+                        $turn = $turn + 1;
+                        if ($turn == 0) {
                             array_push($x, $row[$i]);
             		    }
             		    else if ($turn == 1){
                             array_push($y, $row[$i]);
             		    } else {
-			    array_push($r, $row[$i]);
-			    $turn = -1;
-			    }
+                            array_push($r, $row[$i]);
+                            $turn = -1;
+                        }
                     }
                 } while($row = $result->fetch_row());
             }
@@ -73,7 +77,7 @@
         }
 
 	echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
-        echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y)."; var r = ".json_encode($r)."; var sort = ".json_encode($sort)>"; createGraph(x,y,r,true,sort);</script>";
+    echo "<script type='text/javascript'>var x = ".json_encode($x)."; var y = ".json_encode($y)."; var r = ".json_encode($r)."; var sort = ".json_encode($sort)>"; createGraph(x,y,r,true,sort);</script>";
 
     } else {
             printf("Choose a graph above!");
@@ -81,5 +85,5 @@
 
     mysqli_close($mysqli);
 
-     ?>
- </body>
+?>
+</body>
