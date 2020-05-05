@@ -1,5 +1,5 @@
 <head>
-0;136;0c<title>Income</title>
+<title>Income</title>
  </head>
  <body>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
@@ -30,7 +30,7 @@
     $sort = $_POST['sort'];
     echo "<script>document.getElementById('options').value ='".$option."'</script>";
     echo "<script>document.getElementById('sort').value ='".$sort."'</script>";
-    printf($sort);
+    
     if ($sort == "Sort by Value") {
        	$sort = 1;	
     }else if ($sort == "Sort by Party") {
