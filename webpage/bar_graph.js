@@ -1,5 +1,4 @@
-function sort(x,y,r, sortBy) {
-    console.log(r)
+function sortGraph(x,y,r, sortBy) {
     var tempX = []
     var tempY = []
     var tempR = []
@@ -57,9 +56,9 @@ function getColor(i) {
     }
 }
 
-function createGraph(x, y, r, sort) {
-    if (sort >= 0) {
-	var temp = sort(x, y, r, sort);
+function createGraph(x, y, r, s) {
+    if (s >= 0) {
+	var temp = sortGraph(x, y, r, s);
 	x = temp[0];
 	y = temp[1];
 	r = temp[2];
@@ -83,6 +82,5 @@ function createGraph(x, y, r, sort) {
 	    options.data[0].dataPoints.push({label: x[i], y: parseInt(y[i]), color: getColor(r[i])})
 	}
     }
-    console.log(options);
     $("#chartContainer").CanvasJSChart(options);
 }
