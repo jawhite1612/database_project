@@ -53,15 +53,25 @@
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <script type = "text/javascript" src="bar_graph.js"></script>
+    <script type="text/javascript">
+        function getInputsByValue(select, value)
+        {
+            var allInputs = document.getElementsByTagName("option");
+            var results = [];
+            for(var x=0;x<allInputs.length;x++)
+                if(allInputs[x].value == value)
+                    document.getElementById(select).value = allInputs[x].value;
+        }
+    </script>
     <form id="form" name='form' action="create_graph.php" method="POST">
-      <select id="options" name="options" onchange="this.form.submit()" value="GetIncome">
-        <option value="GetIncome">Get Income</option>
-        <option value="GetPovertyRate">Get Poverty Rate</option>
+      Value Type: <select id="options" name="options" onchange="this.form.submit()" value="GetIncome">
+        <option value="Income">Get Income</option>
+        <option value="PovertyRate">Get Poverty Rate</option>
       </select>
-      <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
-      	<option value="Sort by Alpha">Sort By Alpha</option>
-        <option value="Sort by Value">Sort By Value</option>
-        <option value="Sort by Party">Sort By Party</option>
+      Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
+      	<option value="0">Alpha</option>
+        <option value="1">Value</option>
+        <option value="2">Party</option>
       </select>
     </form>
     <div class="container">
@@ -86,21 +96,15 @@
     $x = array();
     $y = array();
     $r = array();
+
     $option = $_POST['options'];
     $sort = $_POST['sort'];
 
-    echo "<script>document.getElementById('options').value ='".$option."'</script>";
-    echo "<script>document.getElementById('sort').value ='".$sort."'</script>";
+    echo "<script>getInputsByValue('options','".$option."');</script>";
+    echo "<script>getInputsByValue('sort','".$sort."');</script>";
     
-    if ($sort == "Sort by Value") {
-       	$sort = 1;	
-    }else if ($sort == "Sort by Party") {
-    	$sort = 2;
-    } else {
-	   $sort = 0;
-    }
 
-    if ($mysqli->multi_query("CALL ".$option."();")) {
+    if ($mysqli->multi_query("CALL Get".$option."();")) {
 
         if ($result = $mysqli->store_result()) {
 
@@ -110,7 +114,6 @@
             if (strcmp($row[0], 'ERROR: ') == 0) {
                 printf("ERROR!");
             } else {
-            
                 do {
 		   
                     for($i = 0; $i < sizeof($row); $i++){
@@ -137,7 +140,7 @@
         echo "var r = ".json_encode($r).";";
         echo "var sort = ".json_encode($sort).";";
         echo "createList(x,y,r);";
-        echo "createGraph(x,y,r,sort);";
+        echo "createGraph(".json_encode($option).",x,y,r,sort);";
     echo "</script>";
 
 

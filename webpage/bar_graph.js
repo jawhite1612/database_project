@@ -1,5 +1,4 @@
 function createList(x, y, r) {
-	console.log(x);
 	for (var i = 0; i < x.length; i++) {
 		$("<tr></tr>", {
 			id: "row-" + i.toString()
@@ -75,7 +74,7 @@ function getColor(i) {
     }
 }
 
-function createGraph(x, y, r, s) {
+function createGraph(title, x, y, r, s) {
     if (s >= 0) {
 	var temp = sortGraph(x, y, r, s);
 	x = temp[0];
@@ -85,7 +84,7 @@ function createGraph(x, y, r, s) {
     var options = {
 	animationEnabled: true,
 		title: {
-			text: "Income"              
+			text: title              
 		},
 	        dataPointWidth: 7,
 		data: [              
