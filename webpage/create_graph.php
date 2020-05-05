@@ -35,7 +35,7 @@
 
     form {
         margin-left: 200px;
-        margin-top: 50px;
+        margin-top: 10px;
     }
 
     td {
@@ -47,13 +47,31 @@
     th {
         text-align: left
     }
+
+    #map {
+        margin-top: 20px;
+        margin: auto;
+        margin-bottom: -100px;
+    }
 </style>
  </head>
  <body>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <script type = "text/javascript" src="bar_graph.js"></script>
+    <script src="../map/lib/raphael.js"></script>
+    <script src="../map/us-map.js"></script>
     <script type="text/javascript">
+
+        $(document).ready(function() {
+             $('#map').usmap({
+              click: function(event, data) {
+                console.log(data.name);
+              }
+            });
+        });
+
+
         function getInputsByValue(select, value)
         {
             var allInputs = document.getElementsByTagName("option");
@@ -62,7 +80,9 @@
                 if(allInputs[x].value == value)
                     document.getElementById(select).value = allInputs[x].value;
         }
+
     </script>
+    <div id="map" style="width: 300px; height: 300px;"></div>
     <form id="form" name='form' action="create_graph.php" method="POST">
       Value Type: <select id="options" name="options" onchange="this.form.submit()" value="GetIncome">
         <option value="Income">Get Income</option>
@@ -85,8 +105,9 @@
                 </tr>
             </table>
         </div>
-    </div>
 
+    </div>
+    <p>Add some information about the data here!</p>
 <?php
     include 'open.php';
 
