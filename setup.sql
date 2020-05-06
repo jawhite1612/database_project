@@ -113,9 +113,10 @@ LOAD DATA LOCAL INFILE 'relations/Education.txt' INTO TABLE Education FIELDS TER
 delimiter //
 DROP PROCEDURE IF EXISTS GetIncome //
 CREATE PROCEDURE GetIncome()
-BEGIN  
+BEGIN 
   SELECT state, Average, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, avg(medianIncome) AS Average, name, party
-    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes) as votes from Candidate group by electionID) as A on A.votes = Candidate.numOfVotes
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes) as votes, electionID from Candidate group by electionID) as A 
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
     WHERE Socioeconomic.districtID = District.districtID
     AND District.districtID = Election.districtID 
     AND Candidate.electionId = Election.electionID
@@ -126,16 +127,49 @@ END;
 delimiter ;
 
 delimiter //
+DROP PROCEDURE IF EXISTS GetStateIncome //
+CREATE PROCEDURE GetStateIncome(IN s VARCHAR(40))
+BEGIN 
+  SELECT districtId, medianIncome, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, medianIncome, name, party, votes
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A 
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Socioeconomic.districtID = District.districtID
+    AND District.districtID = Election.districtID 
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
 DROP PROCEDURE IF EXISTS GetPovertyRate //
 CREATE PROCEDURE GetPovertyRate()
-BEGIN  
+BEGIN 
   SELECT state, Average, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, avg(percentBelowPovertyLine) AS Average, name, party
-    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes) as votes from Candidate group by electionID) as A on A.votes = Candidate.numOfVotes
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes) as votes, electionID from Candidate group by electionID) as A 
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
     WHERE Socioeconomic.districtID = District.districtID
     AND District.districtID = Election.districtID 
     AND Candidate.electionId = Election.electionID
     GROUP BY Election.electionID) as B
   GROUP BY state;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStatePovertyRate //
+CREATE PROCEDURE GetStatePovertyRate(IN s VARCHAR(40))
+BEGIN 
+  SELECT districtId, percentBelowPovertyLine, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentBelowPovertyLine, name, party, votes
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A 
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Socioeconomic.districtID = District.districtID
+    AND District.districtID = Election.districtID 
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
 END;
 //
 delimiter ;

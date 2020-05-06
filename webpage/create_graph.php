@@ -62,23 +62,111 @@
     <script src="../map/lib/raphael.js"></script>
     <script src="../map/us-map.js"></script>
     <script type="text/javascript">
+        var states = {
+            'AK': 'Alaska',
+            'AL': 'Alabama',
+            'AR': 'Arkansas',
+            'AZ': 'Arizona',
+            'CA': 'California',
+            'CO': 'Colorado',
+            'CT': 'Connecticut',
+            'DC': 'District of Columbia',
+            'DE': 'Delaware',
+            'FL': 'Florida',
+            'GA': 'Georgia',
+            'HI': 'Hawaii',
+            'IA': 'Iowa',
+            'ID': 'Idaho',
+            'IL': 'Illinois',
+            'IN': 'Indiana',
+            'KS': 'Kansas',
+            'KY': 'Kentucky',
+            'LA': 'Louisiana',
+            'MA': 'Massachusetts',
+            'MD': 'Maryland',
+            'ME': 'Maine',
+            'MI': 'Michigan',
+            'MN': 'Minnesota',
+            'MO': 'Missouri',
+            'MS': 'Mississippi',
+            'MT': 'Montana',
+            'NA(Avg)': 'National (Average)',
+            'NA(All)': 'National (All)',
+            'NC': 'North Carolina',
+            'ND': 'North Dakota',
+            'NE': 'Nebraska',
+            'NH': 'New Hampshire',
+            'NJ': 'New Jersey',
+            'NM': 'New Mexico',
+            'NV': 'Nevada',
+            'NY': 'New York',
+            'OH': 'Ohio',
+            'OK': 'Oklahoma',
+            'OR': 'Oregon',
+            'PA': 'Pennsylvania',
+            'PR': 'Puerto Rico',
+            'RI': 'Rhode Island',
+            'SC': 'South Carolina',
+            'SD': 'South Dakota',
+            'TN': 'Tennessee',
+            'TX': 'Texas',
+            'UT': 'Utah',
+            'VA': 'Virginia',
+            'VT': 'Vermont',
+            'WA': 'Washington',
+            'WI': 'Wisconsin',
+            'WV': 'West Virginia',
+            'WY': 'Wyoming'
+        }
 
         $(document).ready(function() {
              $('#map').usmap({
               click: function(event, data) {
-                console.log(data.name);
+                var option = $('#state').val(states[data.name].toLowerCase().replace(" ", "_"));
+                $("#stateAbrev").val(data.name);
+                $('#form').submit();
               }
             });
+
         });
 
+        function addStates() {
+            var stateNames = [];
+            stateNames.push('National (All)');
+            stateNames.push('National (Average)');
+            for (var key in states) {
+                if (key != "NA(Avg)" && key !== "NA(All)") {
+                        stateNames.push(states[key]);
+                    }
+            }
+            console.log(stateNames)
+            for (var state in stateNames) {
+                $("<option></option>", {
+                    text: stateNames[state],
+                    value: stateNames[state]
+                }).appendTo("#stateSelect");
+            }
+        }
 
         function getInputsByValue(select, value)
         {
             var allInputs = document.getElementsByTagName("option");
             var results = [];
             for(var x=0;x<allInputs.length;x++)
-                if(allInputs[x].value == value)
+                if(allInputs[x].value == value) {
                     document.getElementById(select).value = allInputs[x].value;
+                }
+        }
+
+        function changeState() {
+            var state = $('#stateSelect').val();
+            for (var key in states) {
+                if (states[key] == state) {
+                    var option = $('#state').val(states[key].toLowerCase().replace(" ", "_"));
+                    $("#stateAbrev").val(key);
+                    $('#form').submit();
+                }
+            }
         }
 
     </script>
@@ -89,11 +177,15 @@
         <option value="PovertyRate">Get Poverty Rate</option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
-      	<option value="0">Alpha</option>
+      	<option value="0" id="Alpha">Alpha</option>
         <option value="1">Value</option>
         <option value="2">Party</option>
       </select>
-    </form>
+      <input id="state" name="state" style='display: none'>
+      <input id="stateAbrev" name="stateAbrev" style='display: none'>
+      State: <select id="stateSelect" name="states" onchange="changeState()" value ="National (All)">
+      </select>
+    </form> 
     <div class="container">
         <div id="chartContainer" style="height : 370px; width: 50%;"></div>
         <div id="tableContainer" style="height : 370px; width: 30%;">
@@ -108,6 +200,7 @@
 
     </div>
     <p>Add some information about the data here!</p>
+
 <?php
     include 'open.php';
 
@@ -120,12 +213,30 @@
 
     $option = $_POST['options'];
     $sort = $_POST['sort'];
+    $state = $_POST['state'];
+    $abrev = $_POST['stateAbrev'];
+    $temp_option = $option;
 
-    echo "<script>getInputsByValue('options','".$option."');</script>";
-    echo "<script>getInputsByValue('sort','".$sort."');</script>";
+    echo "<script>";
+        echo "getInputsByValue('options','".$option."');";
+        echo "getInputsByValue('sort','".$sort."');";
+        echo "addStates();";
+        echo "document.getElementById('state').value = '".$state."';";
+        echo "document.getElementById('stateAbrev').value = '".$abrev."';";
+        echo "document.getElementById('stateSelect').value = states['".$abrev."'];";
+        echo "if ($('#stateSelect').val() == 'National (All)') { $('#Alpha').css('display','none');";
+        echo "if ($('#sort').val() == 0) { $('#sort').val('1')}}";
+    echo "</script>";
     
+    if ($abrev != "NA(Avg)" && $abrev != "NA(All)") {
+         $option = 'State'.$option."('".$state."%')"; 
+    } else if ($abrev == 'NA(Avg)') {
+          $option = $option."()";
+    } else if ($abrev == 'NA(All)') {
+         $option = 'State'.$option."('%')";   
+    }
 
-    if ($mysqli->multi_query("CALL Get".$option."();")) {
+    if ($mysqli->multi_query("CALL Get".$option.";")) {
 
         if ($result = $mysqli->store_result()) {
 
@@ -154,14 +265,21 @@
             $result->close();
         }
 
+    if (strpos('national', $state) === false)  {
+         $option = $temp_option." (".$abrev.")";  
+    } else {
+         $option = $temp_option." ".$state."";  
+    }
+
 	echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
     echo "<script type='text/javascript'>";
         echo "var x = ".json_encode($x).";";
         echo "var y = ".json_encode($y).";";
         echo "var r = ".json_encode($r).";";
         echo "var sort = ".json_encode($sort).";";
-        echo "createList(x,y,r);";
-        echo "createGraph(".json_encode($option).",x,y,r,sort);";
+        echo "var state = ".json_encode($state).";";
+        echo "createList(state, x,y,r);";
+        echo "createGraph(".json_encode($option).",state,x,y,r,sort);";
     echo "</script>";
 
 
