@@ -7,13 +7,13 @@
     }
 
     #chartContainer {
-        display: inline-block;
+
     }
 
     #tableContainer {
-        display: inline-block;
         overflow: scroll;
         overflow-x: hidden; 
+        margin-top: 80px;
         
     }
 
@@ -22,6 +22,7 @@
         align-items: center;
         justify-content: center;
         margin: auto;
+        margin-left: 50px;
 
     }
 
@@ -30,12 +31,13 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin: auto;
+        margin-left: auto;
     }
 
     form {
         margin-left: 200px;
-        margin-top: 10px;
+        margin-top: 80px;
+        margin-bottom: -70px;
     }
 
     td {
@@ -49,10 +51,16 @@
     }
 
     #map {
-        margin-top: 20px;
-        margin: auto;
-        margin-bottom: -100px;
+        margin-top: 50px;
+        margin-bottom: -200px;
+        margin-left: 175px;
     }
+
+ .container2 {
+    margin-bottom: 150px;
+    margin-left: -50px;
+ }
+
 </style>
  </head>
  <body>
@@ -170,9 +178,8 @@
         }
 
     </script>
-    <div id="map" style="width: 300px; height: 300px;"></div>
     <form id="form" name='form' action="create_graph.php" method="POST">
-      Value Type: <select id="options" name="options" onchange="this.form.submit()" value="GetIncome">
+      Value Type: <select id="options" name="options" onchange="this.form.submit()" value="Income">
         <option value="Income">Get Income</option>
         <option value="PovertyRate">Get Poverty Rate</option>
       </select>
@@ -181,14 +188,16 @@
         <option value="1">Value</option>
         <option value="2">Party</option>
       </select>
-      <input id="state" name="state" style='display: none'>
-      <input id="stateAbrev" name="stateAbrev" style='display: none'>
-      State: <select id="stateSelect" name="states" onchange="changeState()" value ="National (All)">
+      <input id="state" name="state" style='display: none' value = "national_(average)">
+      <input id="stateAbrev" name="stateAbrev" style='display: none' value = "NA(Avg)" >
+      State: <select id="stateSelect" name="states" onchange="changeState()" value ="National (Average)">
       </select>
     </form> 
     <div class="container">
-        <div id="chartContainer" style="height : 370px; width: 50%;"></div>
-        <div id="tableContainer" style="height : 370px; width: 30%;">
+        <div id="chartContainer" style="height : 500px; width: 900px;"></div>
+        <div class="container2">
+        <div id="map" style="width: 50%; height: 300px;"></div>
+        <div id="tableContainer" style="height : 370px; width: 500px;">
             <table id="table"> 
                 <tr>
                     <th> State </th>
@@ -197,7 +206,7 @@
                 </tr>
             </table>
         </div>
-
+    </div>
     </div>
     <p>Add some information about the data here!</p>
 
