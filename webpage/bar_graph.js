@@ -88,18 +88,19 @@ function getColor(i) {
 }
 
 function createGraph(title, state, x, y, r, s) {
+    var width;
     if (x.length < 5) {
-        var width = 55;
+        width = 55;
     } else if (x.length < 10) {
-	var width = 45;
+	width = 45;
     } else if (x.length < 20) {
-        var width = 35;
+        width = 35;
     } else if (x.length < 30) {
-        var width = 25;
+	width = 25;
     } else if (x.length < 40) {
-        var width = 15;
+        width = 15;
     } else {
-        var width = 10;
+        width = 10;
     }
     if (state == 'national_(all)') {
     	width = 1;
