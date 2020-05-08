@@ -70,6 +70,7 @@
     <script src="../map/lib/raphael.js"></script>
     <script src="../map/us-map.js"></script>
     <script type="text/javascript">
+
         var states = {
             'AK': 'Alaska',
             'AL': 'Alabama',
@@ -128,15 +129,55 @@
         }
 
         $(document).ready(function() {
+
              $('#map').usmap({
               click: function(event, data) {
                 var option = $('#state').val(states[data.name].toLowerCase().replace(" ", "_"));
                 $("#stateAbrev").val(data.name);
-                $('#form').submit();
-              }
+                $('#form').submit()
+              },
             });
-
         });
+
+        function getStateColor(y, min, max, good) {
+            var diff = max - min;
+            var ratio = ((y - min)/diff)
+            var color = '';
+            if (ratio > .5) {
+                color = "green";
+            } else {
+                color = "red";
+                ratio = 1 - ratio;
+            }
+            return {fill: color, opacity:  ratio}
+        }
+
+        function setStateColors(x, y, r) {
+            var stateValues = {}
+            var minVal  = Number.MAX_VALUE;
+            var maxVal = Number.MIN_VALUE;
+            for (var i = 0; i < x.length; i++) {
+                stateValues[x[i]] = y[i];
+                minVal = minVal > y[i] ? y[i] : minVal;
+                maxVal = maxVal < y[i] ? y[i] : maxVal;
+            }
+
+
+            var stateColors = {}
+            for (var key in states) {
+                if (!key.includes('NA')) {
+                    stateColors[key] = getStateColor(stateValues[states[key]], minVal, maxVal);
+                }
+            }
+            $('#map').usmap({
+              stateSpecificStyles:stateColors,
+              click: function(event, data) {
+                var option = $('#state').val(states[data.name].toLowerCase().replace(" ", "_"));
+                $("#stateAbrev").val(data.name);
+                $('#form').submit()
+              },
+            });    
+        }
 
         function addStates() {
             var stateNames = [];
@@ -147,7 +188,6 @@
                         stateNames.push(states[key]);
                     }
             }
-            console.log(stateNames)
             for (var state in stateNames) {
                 $("<option></option>", {
                     text: stateNames[state],
@@ -190,7 +230,6 @@
             stateAverages[prev] = [];
             stateAverages[prev][0] = 0;
             stateAverages[prev][1] = 0;
-            console.log(stateAverages[prev]);
             tempX[0] = prev;
             for (var i = 0; i < x.length; i++) {
                 
@@ -268,10 +307,6 @@
     ini_set('error_reporting', E_ALL); // report errors of all types
     ini_set('display_errors', true);   // report errors to screen (don't hide from user)
 
-    $x = array();
-    $y = array();
-    $r = array();
-
     $option = $_POST['options'];
     $sort = $_POST['sort'];
     $state = $_POST['state'];
@@ -288,50 +323,74 @@
         echo "if ($('#stateSelect').val() == 'National (All)') { $('#Alpha').css('display','none');";
         echo "if ($('#sort').val() == 0) { $('#sort').val('1')}}";
     echo "</script>";
-    
-    if ($abrev != "NA(Avg)" && $abrev != "NA(All)") {
-         $option = 'State'.$option."('".$state."%')"; 
-    } else {
-         $option = 'State'.$option."('%')";   
+
+    $x = array();
+    $y = array();
+    $r = array();
+
+    if ($abrev == "NA(Avg)" || $abrev == "NA(All)") {
+        $state = "";
     }
+    $queryNum = 0;
+    if ($mysqli->multi_query('CALL GetState'.$option."('%'); CALL GetState".$option."('".$state."%')")) {
+        do {
+            if ($result = $mysqli->store_result()) {
 
-    if ($mysqli->multi_query("CALL Get".$option.";")) {
-
-        if ($result = $mysqli->store_result()) {
-
-            $row = $result->fetch_row();
-            $turn = -1;
-            
-            if (strcmp($row[0], 'ERROR: ') == 0) {
-                printf("ERROR!");
-            } else {
-                do {
-		   
-                    for($i = 0; $i < sizeof($row); $i++){
-                        $turn = $turn + 1;
-                        if ($turn == 0) {
-                            array_push($x, $row[$i]);
-            		    }
-            		    else if ($turn == 1){
-                            array_push($y, $row[$i]);
-            		    } else {
-                            array_push($r, $row[$i]);
-                            $turn = -1;
+                $row = $result->fetch_row();
+                
+                if (strcmp($row[0], 'ERROR: ') == 0) {
+                    printf("ERROR!");
+                } else {
+                    do {
+                        for($i = 0; $i < sizeof($row); $i++){
+                            if ($i == 0) {
+                                array_push($x, $row[$i]);
+                            }
+                            else if ($i == 1){
+                                array_push($y, $row[$i]);
+                            } else if ($i == 2) {
+                                array_push($r, $row[$i]);
+                            }
                         }
-                    }
-                } while($row = $result->fetch_row());
+                    } while($row = $result->fetch_row());
+                }
+                $result->close();
             }
-            $result->close();
-        }
 
-    if (strpos('national', $state) === false)  {
-         $option = $temp_option." (".$abrev.")";  
+            if ($queryNum == 0) {
+                echo "<script>";
+                    echo "var x = ".json_encode($x).";";
+                    echo "var y = ".json_encode($y).";";
+                    echo "var r = ".json_encode($r).";";
+                    echo "var temp = getAverage(x,y,r);"; 
+                    echo "x = temp[0];"; 
+                    echo "y = temp[1];"; 
+                    echo "r = temp[2];";
+                    echo "setStateColors(x, y, r)";
+                echo "</script>";
+                $x = array();
+                $y = array();
+                $r = array();
+            } 
+            
+            $queryNum +=1;
+
+        } while ($mysqli->next_result());
     } else {
-         $option = $temp_option." ".$state."";  
+        printf("Choose a graph above!");
     }
 
-	echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
+    mysqli_close($mysqli);
+    
+    if (strpos('national', $state) === false)  {
+            $option = $temp_option." (".$abrev.")";  
+        } else {
+            $option = $temp_option." ".$state."";  
+    }
+
+    echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
     echo "<script type='text/javascript'>";
+        echo "console.log(".json_encode($x).");";
         echo "var x = ".json_encode($x).";";
         echo "var y = ".json_encode($y).";";
         echo "var r = ".json_encode($r).";";
@@ -346,12 +405,5 @@
         echo "createList(state, x,y,r);";
         echo "createGraph(".json_encode($option).",state,x,y,r,sort);";
     echo "</script>";
-
-
-    } else {
-            printf("Choose a graph above!");
-    }
-
-    mysqli_close($mysqli);
 ?>
 </body>
