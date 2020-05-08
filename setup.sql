@@ -144,7 +144,7 @@ delimiter ;
 
 delimiter //
 DROP PROCEDURE IF EXISTS GetStateUnemploymentRate //
-CREATE PROCEDURE GetStatePovertyRate(IN s VARCHAR(40))
+CREATE PROCEDURE GetStateUnemploymentRate(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, unemploymentRate, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, unemploymentRate, name, party, votes
     FROM Workers, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
@@ -160,7 +160,7 @@ delimiter ;
 
 delimiter //
 DROP PROCEDURE IF EXISTS GetPercentHighSchoolOrHigher //
-CREATE PROCEDURE GetStatePovertyRate(IN s VARCHAR(40))
+CREATE PROCEDURE GetPercentHighSchoolOrHigher(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, percentHighSchoolOrHigher, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentHighSchoolOrHigher, name, party, votes
     FROM Education, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
@@ -176,7 +176,7 @@ delimiter ;
 
 delimiter //
 DROP PROCEDURE IF EXISTS GetPercentBachelorsOrHigher //
-CREATE PROCEDURE GetStatePovertyRate(IN s VARCHAR(40))
+CREATE PROCEDURE GetPercentBachelorsOrHigher(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, percentBachelorsOrHigher, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentBachelorsOrHigher, name, party, votes
     FROM Education, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
