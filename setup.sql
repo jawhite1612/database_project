@@ -113,12 +113,12 @@ LOAD DATA LOCAL INFILE 'relations/Education.txt' INTO TABLE Education FIELDS TER
 delimiter //
 DROP PROCEDURE IF EXISTS GetStateIncome //
 CREATE PROCEDURE GetStateIncome(IN s VARCHAR(40))
-BEGIN 
+BEGIN
   SELECT districtId, medianIncome, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, medianIncome, name, party, votes
-    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A 
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
     ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
     WHERE Socioeconomic.districtID = District.districtID
-    AND District.districtID = Election.districtID 
+    AND District.districtID = Election.districtID
     AND Candidate.electionId = Election.electionID
     AND District.districtID LIKE s) as B
   GROUP BY districtId;
@@ -126,16 +126,63 @@ END;
 //
 delimiter ;
 
-
 delimiter //
 DROP PROCEDURE IF EXISTS GetStatePovertyRate //
 CREATE PROCEDURE GetStatePovertyRate(IN s VARCHAR(40))
-BEGIN 
+BEGIN
   SELECT districtId, percentBelowPovertyLine, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentBelowPovertyLine, name, party, votes
-    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A 
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
     ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
     WHERE Socioeconomic.districtID = District.districtID
-    AND District.districtID = Election.districtID 
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStateUnemploymentRate //
+CREATE PROCEDURE GetStateUnemploymentRate(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, unemploymentRate, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, unemploymentRate, name, party, votes
+    FROM Workers, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Workers.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetPercentHighSchoolOrHigher //
+CREATE PROCEDURE GetPercentHighSchoolOrHigher(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, percentHighSchoolOrHigher, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentHighSchoolOrHigher, name, party, votes
+    FROM Education, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Education.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetPercentBachelorsOrHigher //
+CREATE PROCEDURE GetPercentBachelorsOrHigher(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, percentBachelorsOrHigher, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentBachelorsOrHigher, name, party, votes
+    FROM Education, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Education.districtID = District.districtID
+    AND District.districtID = Election.districtID
     AND Candidate.electionId = Election.electionID
     AND District.districtID LIKE s) as B
   GROUP BY districtId;
