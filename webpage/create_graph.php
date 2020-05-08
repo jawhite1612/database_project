@@ -177,6 +177,58 @@
             }
         }
 
+        function getAverage(x, y, r) {
+
+            var prev = x[0].substring(0, x[0].indexOf('1'));
+            var stateAverages = {}
+            var districtCount = 0;
+
+            var tempX = []
+            var tempY = []
+            var tempR = []
+
+            stateAverages[prev] = [];
+            stateAverages[prev][0] = 0;
+            stateAverages[prev][1] = 0;
+            console.log(stateAverages[prev]);
+            tempX[0] = prev;
+            for (var i = 0; i < x.length; i++) {
+                
+                if (x[i] == "districtID") {
+                    continue;
+                }
+
+                if (x[i].includes(prev) == false) {
+                    tempY.push(parseInt(stateAverages[prev][0] / districtCount));
+                    tempR.push(parseFloat(stateAverages[prev][1] / districtCount));
+
+                    prev = x[i].substring(0, x[i].indexOf('1'));
+                    tempX.push(prev);
+
+                    districtCount = 0;
+                    stateAverages[prev]  = [];
+                    stateAverages[prev][0] = 0;
+                    stateAverages[prev][1] = 0;
+                }
+
+                stateAverages[prev][0] += parseFloat(y[i]);
+                stateAverages[prev][1] += parseFloat(r[i]);
+                districtCount += 1;
+            }
+            tempY.push(parseInt(stateAverages[prev][0] / districtCount));
+            tempR.push(parseFloat(stateAverages[prev][1] / districtCount));
+
+            for (var i = 0; i < tempX.length; i++) {
+                var splitStr = tempX[i].replace("_", " ").toLowerCase().split(' ');
+                for (var j = 0; j < splitStr.length; j++) {
+                   splitStr[j] = splitStr[j].charAt(0).toUpperCase() + splitStr[j].substring(1);     
+                }
+                tempX[i] = splitStr.join(' '); 
+            }
+
+            return [tempX, tempY, tempR];
+        }
+
     </script>
     <form id="form" name='form' action="create_graph.php" method="POST">
       Value Type: <select id="options" name="options" onchange="this.form.submit()" value="Income">
@@ -239,9 +291,7 @@
     
     if ($abrev != "NA(Avg)" && $abrev != "NA(All)") {
          $option = 'State'.$option."('".$state."%')"; 
-    } else if ($abrev == 'NA(Avg)') {
-          $option = $option."()";
-    } else if ($abrev == 'NA(All)') {
+    } else {
          $option = 'State'.$option."('%')";   
     }
 
@@ -287,6 +337,12 @@
         echo "var r = ".json_encode($r).";";
         echo "var sort = ".json_encode($sort).";";
         echo "var state = ".json_encode($state).";";
+        if ($abrev == 'NA(Avg)') {
+           echo "var temp = getAverage(x,y,r);"; 
+           echo "x = temp[0];"; 
+           echo "y = temp[1];"; 
+           echo "r = temp[2];"; 
+        }
         echo "createList(state, x,y,r);";
         echo "createGraph(".json_encode($option).",state,x,y,r,sort);";
     echo "</script>";
