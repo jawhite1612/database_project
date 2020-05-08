@@ -88,7 +88,19 @@ function getColor(i) {
 }
 
 function createGraph(title, state, x, y, r, s) {
-	 var width = 7;
+    if (x.length < 5) {
+        var width = 55;
+    } else if (x.length < 10) {
+	var width = 45;
+    } else if (x.length < 20) {
+        var width = 35;
+    } else if (x.length < 30) {
+        var width = 25;
+    } else if (x.length < 40) {
+        var width = 15;
+    } else {
+        var width = 10;
+    }
     if (state == 'national_(all)') {
     	width = 1;
     	s = s == 0 ? 1 : s;
@@ -115,7 +127,7 @@ function createGraph(title, state, x, y, r, s) {
     }
     for (var i =0; i < x.length; i++) {
 		if (parseInt(y[i]) > 0) {
-		    options.data[0].dataPoints.push({label: x[i], x: (state != 'national_(all)' && state != 'national_(average)' && state && s == 0) ? parseInt(x[i].substring(state.length)) - 1 : i, y: parseInt(y[i]), color: getColor(r[i])})
+		    options.data[0].dataPoints.push({label: x[i], x: (state != 'national_(all)' && state != 'national_(average)' && state && s == 0) ? parseInt(x[i].substring(state.length)) - 1 : i, y: parseFloat(y[i]), color: getColor(r[i])})
 		}
     }
     $("#chartContainer").CanvasJSChart(options);
