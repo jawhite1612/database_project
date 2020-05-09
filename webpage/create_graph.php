@@ -143,13 +143,7 @@
             var diff = max - min;
             var ratio = ((y - min)/diff)
             var color = '';
-            if (ratio > .5) {
-                color = "green";
-            } else {
-                color = "red";
-                ratio = 1 - ratio;
-            }
-            return {fill: color, opacity:  ratio}
+            return {fill: "green", opacity: ((ratio - .005) / .995)}
         }
 
         function setStateColors(x, y, r) {
