@@ -231,7 +231,7 @@
     <div class="container">
         <div id="chartContainer" style="height : 500px; width: 900px;"></div>
         <div class="container2">
-        <div id="map" style="width: 50%; height: 300px;"></div>
+        <div id="map" style="width: 300px; height: 300px;"></div>
         <div id="tableContainer" style="height : 370px; width: 500px;">
             <table id="table"> 
                 <tr>
@@ -287,7 +287,7 @@
         require_once('pie_graph.php');
         echo "<script>";
             echo "$('#tableContainer').css('display', 'none');";
-            echo "$('#map').css('display', 'none');";
+            //echo "$('#map').css('display', 'none');";
             echo "$('#sort').css('display', 'none');";
             echo "$('#sortLabel').css('display', 'none');";
             echo "$('#chartContainer').css('margin-top', '100px');";
@@ -351,7 +351,6 @@
 
         echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
         echo "<script type='text/javascript'>";
-            echo "console.log(".json_encode($x).");";
             echo "var x = ".json_encode($x).";";
             echo "var y = ".json_encode($y).";";
             echo "var r = ".json_encode($r).";";

@@ -1,3 +1,44 @@
+function getStatePartyColor(i, min, max) {
+    if (i == 0) {
+		return "red";
+    } else if (i > 0 && i < .5) {
+		return "#f57a7a";
+    } else if (i == .5) {
+		return "yellow";
+    } else if (i > .5 && i < 1) {
+		return "#7b7bed";
+    } else if (i == 1) {
+		return "blue";
+    }
+}
+
+function setStatePartyColors(x, r) {
+ 	var stateValues = {}
+    var minVal  = Number.MAX_VALUE;
+    var maxVal = Number.MIN_VALUE;
+    for (var i = 0; i < x.length; i++) {
+        stateValues[x[i]] = r[i];
+        minVal = minVal > r[i] ? r[i] : minVal;
+        maxVal = maxVal < r[i] ? r[i] : maxVal;
+    }
+
+    var stateColors = {}
+    for (var key in states) {
+        if (!key.includes('NA')) {
+            stateColors[key] = {fill: getStatePartyColor(stateValues[states[key]], minVal, maxVal)};
+        }
+    }
+
+    $('#map').usmap({
+      stateSpecificStyles:stateColors,
+      click: function(event, data) {
+        var option = $('#state').val(states[data.name].toLowerCase().replace(" ", "_"));
+        $("#stateAbrev").val(data.name);
+        $('#form').submit()
+      },
+    });    
+}
+
 function createPieGraph(x) {
 	
 	rawData = []
@@ -31,7 +72,7 @@ function createPieGraph(x) {
 	},
 	data: [{
 			type: "pie",
-			startAngle: 0,
+			startAngle: 45,
 			showInLegend: "true",
 			legendText: "{label} (#percent%)",
 			indexLabel: "{label} ({y})",
@@ -51,12 +92,12 @@ function createPieGraph(x) {
 	)
 
 	options.data[0].dataPoints.sort(function (a, b) {
-		console.log(a.y)
 		return a.y < b.y ? 1 : -1;
 	})
 
-	console.log(options.data[0].dataPoints)
 
 	$("#chartContainer").CanvasJSChart(options);
-
+	$("<div></div>", {
+		text: ratioAverage
+	}).appendTo("body");
 }
