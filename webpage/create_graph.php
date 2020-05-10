@@ -265,14 +265,17 @@
     </script>
     <form id="form" name='form' action="create_graph.php" method="POST">
       Value Type: <select id="options" name="options" onchange="this.form.submit()" value="Income">
-        <option value="Income">Get Income</option>
-        <option value="PovertyRate">Get Poverty Rate</option>
+        <option value="MedianIncome">Get Median Income</option>
+	<option value="PovertyRate">Get Poverty Rate</option>
         <option value="UnemploymentRate">Get Unemployment Rate</option>
+    	<option value="PercentWithoutHealthInsurance">Get Percent Without Health Insurance</option>
     	<option value="PercentBachelorsOrHigher">Get Percent Bachelors or Higher</option>
-    	<option value="MedianAge">Get Median Age</option>
+    	<option value="MedianHomeValue">Get Median Home Value</option>
     	<option value="MedianRent">Get Median Rent</option>
-    	<option value="AvgCommute">Get Average Commute</option>
-        <option value="Demographics"> Get State Demographics </option>
+    	<option value="PercentMortgagedUnits">Get Percent Mortgaged Units</option>
+    	<option value="AverageCommute">Get Average Commute</option>
+    	<option value="PercentMinority">Get Percent Minority</option>
+    	<option value="PercentForeignBorn">Get Percent Foreign Born</option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>
@@ -299,7 +302,8 @@
         </div>
     </div>
     </div>
-    <p>Add some information about the data here!</p>
+    <p>Data obtained from <a target="_blank" href=https://dataverse.harvard.edu/dataverse/medsl/>MIT Election Data and Science Lab: Election Data</a> and 
+	<a target="_blank" href=https://www.census.gov/mycd/>US Census: My Congressional District</a></p>
 <?php
     include 'open.php';
 

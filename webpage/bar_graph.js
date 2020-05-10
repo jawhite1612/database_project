@@ -102,13 +102,16 @@ function createGraph(title, state, x, y, r, s) {
         width = 15;
     } else {
         width = 1;
+    if (state == 'national_(all)') {
+	width = 1;
+    	s = s == 0 ? 1 : s;
     }
-	  if (s >= 0) {
-			var temp = sortGraph(x, y, r, s);
-			x = temp[0];
-			y = temp[1];
-			r = temp[2];
-	    }
+  	if (s >= 0) {
+		var temp = sortGraph(x, y, r, s);
+		x = temp[0];
+		y = temp[1];
+		r = temp[2];
+    }
    
     var options = {
 	animationEnabled: true,
@@ -119,7 +122,7 @@ function createGraph(title, state, x, y, r, s) {
 	    	title: {
 			text: title              
 		},
-	        dataPointWidth: width,
+	    	dataPointWidth: width,
 		data: [              
 		    {
 			type: "column",

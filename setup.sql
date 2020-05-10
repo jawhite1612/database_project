@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS Population (
   18andOver INT,
   65andOver INT,
   singleRace INT,
+  multiRace INT,
   black INT,
   nativeAmericanAlaskan INT,
   asian INT,
@@ -110,8 +111,8 @@ CREATE TABLE IF NOT EXISTS Education (
 LOAD DATA LOCAL INFILE 'relations/Education.txt' INTO TABLE Education FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 delimiter //
-DROP PROCEDURE IF EXISTS GetStateIncome //
-CREATE PROCEDURE GetStateIncome(IN s VARCHAR(40))
+DROP PROCEDURE IF EXISTS GetStateMedianIncome //
+CREATE PROCEDURE GetStateMedianIncome(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, medianIncome, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, medianIncome, name, party, votes
     FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
@@ -158,8 +159,8 @@ END;
 delimiter ;
 
 delimiter //
-DROP PROCEDURE IF EXISTS GetStateAvgCommute //
-CREATE PROCEDURE GetStateAvgCommute(IN s VARCHAR(40))
+DROP PROCEDURE IF EXISTS GetStateAverageCommute //
+CREATE PROCEDURE GetStateAverageCommute(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, meanCommute, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, meanCommute, name, party, votes
     FROM Workers, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
@@ -238,14 +239,77 @@ END;
 delimiter ;
 
 delimiter //
-DROP PROCEDURE IF EXISTS GetStateDemographics //
-CREATE PROCEDURE GetStateDemographics(IN s VARCHAR(40))
+DROP PROCEDURE IF EXISTS GetStateMedianHomeValue //
+CREATE PROCEDURE GetStateMedianHomeValue(IN s VARCHAR(40))
 BEGIN
-  SELECT districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, hispanic, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio 
-    FROM (SELECT state, District.districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, hispanic, name, party, votes
+  SELECT districtId, medianOwned, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, medianOwned, name, party, votes
+    FROM Housing, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Housing.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStatePercentForeignBorn //
+CREATE PROCEDURE GetStatePercentForeignBorn(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, ROUND((foreignBorn*100.0)/(foreignBorn+nativeBorn),2) as percent, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, foreignBorn, nativeBorn, name, party, votes
     FROM Population, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
     ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
     WHERE Population.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStatePercentMortgagedUnits //
+CREATE PROCEDURE GetStatePercentMortgagedUnits(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, ROUND((mortgagedUnits*100.0)/(mortgagedUnits+nonmortgagedUnits),2) as percent, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, mortgagedUnits, nonmortgagedUnits, name, party, votes
+    FROM Housing, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Housing.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStatePercentMinority //
+CREATE PROCEDURE GetStatePercentMinority(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, ROUND((black+nativeAmericanAlaskan+asian+pacificIslander+otherRace)*100.0/(totalPop),2) as percent, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, totalPop, name, party, votes
+    FROM Population, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Population.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStatePercentWithoutHealthInsurance //
+CREATE PROCEDURE GetStatePercentWithoutHealthInsurance(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, ROUND((withoutHealthInsurance*100.0)/(withHealthInsurance+withoutHealthInsurance),2) as percent, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, withHealthInsurance, withoutHealthInsurance, name, party, votes
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Socioeconomic.districtID = District.districtID
     AND District.districtID = Election.districtID
     AND Candidate.electionId = Election.electionID
     AND District.districtID LIKE s) as B
