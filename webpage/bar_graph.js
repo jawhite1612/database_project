@@ -100,7 +100,7 @@ function createGraph(title, state, x, y, r, s) {
     } else if (x.length < 40) {
         width = 15;
     } else {
-        width = 10;
+	width = 10;
     }
     if (state == 'national_(all)') {
     	width = 1;

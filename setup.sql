@@ -159,8 +159,24 @@ END;
 delimiter ;
 
 delimiter //
-DROP PROCEDURE IF EXISTS GetPercentHighSchoolOrHigher //
-CREATE PROCEDURE GetPercentHighSchoolOrHigher(IN s VARCHAR(40))
+DROP PROCEDURE IF EXISTS GetStateAvgCommute //
+CREATE PROCEDURE GetStateAvgCommute(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, meanCommute, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, meanCommute, name, party, votes
+    FROM Workers, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Workers.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStatePercentHighSchoolOrHigher //
+CREATE PROCEDURE GetStatePercentHighSchoolOrHigher(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, percentHighSchoolOrHigher, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentHighSchoolOrHigher, name, party, votes
     FROM Education, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
@@ -175,10 +191,74 @@ END;
 delimiter ;
 
 delimiter //
-DROP PROCEDURE IF EXISTS GetPercentBachelorsOrHigher //
-CREATE PROCEDURE GetPercentBachelorsOrHigher(IN s VARCHAR(40))
+DROP PROCEDURE IF EXISTS GetStatePercentBachelorsOrHigher //
+CREATE PROCEDURE GetStatePercentBachelorsOrHigher(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, percentBachelorsOrHigher, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, percentBachelorsOrHigher, name, party, votes
+    FROM Education, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Education.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStateMedianRent //
+CREATE PROCEDURE GetStateMedianRent(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, medianRent, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, medianRent, name, party, votes
+    FROM Housing, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Housing.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStateMedianAge //
+CREATE PROCEDURE GetStateMedianAge(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, medianAge, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, medianAge, name, party, votes
+    FROM Population, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Population.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStateDemographics //
+CREATE PROCEDURE GetStateDemographics(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, name, party, votes
+    FROM Population, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Population.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+delimiter //
+DROP PROCEDURE IF EXISTS GetStateEducationLevels //
+CREATE PROCEDURE GetStateEducationLevels(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, lessThan9thGrade, 9thTo12thGrade, highSchoolDiploma, someCollege, associatesDegree, bachelorsDegree, graduateOrProfessionalDegree, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, lessThan9thGrade, 9thTo12thGrade, highSchoolDiploma, someCollege, associatesDegree, bachelorsDegree, graduateOrProfessionalDegree, name, party, votes
     FROM Education, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
     ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
     WHERE Education.districtID = District.districtID
