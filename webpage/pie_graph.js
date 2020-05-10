@@ -25,11 +25,15 @@ function createPieGraph(x) {
 	title: {
 		text: "Demographics (" + rawData[0] + ")"
 	},
+	legend:{
+		horizontalAlign: "right",
+		verticalAlign: "center"
+	},
 	data: [{
 			type: "pie",
 			startAngle: 0,
 			showInLegend: "true",
-			legendText: "{label}",
+			legendText: "{label} (#percent%)",
 			indexLabel: "{label} ({y})",
 			yValueFormatString:"#,##0.#"%"",
 			dataPoints: []
@@ -45,6 +49,13 @@ function createPieGraph(x) {
 		{label: 'Other', y: rawData[6]},
 		{label: 'Hispanic', y: rawData[7]}
 	)
+
+	options.data[0].dataPoints.sort(function (a, b) {
+		console.log(a.y)
+		return a.y < b.y ? 1 : -1;
+	})
+
+	console.log(options.data[0].dataPoints)
 
 	$("#chartContainer").CanvasJSChart(options);
 
