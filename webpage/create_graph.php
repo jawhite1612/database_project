@@ -219,7 +219,7 @@
     	<option value="PercentForeignBorn">Get Percent Foreign Born</option>
         <option value="Demographics">Get State Demographics (Pie Chart)</option>
       </select>
-      Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
+      <span id="sortLabel">Sort by:</span><select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>
         <option value="1">Value</option>
         <option value="2">Party</option>
@@ -290,6 +290,7 @@
             echo "$('#tableContainer').css('display', 'none');";
             echo "$('#map').css('display', 'none');";
             echo "$('#sort').css('display', 'none');";
+            echo "$('#sortLabel').css('display', 'none');";
             echo "$('#chartContainer').css('margin-top', '100px');";
             echo "$('#infoText').css('margin-top', '50px');";
         echo "</script>";

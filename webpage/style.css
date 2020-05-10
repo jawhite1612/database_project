@@ -1,4 +1,8 @@
 
+    #sortLabel {
+        display: inline-block;
+    }
+
     #infoText {
         margin-top: -100px;
     }
