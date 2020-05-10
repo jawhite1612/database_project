@@ -99,14 +99,19 @@ function createGraph(title, state, x, y, r, s) {
 	width = 25;
     } else if (x.length < 40) {
         width = 15;
-    } else {
+    } else if (x.length < 55) {
 	width = 10;
+    } else {
+	width = 1.5;
+        s = s == 0 ? 1 : s;
     }
+/*
     if (state == 'national_(all)') {
     	width = 1;
     	s = s == 0 ? 1 : s;
     }
-    if (s >= 0) {
+*/
+  if (s >= 0) {
 		var temp = sortGraph(x, y, r, s);
 		x = temp[0];
 		y = temp[1];
@@ -115,7 +120,10 @@ function createGraph(title, state, x, y, r, s) {
    
     var options = {
 	animationEnabled: true,
-		title: {
+		theme: "light2",
+	    	exportFileName: title,
+	    	exportEnabled: true,
+	    	title: {
 			text: title              
 		},
 	        dataPointWidth: width,
