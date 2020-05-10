@@ -110,8 +110,8 @@ CREATE TABLE IF NOT EXISTS Education (
 LOAD DATA LOCAL INFILE 'relations/Education.txt' INTO TABLE Education FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
 delimiter //
-DROP PROCEDURE IF EXISTS GetStateIncome //
-CREATE PROCEDURE GetStateIncome(IN s VARCHAR(40))
+DROP PROCEDURE IF EXISTS GetStateMedianIncome //
+CREATE PROCEDURE GetStateMedianIncome(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, medianIncome, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, medianIncome, name, party, votes
     FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
@@ -158,8 +158,8 @@ END;
 delimiter ;
 
 delimiter //
-DROP PROCEDURE IF EXISTS GetStateAvgCommute //
-CREATE PROCEDURE GetStateAvgCommute(IN s VARCHAR(40))
+DROP PROCEDURE IF EXISTS GetStateAverageCommute //
+CREATE PROCEDURE GetStateAverageCommute(IN s VARCHAR(40))
 BEGIN
   SELECT districtId, meanCommute, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, meanCommute, name, party, votes
     FROM Workers, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
@@ -301,7 +301,21 @@ END;
 //
 delimiter ;
 
-
+delimiter //
+DROP PROCEDURE IF EXISTS GetStatePercentWithoutHealthInsurance //
+CREATE PROCEDURE GetStatePercentWithoutHealthInsurance(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, ROUND((withoutHealthInsurance*100.0)/(withHealthInsurance+withoutHealthInsurance),2) as percent, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, withHealthInsurance, withoutHealthInsurance, name, party, votes
+    FROM Socioeconomic, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Socioeconomic.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
 
 delimiter //
 DROP PROCEDURE IF EXISTS GetStateEducationLevels //

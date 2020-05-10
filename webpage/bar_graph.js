@@ -110,7 +110,7 @@ function createGraph(title, state, x, y, r, s) {
 	    	title: {
 			text: title              
 		},
-	        dataPointWidth: width,
+	    	dataPointWidth: width,
 		data: [              
 		    {
 			type: "column",
