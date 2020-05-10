@@ -268,6 +268,10 @@
         <option value="Income">Get Income</option>
         <option value="PovertyRate">Get Poverty Rate</option>
         <option value="UnemploymentRate">Get Unemployment Rate</option>
+    	<option value="PercentBachelorsOrHigher">Get Percent Bachelors or Higher</option>
+    	<option value="MedianAge">Get Median Age</option>
+    	<option value="MedianRent">Get Median Rent</option>
+    	<option value="AvgCommute">Get Average Commute</option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>

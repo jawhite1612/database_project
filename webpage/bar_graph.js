@@ -79,7 +79,8 @@ function getColor(i) {
     } else if (i > 0 && i < .5) {
 	return "#f57a7a";
     } else if (i == .5) {
-	return "#f7ffcf";
+	return "yellow";
+	//return "#f7ffcf";
     } else if (i > .5 && i < 1) {
 	return "#7b7bed";
     } else if (i == 1) {
@@ -102,20 +103,20 @@ function createGraph(title, state, x, y, r, s) {
     } else {
         width = 1;
     }
-    if (state == 'national_(all)') {
-    	width = 1;
-    	s = s == 0 ? 1 : s;
-    }
-    if (s >= 0) {
-		var temp = sortGraph(x, y, r, s);
-		x = temp[0];
-		y = temp[1];
-		r = temp[2];
-    }
+	  if (s >= 0) {
+			var temp = sortGraph(x, y, r, s);
+			x = temp[0];
+			y = temp[1];
+			r = temp[2];
+	    }
    
     var options = {
 	animationEnabled: true,
-		title: {
+		theme: "light2",
+	    	exportFileName: title,
+	    	exportEnabled: true,
+	    	dataPointMaxWidth: 200,
+	    	title: {
 			text: title              
 		},
 	        dataPointWidth: width,
