@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS Population (
   18andOver INT,
   65andOver INT,
   singleRace INT,
+  white INT,
   black INT,
   nativeAmericanAlaskan INT,
   asian INT,
@@ -56,7 +57,6 @@ CREATE TABLE IF NOT EXISTS Population (
   hispanic INT,
   nativeBorn INT,
   foreignBorn INT,
-  white INT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
 LOAD DATA LOCAL INFILE 'relations/People.txt' INTO TABLE Population FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
