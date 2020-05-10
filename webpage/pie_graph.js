@@ -1,7 +1,11 @@
 function createPieGraph(x) {
-	console.log(x);
+	
 	rawData = []
-	rawData[0] = x[0][0].substring(0, x[0][0].indexOf('1'));
+	if (x[0].length > 300) {
+		rawData[0] = 'national';
+	} else {
+		rawData[0] = x[0][0].substring(0, x[0][0].indexOf('1'));
+	}
 	for (var i = 1; i < x.length-1; i++) {
 		rawData[i] = x[i].reduce(function(a,b) {
 			return parseInt(a) + parseInt(b);
