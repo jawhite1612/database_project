@@ -91,7 +91,7 @@ function getColor(i) {
 function createGraph(title, state, x, y, r, s) {
     var width;
     if (state == 'national_(all)') {
-    	width = 1;
+	width = 1;
     	s = s == 0 ? 1 : s;
     }
   if (s >= 0) {

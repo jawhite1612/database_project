@@ -269,9 +269,12 @@
         <option value="PovertyRate">Get Poverty Rate</option>
         <option value="UnemploymentRate">Get Unemployment Rate</option>
 	<option value="PercentBachelorsOrHigher">Get Percent Bachelors or Higher</option>
-	<option value="MedianAge">Get Median Age</option>
+	<option value="MedianHomeValue">Get Median Home Value</option>
 	<option value="MedianRent">Get Median Rent</option>
+	<option value="PercentMortgagedUnits">Get Percent Mortgaged Units</option>
 	<option value="AvgCommute">Get Average Commute</option>
+	<option value="PercentMinority">Get Percent Minority</option>
+	<option value="PercentForeignBorn">Get Percent Foreign Born</option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>
