@@ -102,6 +102,7 @@ function createGraph(title, state, x, y, r, s) {
         width = 15;
     } else {
         width = 1;
+    }
     if (state == 'national_(all)') {
 	width = 1;
     	s = s == 0 ? 1 : s;

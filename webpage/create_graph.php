@@ -276,6 +276,7 @@
     	<option value="AverageCommute">Get Average Commute</option>
     	<option value="PercentMinority">Get Percent Minority</option>
     	<option value="PercentForeignBorn">Get Percent Foreign Born</option>
+        <option value="Demographics">Get State Demographics</option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>

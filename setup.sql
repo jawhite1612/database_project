@@ -47,7 +47,6 @@ CREATE TABLE IF NOT EXISTS Population (
   18andOver INT,
   65andOver INT,
   singleRace INT,
-  multiRace INT,
   black INT,
   nativeAmericanAlaskan INT,
   asian INT,
