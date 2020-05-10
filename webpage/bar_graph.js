@@ -100,13 +100,13 @@ function createGraph(title, state, x, y, r, s) {
 	width = 25;
     } else if (x.length < 40) {
         width = 15;
+    } else if (x.length <= 55){
+        width = 10;
     } else {
-        width = 1;
-    }
-    if (state == 'national_(all)') {
-	width = 1;
+    	width = 1;
     	s = s == 0 ? 1 : s;
     }
+    
   	if (s >= 0) {
 		var temp = sortGraph(x, y, r, s);
 		x = temp[0];
