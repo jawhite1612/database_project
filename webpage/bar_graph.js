@@ -79,7 +79,8 @@ function getColor(i) {
     } else if (i > 0 && i < .5) {
 	return "#f57a7a";
     } else if (i == .5) {
-	return "#f7ffcf";
+	return "yellow";
+	//return "#f7ffcf";
     } else if (i > .5 && i < 1) {
 	return "#7b7bed";
     } else if (i == 1) {
@@ -89,28 +90,10 @@ function getColor(i) {
 
 function createGraph(title, state, x, y, r, s) {
     var width;
-    if (x.length < 5) {
-        width = 55;
-    } else if (x.length < 10) {
-	width = 45;
-    } else if (x.length < 20) {
-        width = 35;
-    } else if (x.length < 30) {
-	width = 25;
-    } else if (x.length < 40) {
-        width = 15;
-    } else if (x.length < 55) {
-	width = 10;
-    } else {
-	width = 1.5;
-        s = s == 0 ? 1 : s;
-    }
-/*
     if (state == 'national_(all)') {
     	width = 1;
     	s = s == 0 ? 1 : s;
     }
-*/
   if (s >= 0) {
 		var temp = sortGraph(x, y, r, s);
 		x = temp[0];
@@ -123,6 +106,7 @@ function createGraph(title, state, x, y, r, s) {
 		theme: "light2",
 	    	exportFileName: title,
 	    	exportEnabled: true,
+	    	dataPointMaxWidth: 200,
 	    	title: {
 			text: title              
 		},
