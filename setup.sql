@@ -38,7 +38,6 @@ CREATE TABLE IF NOT EXISTS Candidate (
 );
 LOAD DATA LOCAL INFILE 'relations/Candidate.txt' INTO TABLE Candidate FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
 
-
 CREATE TABLE IF NOT EXISTS Population (
   districtID VARCHAR(50),
   totalPop INT,
@@ -48,16 +47,16 @@ CREATE TABLE IF NOT EXISTS Population (
   18andOver INT,
   65andOver INT,
   singleRace INT,
-  multiRace INT,
-  white INT,
   black INT,
   nativeAmericanAlaskan INT,
   asian INT,
   pacificIslander INT,
   otherRace INT,
+  multiRace INT,
   hispanic INT,
   nativeBorn INT,
   foreignBorn INT,
+  white INT,
   FOREIGN KEY(districtID) REFERENCES District(districtID)
 );
 LOAD DATA LOCAL INFILE 'relations/People.txt' INTO TABLE Population FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
@@ -242,7 +241,8 @@ delimiter //
 DROP PROCEDURE IF EXISTS GetStateDemographics //
 CREATE PROCEDURE GetStateDemographics(IN s VARCHAR(40))
 BEGIN
-  SELECT districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio from (SELECT state, District.districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, name, party, votes
+  SELECT districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, hispanic, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio 
+    FROM (SELECT state, District.districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, hispanic, name, party, votes
     FROM Population, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
     ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
     WHERE Population.districtID = District.districtID

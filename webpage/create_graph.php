@@ -272,6 +272,7 @@
     	<option value="MedianAge">Get Median Age</option>
     	<option value="MedianRent">Get Median Rent</option>
     	<option value="AvgCommute">Get Average Commute</option>
+        <option value="Demographics"> Get State Demographics </option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>
@@ -299,7 +300,6 @@
     </div>
     </div>
     <p>Add some information about the data here!</p>
-
 <?php
     include 'open.php';
 
@@ -311,6 +311,7 @@
     $state = $_POST['state'];
     $abrev = $_POST['stateAbrev'];
     $temp_option = $option;
+    $createdGraph = false;
 
     echo "<script>";
         echo "getInputsByValue('options','".$option."');";
@@ -330,8 +331,15 @@
     if ($abrev == "NA(Avg)" || $abrev == "NA(All)") {
         $state = "";
     }
+
+    if($option == 'Demographics') {
+        require_once('pie_graph.php');
+        getDemographics($state, $mysqli);
+        $createGraph = true; 
+    }
+
     $queryNum = 0;
-    if ($mysqli->multi_query('CALL GetState'.$option."('%'); CALL GetState".$option."('".$state."%')")) {
+    if ($createGraph == false && $mysqli->multi_query('CALL GetState'.$option."('%'); CALL GetState".$option."('".$state."%')")) {
         do {
             if ($result = $mysqli->store_result()) {
 
@@ -375,34 +383,36 @@
             $queryNum +=1;
 
         } while ($mysqli->next_result());
+
+        if (strpos('national', $state) === false)  {
+            $option = $temp_option." (".$abrev.")";  
+        } else {
+            $option = $temp_option." ".$state."";  
+        }
+
+        echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
+        echo "<script type='text/javascript'>";
+            echo "console.log(".json_encode($x).");";
+            echo "var x = ".json_encode($x).";";
+            echo "var y = ".json_encode($y).";";
+            echo "var r = ".json_encode($r).";";
+            echo "var sort = ".json_encode($sort).";";
+            echo "var state = ".json_encode($state).";";
+            if ($abrev == 'NA(Avg)') {
+               echo "var temp = getAverage(x,y,r);"; 
+               echo "x = temp[0];"; 
+               echo "y = temp[1];"; 
+               echo "r = temp[2];"; 
+            }
+            echo "createList(state, x,y,r);";
+            echo "createGraph(".json_encode($option).",state,x,y,r,sort);";
+        echo "</script>";
+
     } else {
         printf("Choose a graph above!");
     }
 
     mysqli_close($mysqli);
-    
-    if (strpos('national', $state) === false)  {
-            $option = $temp_option." (".$abrev.")";  
-        } else {
-            $option = $temp_option." ".$state."";  
-    }
 
-    echo "<script type = 'text/javascript' src='bar_graph.js'></script>";
-    echo "<script type='text/javascript'>";
-        echo "console.log(".json_encode($x).");";
-        echo "var x = ".json_encode($x).";";
-        echo "var y = ".json_encode($y).";";
-        echo "var r = ".json_encode($r).";";
-        echo "var sort = ".json_encode($sort).";";
-        echo "var state = ".json_encode($state).";";
-        if ($abrev == 'NA(Avg)') {
-           echo "var temp = getAverage(x,y,r);"; 
-           echo "x = temp[0];"; 
-           echo "y = temp[1];"; 
-           echo "r = temp[2];"; 
-        }
-        echo "createList(state, x,y,r);";
-        echo "createGraph(".json_encode($option).",state,x,y,r,sort);";
-    echo "</script>";
 ?>
 </body>
