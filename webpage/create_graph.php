@@ -267,6 +267,7 @@
       Value Type: <select id="options" name="options" onchange="this.form.submit()" value="Income">
         <option value="Income">Get Income</option>
         <option value="PovertyRate">Get Poverty Rate</option>
+        <option value="UnemploymentRate">Get Unemployment Rate</option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>
