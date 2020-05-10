@@ -1,0 +1,63 @@
+
+    #infoText {
+        margin-top: -100px;
+    }
+
+    .data {
+        display: inline-block;
+    }
+
+    #chartContainer {
+
+    }
+
+    #tableContainer {
+        overflow: scroll;
+        overflow-x: hidden; 
+        margin-top: 80px;
+        
+    }
+
+    #tableContainer table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-left: 50px;
+
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+    }
+
+    form {
+        margin-left: 200px;
+        margin-top: 80px;
+        margin-bottom: -70px;
+    }
+
+    td {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    th {
+        text-align: left
+    }
+
+    #map {
+        margin-top: 50px;
+        margin-bottom: -200px;
+        margin-left: 175px;
+    }
+
+ .container2 {
+    margin-bottom: 150px;
+    margin-left: -50px;
+ }

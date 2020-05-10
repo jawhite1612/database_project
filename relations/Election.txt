@@ -349,7 +349,7 @@ electionID,districtID,year,office
 348,south_carolina5,2016,US House
 349,south_carolina6,2016,US House
 350,south_carolina7,2016,US House
-351,south_dakota,2016,US House
+351,south_dakota1,2016,US House
 352,tennessee1,2016,US House
 353,tennessee2,2016,US House
 354,tennessee3,2016,US House
@@ -784,7 +784,7 @@ electionID,districtID,year,office
 783,south_carolina5,2018,US House
 784,south_carolina6,2018,US House
 785,south_carolina7,2018,US House
-786,south_dakota,2018,US House
+786,south_dakota1,2018,US House
 787,tennessee1,2018,US House
 788,tennessee2,2018,US House
 789,tennessee3,2018,US House

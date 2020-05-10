@@ -1,67 +1,6 @@
 <head>
 <title>Income</title>
-<style> 
-
-    .data {
-        display: inline-block;
-    }
-
-    #chartContainer {
-
-    }
-
-    #tableContainer {
-        overflow: scroll;
-        overflow-x: hidden; 
-        margin-top: 80px;
-        
-    }
-
-    #tableContainer table {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        margin-left: 50px;
-
-    }
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-left: auto;
-    }
-
-    form {
-        margin-left: 200px;
-        margin-top: 80px;
-        margin-bottom: -70px;
-    }
-
-    td {
-        border-color: black;
-        border-width: 1px;
-        border-style: solid;
-    }
-
-    th {
-        text-align: left
-    }
-
-    #map {
-        margin-top: 50px;
-        margin-bottom: -200px;
-        margin-left: 175px;
-    }
-
- .container2 {
-    margin-bottom: 150px;
-    margin-left: -50px;
- }
-
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
@@ -263,10 +202,12 @@
         }
 
     </script>
+
+
     <form id="form" name='form' action="create_graph.php" method="POST">
       Value Type: <select id="options" name="options" onchange="this.form.submit()" value="Income">
         <option value="MedianIncome">Get Median Income</option>
-	<option value="PovertyRate">Get Poverty Rate</option>
+        <option value="PovertyRate">Get Poverty Rate</option>
         <option value="UnemploymentRate">Get Unemployment Rate</option>
     	<option value="PercentWithoutHealthInsurance">Get Percent Without Health Insurance</option>
     	<option value="PercentBachelorsOrHigher">Get Percent Bachelors or Higher</option>
@@ -276,7 +217,7 @@
     	<option value="AverageCommute">Get Average Commute</option>
     	<option value="PercentMinority">Get Percent Minority</option>
     	<option value="PercentForeignBorn">Get Percent Foreign Born</option>
-        <option value="Demographics">Get State Demographics</option>
+        <option value="Demographics">Get State Demographics (Pie Chart)</option>
       </select>
       Sort by: <select id="sort" name="sort" onchange="this.form.submit()" value="Sort by Alpha">
       	<option value="0" id="Alpha">Alpha</option>
@@ -303,13 +244,19 @@
         </div>
     </div>
     </div>
-    <p>Data obtained from <a target="_blank" href=https://dataverse.harvard.edu/dataverse/medsl/>MIT Election Data and Science Lab: Election Data</a> and 
-	<a target="_blank" href=https://www.census.gov/mycd/>US Census: My Congressional District</a></p>
+    <p id="infoText">
+        Data obtained from
+        <a target="_blank" href=https://dataverse.harvard.edu/dataverse/medsl/>MIT Election Data and Science Lab: Election Data</a> 
+        and 
+	   <a target="_blank" href=https://www.census.gov/mycd/>US Census: My Congressional District</a>
+    </p>
+
+
 <?php
     include 'open.php';
 
-    ini_set('error_reporting', E_ALL); // report errors of all types
-    ini_set('display_errors', true);   // report errors to screen (don't hide from user)
+   // ini_set('error_reporting', E_ALL); // report errors of all types
+    //ini_set('display_errors', true);   // report errors to screen (don't hide from user)
 
     $option = $_POST['options'];
     $sort = $_POST['sort'];
@@ -339,6 +286,13 @@
 
     if($option == 'Demographics') {
         require_once('pie_graph.php');
+        echo "<script>";
+            echo "$('#tableContainer').css('display', 'none');";
+            echo "$('#map').css('display', 'none');";
+            echo "$('#sort').css('display', 'none');";
+            echo "$('#chartContainer').css('margin-top', '100px');";
+            echo "$('#infoText').css('margin-top', '50px');";
+        echo "</script>";
         getDemographics($state, $mysqli);
         $createGraph = true; 
     }
@@ -413,8 +367,6 @@
             echo "createGraph(".json_encode($option).",state,x,y,r,sort);";
         echo "</script>";
 
-    } else {
-        printf("Choose a graph above!");
     }
 
     mysqli_close($mysqli);

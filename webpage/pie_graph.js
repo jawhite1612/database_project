@@ -19,11 +19,11 @@ function createPieGraph(x) {
 	var options = {
 	animationEnabled: true,
 	title: {
-		text: "Demographics"
+		text: "Demographics (" + rawData[0] + ")"
 	},
 	data: [{
 			type: "pie",
-			startAngle: 45,
+			startAngle: 0,
 			showInLegend: "true",
 			legendText: "{label}",
 			indexLabel: "{label} ({y})",
@@ -38,7 +38,7 @@ function createPieGraph(x) {
 		{label: 'Native American/Alaskan', y: rawData[3]}, 
 		{label: 'Asian', y: rawData[4]}, 
 		{label: "Pacific Islander", y: rawData[5]}, 
-		{label: 'Other Race', y: rawData[6]},
+		{label: 'Other', y: rawData[6]},
 		{label: 'Hispanic', y: rawData[7]}
 	)
 
