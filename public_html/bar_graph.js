@@ -89,6 +89,11 @@ function getColor(i) {
 }
 
 function createGraph(title, state, x, y, r, s) {
+	if (title.charAt(title.length-9) == '(') {
+        	title = title.substr(0, title.length-10).match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-9);
+        } else {
+                title = title.match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-4);
+        }
 /*    var width;
     if (x.length < 5) {
         width = 55;
@@ -121,7 +126,7 @@ function createGraph(title, state, x, y, r, s) {
 	    	exportEnabled: true,
 	    	dataPointMaxWidth: 200,
 	    	title: {
-			text: title.match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-4)           
+			text: title
 		},
 		data: [              
 		    {
