@@ -121,7 +121,7 @@ function createGraph(title, state, x, y, r, s) {
 	    	exportEnabled: true,
 	    	dataPointMaxWidth: 200,
 	    	title: {
-			text: title              
+			text: title.match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-4)           
 		},
 		data: [              
 		    {
