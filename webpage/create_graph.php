@@ -6,8 +6,8 @@
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <script type = "text/javascript" src="bar_graph.js"></script>
-    <script src="../map/lib/raphael.js"></script>
-    <script src="../map/us-map.js"></script>
+    <script src="map/lib/raphael.js"></script>
+    <script src="map/us-map.js"></script>
     <script type="text/javascript">
 
         var states = {
