@@ -89,7 +89,7 @@ function getColor(i) {
 }
 
 function createGraph(title, state, x, y, r, s) {
-    var width;
+/*    var width;
     if (x.length < 5) {
         width = 55;
     } else if (x.length < 10) {
@@ -106,7 +106,7 @@ function createGraph(title, state, x, y, r, s) {
     	width = 1;
     	s = s == 0 ? 1 : s;
     }
-    
+*/  
   	if (s >= 0) {
 		var temp = sortGraph(x, y, r, s);
 		x = temp[0];
@@ -123,7 +123,6 @@ function createGraph(title, state, x, y, r, s) {
 	    	title: {
 			text: title              
 		},
-	    	dataPointWidth: width,
 		data: [              
 		    {
 			type: "column",

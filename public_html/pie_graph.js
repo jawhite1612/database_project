@@ -63,8 +63,11 @@ function createPieGraph(x) {
 
 	var options = {
 	animationEnabled: true,
+	theme: "light2",
+        exportFileName: "Demographics (" + rawData[0].charAt(0).toUpperCase() + rawData[0].slice(1) + ")",
+        exportEnabled: true,
 	title: {
-		text: "Demographics (" + rawData[0] + ")"
+		text: "Demographics (" + rawData[0].charAt(0).toUpperCase() + rawData[0].slice(1) + ")"
 	},
 	legend:{
 		horizontalAlign: "right",
@@ -98,6 +101,6 @@ function createPieGraph(x) {
 
 	$("#chartContainer").CanvasJSChart(options);
 	$("<div></div>", {
-		text: ratioAverage
+		//text: ratioAverage
 	}).appendTo("body");
 }

@@ -170,7 +170,7 @@
                 }
 
                 if (x[i].includes(prev) == false) {
-                    tempY.push(parseInt(stateAverages[prev][0] / districtCount));
+                    tempY.push(parseFloat(stateAverages[prev][0] / districtCount));
                     tempR.push(parseFloat(stateAverages[prev][1] / districtCount));
 
                     prev = x[i].substring(0, x[i].indexOf('1'));
@@ -186,7 +186,7 @@
                 stateAverages[prev][1] += parseFloat(r[i]);
                 districtCount += 1;
             }
-            tempY.push(parseInt(stateAverages[prev][0] / districtCount));
+            tempY.push(parseFloat(stateAverages[prev][0] / districtCount));
             tempR.push(parseFloat(stateAverages[prev][1] / districtCount));
 
             for (var i = 0; i < tempX.length; i++) {
