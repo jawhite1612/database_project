@@ -89,11 +89,11 @@ function getColor(i) {
 
 function createGraph(title, state, x, y, r, s) {
 	if (title.substring(title.length-8,title.length-6) == 'NA') {
-        	title = title.substring(0, title.length-10).match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-9);
+        	maintitle = title.substring(0, title.length-10).match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-9);
         } else {
-                title = title.match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-4);
+                maintitle = title.match(/[A-Z][a-z]+|[0-9]+/g).join(" ") + " " + title.substr(title.length-4);
         }
-	if (title.substr(title.length-5,title.length-3) == 'Avg') {
+	if (title.substring(title.length-5,title.length-2) == 'Avg') {
 		xaxistitle = "State";
 	} else {
 		xaxistitle = "Congressional District";
@@ -125,7 +125,7 @@ function createGraph(title, state, x, y, r, s) {
 	    	exportEnabled: true,
 	    	dataPointMaxWidth: 200,
 	    	title: {
-			text: title
+			text: maintitle
 		},
 	    	axisX:{
        			title: xaxistitle,
