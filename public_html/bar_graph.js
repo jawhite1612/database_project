@@ -99,6 +99,16 @@ function createGraph(title, state, x, y, r, s) {
 	} else {
 		xaxistitle = "Congressional District";
 	}
+	titleArray = title.match(/[A-Z][a-z]+/g);
+	if (titleArray[0] == "Median") {
+		yaxistitle = "Dollars ($)";
+	} else if (titleArray[0] == "Percent" || titleArray[1] == "Rate") {
+		yaxistitle = "Percent (%)";
+	} else if (titleArray[1] == "Commute") {
+		yaxistitle = "Minutes (min)";
+	} else {
+		yaxistitle = "";
+	}
 /*    var width;
     if (x.length < 5) {
         width = 55;
@@ -136,6 +146,9 @@ function createGraph(title, state, x, y, r, s) {
 	    	axisX:{
        			title: xaxistitle,
       		},
+	    	axisY:{
+			title: yaxistitle,
+		},
 		data: [              
 		    {
 			type: "column",
