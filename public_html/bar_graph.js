@@ -80,7 +80,6 @@ function getColor(i) {
 	return "#f57a7a";
     } else if (i == .5) {
 	return "yellow";
-	//return "#f7ffcf";
     } else if (i > .5 && i < 1) {
 	return "#7b7bed";
     } else if (i == 1) {
@@ -109,24 +108,9 @@ function createGraph(title, state, x, y, r, s) {
 	} else {
 		yaxistitle = "";
 	}
-/*    var width;
-    if (x.length < 5) {
-        width = 55;
-    } else if (x.length < 10) {
-	width = 45;
-    } else if (x.length < 20) {
-        width = 35;
-    } else if (x.length < 30) {
-	width = 25;
-    } else if (x.length < 40) {
-        width = 15;
-    } else if (x.length <= 55){
-        width = 10;
-    } else {
-    	width = 1;
-    	s = s == 0 ? 1 : s;
+    if (title.substring(title.length-8,title.length-1) == 'NA(All)') {
+	s = s == 0 ? 1 : s;
     }
-*/  
   	if (s >= 0) {
 		var temp = sortGraph(x, y, r, s);
 		x = temp[0];
