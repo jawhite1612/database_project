@@ -3,7 +3,7 @@ Andrew Zheng - azheng4
 
 To install,
 
-	1) Run the following line to setup the database
+	1) Run the following line to setup the database then enter password
 
 		mysql -h dbase.cs.jhu.edu -u StaffUsername -D DBName -p < setup.sql
 
