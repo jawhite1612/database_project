@@ -1,0 +1,36 @@
+Julian White - jwhit139
+Andrew Zheng - azheng4
+
+To install,
+
+	1) Run the following line to setup the database
+
+		mysql -h dbase.cs.jhu.edu -u StaffUsername -D DBName -p < setup.sql
+
+	2) Enable permissions on public_html dir:
+
+		chmod o+x public_html
+
+	2) Navigate into public_html (cd public_html) and enable permissions on html, js, and php files
+
+		chmod o+r *
+
+	3) Enable permisions on the map folder
+
+		chmod o+x map
+
+	4) Navigate into map folder (cd map) and enable read permissions on us-map.js
+
+		chmod o+r us-map.js
+
+	6) Enable execute permissions on lib folder
+
+		chmod o+x lib
+
+	7) Navigate into lib folder (cd lib) and enable on rapheal.js
+
+		chmod o+r rapheal.js
+
+After all of these permisions are enabled, open the jwhit139_azheng4.html file on a browser:
+
+	../public_html/jwhit139_azheng4.html
