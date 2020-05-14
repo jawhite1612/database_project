@@ -255,6 +255,24 @@ END;
 delimiter ;
 
 delimiter //
+DROP PROCEDURE IF EXISTS GetStateDemographics //
+CREATE PROCEDURE GetStateDemographics(IN s VARCHAR(40))
+BEGIN
+  SELECT districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, hispanic, sum(case when `party` = 'democrat' then 1 else 0 end)/count(*) as ratio 
+    FROM (SELECT state, District.districtId, white, black, nativeAmericanAlaskan, asian, pacificIslander, otherRace, hispanic, name, party, votes
+    FROM Population, District, Election, Candidate inner join (select max(numOfVotes)as votes, electionID from Candidate group by electionID) as A
+    ON A.votes = Candidate.numOfVotes and A.electionID = Candidate.electionID
+    WHERE Population.districtID = District.districtID
+    AND District.districtID = Election.districtID
+    AND Candidate.electionId = Election.electionID
+    AND District.districtID LIKE s) as B
+  GROUP BY districtId;
+END;
+//
+delimiter ;
+
+
+delimiter //
 DROP PROCEDURE IF EXISTS GetStatePercentForeignBorn //
 CREATE PROCEDURE GetStatePercentForeignBorn(IN s VARCHAR(40))
 BEGIN
